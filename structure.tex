@@ -1,0 +1,396 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% Structure Specification File
+% Version 1.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\usepackage{etoolbox} % Required for conditional statements
+
+\setlength\parindent{0pt} % Stop paragraph indentation
+
+\usepackage{supertabular} % Required for the supertabular environment which allows tables to span multiple pages so sections with tables correctly wrap across pages
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT MARGINS
+%----------------------------------------------------------------------------------------
+
+\usepackage{geometry} % Required for adjusting page dimensions and margins
+
+\geometry{
+	left=7.6cm,
+	right=1cm,
+	top=0.5cm,
+	bottom=0.2cm,
+	letterpaper, % Paper size, change to letterpaper for US letter size
+	%showframe, % Uncomment to show how the type block is set on the page -- typically for debugging
+}
+
+% \RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.2cm,nohead,nofoot]{geometry}
+
+%----------------------------------------------------------------------------------------
+%	COLUMN LAYOUT
+%----------------------------------------------------------------------------------------
+
+% \usepackage{paracol} % Required for creating multi-column layouts that can span pages automatically
+
+% \columnratio{0.55,0.45} % The relative ratios of the two columns in the CV
+
+% \setlength\columnsep{0.05\textwidth} % Specify the amount of space between the columns
+
+%----------------------------------------------------------------------------------------
+%	FONTS
+%----------------------------------------------------------------------------------------
+\usepackage{courier}
+\usepackage{fontspec} % Required for specifying custom fonts under XeLaTeX
+
+\setmainfont{EBGaramond}[ % Make the default font EBGaramond
+Path=fonts/, % The font is provided with the template in the fonts folder
+UprightFont=*-Regular.ttf,
+BoldFont=*-Bold.ttf,
+BoldItalicFont=*-BoldItalic.ttf,
+ItalicFont=*-Italic.ttf,
+SmallCapsFont=*-SC.ttf
+]
+
+\newfontfamily\cvtextfont[Path=fonts/]{freebooterscript} % Create a new font family for the cursive font Freebooter Script, provided with the template in the fonts folder
+
+\newfontfamily\cvlangfont{Courier New} % Create a new font family for programming languages
+
+\newfontfamily{\FA}[Path=fonts/]{FontAwesome} % Create a new font family for FontAwesome icons, provided with the template in the fonts folder
+\input{fonts/fontawesomesymbols-xeluatex.tex} % Load a file to create shortcuts to the icons, see icon examples and their shortcuts in fontawesome.pdf in the fonts folder
+
+\usepackage[sf,scale=0.95]{libertine} % Load Libertine as a \sffamily font for sans serif titles
+
+%----------------------------------------------------------------------------------------
+%	COLOURS AND LINKS
+%----------------------------------------------------------------------------------------
+
+\usepackage[usenames,svgnames]{xcolor} % Allows the definition and use of custom colours
+
+\definecolor{text}{HTML}{2b2b2b} % Main document font colour, off-black
+\definecolor{headings}{HTML}{701112} % Dark red colour for headings
+\definecolor{shade}{HTML}{F5DD9D} % Peach colour for the contact information box
+\definecolor{linkcolor}{HTML}{641c1d} % 25% desaturated headings colour for links
+\definecolor{sidecolor}{HTML}{E7E7E7} % Grey sidebar color
+\definecolor{python}{HTML}{0E5484}
+\definecolor{maingray}{HTML}{B9B9B9}
+\definecolor{proglang}{HTML}{f2f2f2}
+\definecolor{matlab}{HTML}{e16737}
+\definecolor{cuda}{HTML}{3A4E3A}
+\definecolor{rpackage}{HTML}{198CE7}
+\definecolor{qt}{HTML}{3D6117}
+
+% Other colour options: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+% For preset colours that can be used by their names without having to define them, see: https://www.latextemplates.com/svgnames-colors
+
+\color{text} % Set the default text colour for the whole document to the colour defined as 'text' above
+
+%------------------------------------------------
+
+\usepackage{hyperref} % Required for links
+
+\hypersetup{colorlinks, breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and their colours
+
+%----------------------------------------------------------------------------------------
+%	HEADERS & FOOTERS
+%----------------------------------------------------------------------------------------
+
+\usepackage{fancyhdr} % Required for customising headers and footers
+
+\pagestyle{fancy} % Enable custom headers and footers
+
+\fancyhf{} % This suppresses all headers and footers by default, add headers and footers in the template file as per the example
+
+\renewcommand{\headrulewidth}{0pt} % Remove the default rule under the header
+
+%----------------------------------------------------------------------------------------
+%	SECTIONS
+%----------------------------------------------------------------------------------------
+
+\usepackage[nobottomtitles*]{titlesec} % Required for modifying sections, the nobottomtitles* is required for pushing section titles to the next page when they are close to the bottom of the page
+
+\renewcommand{\bottomtitlespace}{0.1\textheight} % Modify the minimal space required from the bottom margin not to move the title to the next page
+
+\titleformat{\section}{\color{headings}\scshape\LARGE\raggedright}{}{0em}{}[\color{black}\titlerule] % Define the \section format
+
+\titlespacing{\section}{0pt}{0pt}{8pt} % Spacing around section titles, the order is: left, before and after
+
+%----------------------------------------------------------------------------------------
+%	CUSTOM COMMANDS
+%----------------------------------------------------------------------------------------
+
+% Command for entering a new work position
+\newcommand{\workposition}[5]{
+	{\expandafter\ifstrequal\expandafter{#3}{}{}{{\raggedright\large #3}}} % Employer
+	\hfill
+	{\raggedleft\textsc{#1\expandafter\ifstrequal\expandafter{#2}{}{}{\hspace{2pt}\footnotesize{(#2)}}}\par} % Duration and conditional full time/part time text
+	\expandafter\ifstrequal\expandafter{#4}{}{}{{\raggedright\large\textit{\textbf{#4}}}\\[4pt]} % Job title
+	\expandafter\ifstrequal\expandafter{#5}{}{}{#5\\} % Description
+}
+
+% Command for entering a separate qualification
+\newcommand{\educationentry}[5]{
+	\textsc{#1} & \textbf{#2}\\ % Duration and degree
+	\expandafter\ifstrequal\expandafter{#3}{}{}{& {\small\textsc{#3}}\\} % Honours, achievements or distinctions (e.g. first class honours)
+	\expandafter\ifstrequal\expandafter{#4}{}{}{& #4\\} % Department
+	\expandafter\ifstrequal\expandafter{#5}{}{}{& \textit{#5}\\[6pt]} % Institution
+}
+
+% Command for entering a separate table row -- used as a generic visual element for any section that uses a two column table
+\newcommand{\tableentry}[3]{
+	\textsc{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]} % First the heading, then content, then a conditional insertion of whitespace if the third parameter has any content in it
+}
+
+% Command for entering a long-form description where there is a title on one line and a paragraph description below it
+\newcommand{\longformdescription}[2]{
+	\textit{#1}\\[3pt]
+	#2\medskip
+}
+
+% Command for entering a publication in long-form format
+\newcommand{\longformpublication}[1]{
+	#1\medskip
+}
+
+% Command for entering a publication as a short DOI (digital object identifier) string to the publication, a link is automatically created
+\newcommand{\doipublication}[5]{
+	#1 & % Year
+	\href{#2}{\expandafter\ifstrequal\expandafter{#3}{firstauthor}{\small#5}{\small#5}}% title string and if "firstauthor" is entered for the 3rd argument, this makes the DOI string bold indicating a first author publication
+	\expandafter\ifstrequal\expandafter{#4}{}{\\}{\\[3pt]} % Conditional insertion of whitespace if the 4th parameter has any content in it
+}
+
+% Command to create the rounded boxes around the first three letters of section titles
+\newcommand*\round[2]{%
+	\begin{tikzpicture}[baseline=(char.base)]
+		\node[align=center,anchor=north west, draw,rectangle, rounded corners=2.5mm, inner sep=1.6pt, minimum size=5.5mm, text centered, minimum height = 5mm, text height=2mm, fill=#2,#2,text=black](char){#1};%
+	\end{tikzpicture}
+}
+
+% Command for creating a big colored dot
+\newcommand{\programlang}[2]{
+	\round{
+		{#1$\bullet$}~~{\footnotesize\cvlangfont#2}
+	}{proglang}
+}
+
+%----------------------------------------------------------------------------------------
+%	GRAPHICS DEFINITIONS
+%---------------------------------------------------------------------------------------- 
+
+\usepackage{tikz} % Required for creating the plots
+\usetikzlibrary{shapes, backgrounds}
+\tikzset{x=1cm, y=1cm} % Default tikz units
+
+% Command to vertically centre adjacent content
+\newcommand{\vcenteredhbox}[1]{% The only parameter is for the content to centre
+	\begingroup%
+		\setbox0=\hbox{#1}\parbox{\wd0}{\box0}%
+	\endgroup%
+}
+
+%----------------------------------------------------------------------------------------
+%	CHARTS
+%---------------------------------------------------------------------------------------- 
+
+\newcounter{barcount}
+
+% Environment to hold a new bar chart
+\newenvironment{barchart}[1]{ % The only parameter is the maximum bar width, in cm
+	\newcommand{\barwidth}{0.35}
+	\newcommand{\barsep}{0.2}
+	
+	% Command to add a bar to the bar chart
+	\newcommand{\baritem}[2]{ % The first argument is the bar label and the second is the percentage the current bar should take up of the total width
+		\pgfmathparse{##2}
+		\let\perc\pgfmathresult
+		
+		\pgfmathparse{#1}
+		\let\barsize\pgfmathresult
+		
+		\pgfmathparse{\barsize*##2/100}
+		\let\barone\pgfmathresult
+		
+		\pgfmathparse{(\barwidth*\thebarcount)+(\barsep*\thebarcount)}
+		\let\barx\pgfmathresult
+		
+		\filldraw[fill=shade, draw=none] (0,-\barx) rectangle (\barone,-\barx-\barwidth);
+		
+		\node [label=180:\colorbox{white}{\textcolor{text}{##1}}] at (0,-\barx-0.175) {};
+		\addtocounter{barcount}{1}
+	}
+	\begin{tikzpicture}
+		\setcounter{barcount}{0}
+}{
+	\end{tikzpicture}
+}
+
+%----------------------------------------------------------------------------------------
+%	 SIDEBAR DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+\usepackage[absolute,overlay]{textpos}
+\usepackage{ifthen}
+
+\newlength\imagewidth
+\newlength\imagescale
+\pgfmathsetlength{\imagewidth}{5cm}
+\pgfmathsetlength{\imagescale}{\imagewidth/600}
+
+\newlength{\TotalSectionLength} % Define a new length to hold the remaining line width after the section title is printed
+\newlength{\SectionTitleLength} % Define a new length to hold the width of the section title
+\newcommand{\profilesection}[1]{%
+	\setlength\TotalSectionLength{\linewidth}% Set the total line width
+	\settowidth{\SectionTitleLength}{\huge #1 }% Calculate the width of the section title
+	% \addtolength\TotalSectionLength{-\SectionTitleLength}% Subtract the section title width from the total width
+	\addtolength\TotalSectionLength{-2.22221pt}% Modifier to remove overfull box warning
+	\vspace{5pt}% Whitespace before the section title
+	{\color{headings} \scshape\LARGE #1 \\\rule[0.3\baselineskip]{\TotalSectionLength}{0.5pt}}% Print the title and auto-width rule
+}
+
+% \titleformat{\section}{\color{headings}\scshape\LARGE\raggedright}{}{0em}{}[\color{black}\titlerule] % Define the \section format
+
+
+% Define custom commands for CV info
+\newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
+\newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
+\newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
+\newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
+\newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
+\newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
+\newcommand{\education}[1]{\renewcommand{\education}{#1}}
+\newcommand{\references}[1]{\renewcommand{\references}{#1}}
+\newcommand{\awards}[1]{\renewcommand{\awards}{#1}}
+\newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
+\newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
+\newcommand{\cvjobtitle}[1]{\renewcommand{\cvjobtitle}{#1}}
+\newcommand{\cvgithub}[1]{\renewcommand{\cvgithub}{#1}}
+\newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
+
+% Command for printing skill progress bars
+\newcommand\skills[1]{ 
+	\renewcommand{\skills}{
+		\begin{tikzpicture}
+			\foreach [count=\i] \x/\y in {#1}{
+				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+				\draw[fill=white,headings](0,\i) rectangle (\y,\i+0.4);
+				\node [above right] at (0,\i+0.4) {\x};
+			}
+		\end{tikzpicture}
+	}
+}
+
+%----------------------------------------------------------------------------------------
+%	 SIDEBAR LAYOUT
+%----------------------------------------------------------------------------------------
+\usepackage{ragged2e} % For fully justified text
+
+\newcommand{\makeprofile}{
+	\begin{tikzpicture}[remember picture,overlay]
+		\node [rectangle, fill=sidecolor, anchor=north, minimum width=9cm, minimum height=\paperheight+1cm] (box) at (-5cm,2.5cm){};
+	\end{tikzpicture}
+
+	%------------------------------------------------
+
+	\begin{textblock}{6}(0.5, 0.2)
+
+		%------------------------------------------------
+		
+		\ifthenelse{\equal{\profilepic}{}}{}{
+			\begin{center}
+				\begin{tikzpicture}[x=\imagescale,y=-\imagescale]
+					\clip (600/2, 567/2) circle (567/2);
+					\node[anchor=north west, inner sep=0pt, outer sep=0pt] at (0,0) {\includegraphics[width=\imagewidth]{\profilepic}};
+				\end{tikzpicture}
+			\end{center}
+		}
+
+		% %------------------------------------------------
+
+		% {\Huge\color{mainblue}\cvname}
+
+		% %------------------------------------------------
+
+		% {\Large\color{black!80}\cvjobtitle}
+
+		%------------------------------------------------
+
+		% \renewcommand{\arraystretch}{1.2}
+		% \begin{tabular}{p{0.5cm} @{\hskip 0.5cm}p{5cm}}
+		% 	\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faHome} & \cvdate\\}
+		% 	\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
+		% 	\ifthenelse{\equal{\cvnumberphone}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone\\}
+		% 	\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\faGithub} & \cvsite\\}
+		% 	\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail}}
+		% \end{tabular}
+
+		\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+			\vspace{0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+			\colorbox{shade}{ % Create the coloured box
+				\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+					\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
+					\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
+					\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+					\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
+					\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\small\faDesktop} & \href{https://\cvsite}{\cvsite} \\} % Website
+					\ifthenelse{\equal{\cvgithub}{}}{}{\raisebox{-1pt}{\faGithub} & \href{https://\cvgithub}{\cvgithub} \\} % GitHub profile
+					\ifthenelse{\equal{\cvlinkedin}{}}{}{\raisebox{-1pt}{\faLinkedinSquare} & \href{https://\cvlinkedin}{\cvlinkedin} \\} % LinkedIn profile
+					% See fontawesome.pdf in the fonts folder for all icons you can use
+				\end{supertabular}
+			}
+		}
+
+		%------------------------------------------------
+
+		\ifthenelse{\equal{\aboutme}{}}{}{
+			\profilesection{About me}
+			\begin{justify}
+				\aboutme
+			\end{justify}
+		}
+
+		%------------------------------------------------
+
+		\ifthenelse{\equal{\education}{}}{}{
+			\profilesection{Education}\\
+			\education
+		}
+
+		%------------------------------------------------
+
+		\profilesection{Expertise}\\
+		\skills
+
+		%------------------------------------------------
+		
+		\ifthenelse{\equal{\awards}{}}{}{
+			\profilesection{Awards}\\
+			\awards
+		}
+		
+		%------------------------------------------------
+		
+		\ifthenelse{\equal{\references}{}}{}{
+			\profilesection{References}\\
+			\references
+		}
+
+
+
+	\end{textblock}
+}

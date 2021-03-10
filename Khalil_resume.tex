@@ -1,0 +1,428 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify
+% XeLaTeX as the engine in your editor or script
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{sol.research.mcgill.ca} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% \begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.06\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{0.005\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\LARGE \cvname}\\\medskip % Your name
+	{\sffamily\Large\color{headings}\textit \cvjobtitle}\\ % Your profession
+	% {\Huge\color{headings}\cvtextfont Curriculum Vitae}
+}
+
+%----------------------------------------------------------------------------------------
+%	 SIDEBAR DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+\setlength{\TPHorizModule}{1cm} % Left margin
+\setlength{\TPVertModule}{1cm} % Top margin
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\education{
+	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+		%------------------------------------------------
+
+		\educationentry{2017 -- 2020} % Duration
+		{Doctor of Philosophy} % Degree
+		{} % Honours, achievements or distinctions (e.g. first class honours)
+		{Mechanical Engineering} % Department
+		{McGill University} % Institution
+
+		%------------------------------------------------
+
+		\educationentry{2013 -- 2015} % Duration
+		{Master of Science} % Degree
+		{} % Honours, achievements or distinctions (e.g. first class honours)
+		{Mechanical Engineering} % Department
+		{Khalifa University} % Institution
+
+		%------------------------------------------------
+
+		\educationentry{2009 -- 2013} % Duration
+		{Bachelor of Science} % Degree
+		{First Class Honours} % Honours, achievements or distinctions (e.g. first class honours)
+		{Mechanical Engineering} % Department
+		{Khalifa University} % Institution
+
+		%------------------------------------------------
+
+	\end{supertabular}
+}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+\awards{
+	%------------------------------------------------
+
+	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+		%------------------------------------------------
+
+		\tableentry{2018}{\textbf{Doctoral research award}}{}
+		\tableentry{}{\textit{Fonds de Recherche du Qu\'{e}bec}}{spaceafter}
+
+		%------------------------------------------------
+
+		\tableentry{2017}{\textbf{McGill engineering doctoral award}}{}
+		\tableentry{}{\textit{McGill University}}{spaceafter}
+
+		%------------------------------------------------
+
+	\end{supertabular}
+}
+
+%----------------------------------------------------------------------------------------
+%	 REFERENCES
+%----------------------------------------------------------------------------------------
+
+\references{
+	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+		%------------------------------------------------
+
+		\tableentry{}{\textbf{Prof. Michael Kokkolaras}}{spaceafter}
+		\tableentry{Position}{Associate Professor}{}
+		\tableentry{Employer}{\href{https://www.mcgill.ca/mecheng/}{Department of Mechanical}}{}
+		\tableentry{}{\href{https://www.mcgill.ca/}{Engineering, \textit{McGill Univeristy}}}{spaceafter}
+		\tableentry{Email}{\href{mailto:michael.kokkolaras@mcgill.ca}{michael.kokkolaras@mcgill.ca}}{}
+
+		% %------------------------------------------------
+
+		% \tableentry{}{}{} % Creates some additional whitespace between the references
+
+		% %------------------------------------------------
+
+		% \tableentry{}{\textbf{Prof. Nader Vahdati}}{spaceafter}
+		% \tableentry{Position}{Associate Professor}{}
+		% \tableentry{Employer}{\href{}{Department of Mechanical}}{}
+		% \tableentry{}{\href{https://www.ku.ac.ae/}{Engineering, \textit{Khalifa Univeristy}}}{spaceafter}
+		% \tableentry{Email}{\href{mailto:nader.vahdati@ku.ac.ae}{nader.vahdati@ku.ac.ae}}{}
+
+		%------------------------------------------------
+
+	\end{supertabular}
+}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{Scientific computing/5.0},{Uncertainty quantification/4.5},{Software development/4.0},{{CAD/3D~modeling}/5.7},{Machine learning/4.8},{Optimization/5.5}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{Research}
+
+{\raggedright\textbf{``Optimization-driven set-based design for dynamic design requirements"}}
+\textit{\center How do you design a component when the design requirements can change at any moment and without advance notice?}
+That is the question my dissertations tries to answer. To do so, I came up with design metrics for qualitative descriptions such as flexibility and robustness. I used optimization, automation and machine learning to obtain thousands of possible designs. My research culminated in a technology transfer at GKN aerospace.
+
+\programlang{\color{python}}{python}~\programlang{\color{magenta}}{C++}~\programlang{\color{matlab}}{MATLAB}~\programlang{\color{rpackage}}{R}~\round{\href{https://github.com/khbalhandawi/DM_SBD_opt}{\small\faGlobe~Online open-source code}}{proglang}
+
+\medskip % Extra whitespace before the next section
+
+{\raggedright\textbf{``Optimization of infectious disease prevention policies using agent-based modeling"}}
+\textit{\center How can we apply the principles of design and decision making to help bring the pandemic under control?}
+To answer this question, I modeled how an infectious disease spreads in a small population. Diseases such as COVID-19 spread through social interaction. Intelligent agents can be used to model a complex social system. Optimization can be used to determine the critical amount of intervention necessary to keep the disease in check.
+
+\programlang{\color{magenta}}{C++}~\programlang{\color{cuda}}{CUDA}~\programlang{\color{python}}{python}~\programlang{\color{qt}}{Qt}~\round{\href{https://github.com/khbalhandawi/COVID_SIM}{\small\faGlobe~Online open-source code}}{proglang}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\workposition{Current, from Jan 2021} % Duration
+{} % FT/PT (full time or part time)
+{Systems Optimization Lab, McGill University} % Employer
+{Postdoctoral Researcher} % Job title
+{
+	$\bullet$ Build and interpret data-driven models for COVID-19.\\
+	$\bullet$ Prepare teaching course material for optimization courses.
+} % Description
+
+%------------------------------------------------
+
+\workposition{Jan 2017 -- Dec 2020} % Duration
+{FT} % FT/PT (full time or part time)
+{McGill University} % Employer
+{Research and teaching assistant} % Job title
+{
+	$\bullet$ Supervise and teach undergraduate courses\\
+	$\bullet$ Advance the fields of design optimization and surrogate modeling.
+}  % Description
+
+%------------------------------------------------
+
+\workposition{Summer 2017, 2018, 2019} % Duration
+{PT} % FT/PT (full time or part time)
+{GKN Aerospace Engine Systems} % Employer
+{Visiting researcher} % Job title
+{
+	$\bullet$ Transfer academic research to the industry by providing training and workshops.\\
+	$\bullet$ Collect information about industrial workflows to guide academic research.
+}  % Description
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+% Example \longformdescription{} command to add another publication:
+
+%\longformpublication{Reference (format this manually as desired)}
+
+%------------------------------------------------
+
+% \longformpublication{\textbf{Freeman, G. R.} (1996). Chemistry of Multiply Charged Negative Molecular Ions and Clusters in the Gas Phase:  Terrestrial and in Intense Galactic Magnetic Fields. \textit{The Journal of Physical Chemistry}, \textit{100}(11), 4331-4338.}
+
+% \longformpublication{Jacobsen, F. M., Gee, N., \textbf{Freeman, G. R.} (1986). Electron mobility in liquid krypton as function of density, temperature, and electric field strength. \textit{Physical Review A}, \textit{34}(3): 2329-2335.}
+
+%------------------------------------------------
+
+% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
+
+% Example \doipublication{} command to add another publication:
+
+%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
+
+% All four parameters are required (can be empty though)
+% A value of "firstauthor" in the third parameter will print the DOI in bold
+% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+
+	\doipublication{2021}{}{firstauthor}{spaceafter}{Optimization of Infectious Disease Prevention and Control Policies Using Agent-based Modeling}
+	\doipublication{2021}{}{firstauthor}{spaceafter}{Optimization of Design Margins Allocation When Making Use of Additive Remanufacturing}
+	% \doipublication{2021}{}{}{spaceafter}{Novel Aerial Firefighting System For Suppression of Incipient Cladding Fires}
+
+	%------------------------------------------------
+
+	\doipublication{2020}{https://asmedigitalcollection.asme.org/mechanicaldesign/article-abstract/143/2/021702/1085767}{firstauthor}{spaceafter}{Scalable Set-based Design Optimization and Remanufacturing for Meeting Changing Requirements}
+
+	%------------------------------------------------
+
+	\doipublication{2019}{https://www.cambridge.org/core/journals/proceedings-of-the-international-conference-on-engineering-design/article/lifecycle-costdriven-system-dynamics-approach-for-considering-additive-remanufacturing-or-repair-in-aeroengine-component-design/E6288AA6947FED87C8AD308E3CA62788}{}{}{A Lifecycle Cost-driven System Dynamics Approach for Considering Additive Re-manufacturing}
+	\doipublication{}{https://www.cambridge.org/core/journals/proceedings-of-the-international-conference-on-engineering-design/article/lifecycle-costdriven-system-dynamics-approach-for-considering-additive-remanufacturing-or-repair-in-aeroengine-component-design/E6288AA6947FED87C8AD308E3CA62788}{}{spaceafter}{or Repair in Aero-engine Component Design}
+
+	
+
+	%------------------------------------------------
+
+\end{supertabular}
+
+\medskip % Extra whitespace before the next section
+
+% %----------------------------------------------------------------------------------------
+% %	COMPUTER SKILLS
+% %----------------------------------------------------------------------------------------
+
+% \section{Computer Skills}
+
+% % Example \tableentry{} command to add another line:
+
+% %\tableentry{Heading}{Content}{spaceafter}
+
+% % All 3 parameters must be supplied but any can be empty if you don't need them
+% % A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+% %------------------------------------------------
+
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+% 	%------------------------------------------------
+
+% 	\tableentry{Beginner}{Java, MS DOS}{spaceafter}
+
+% 	%------------------------------------------------
+
+% 	\tableentry{Intermediate}{Javascript, Python, HTML, CSS,}{}
+% 	\tableentry{}{Microsoft Windows}{}
+% 	\tableentry{}{Computer Hardware \& Support}{spaceafter}
+
+% 	%------------------------------------------------
+
+% 	\tableentry{Expert}{Perl, Unix, \LaTeX}{spaceafter}
+
+% 	%------------------------------------------------
+
+% \end{supertabular}
+
+% \begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+% 	\begin{barchart}{5.5}
+% 		\baritem{JavaScript}{60}
+% 		\baritem{PHP}{100}
+% 		\baritem{SASS/LESS}{70}
+% 		\baritem{Bootstrap}{70}
+% 		\baritem{Git}{40}
+% 		\baritem{LaTeX}{60}
+% 	\end{barchart}
+% \end{minipage}
+
+% %----------------------------------------------------------------------------------------
+% %	COMMUNICATION SKILLS
+% %----------------------------------------------------------------------------------------
+
+% \section{Communication Skills}
+
+% % Example \tableentry{} command to add another line:
+
+% %\tableentry{Heading}{Content}{spaceafter}
+
+% % All 3 parameters must be supplied but any can be empty if you don't need them
+% % A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+% %------------------------------------------------
+
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+% 	%------------------------------------------------
+
+% 	\tableentry{Conferences}{Oral Presentation at the Annual MIT}{}
+% 	\tableentry{}{Theoretical Physics Conference -- 1987}{spaceafter}
+
+% 	%------------------------------------------------
+
+% 	\tableentry{Posters}{Poster at the Meeting of the American}{}
+% 	\tableentry{}{Physical Society -- 1985}{spaceafter}
+
+% 	%------------------------------------------------
+
+% \end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS DESCRIPTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+% Example \longformdescription{} command to add another section:
+
+%\longformdescription{Heading}{Description}
+
+%------------------------------------------------
+
+\longformdescription{Goal Oriented}{I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgement to immediately act based on consensus to achieve goals quickly and efficiently.}
+
+\longformdescription{Physical Dexterity}{I specialize in gymnastics and calethtinics training for sound body and mind necessary to maintain focus needed for innovative problem-solving.}
+
+\longformdescription{Passionate}{I have been interested computers and video games as long as I can remember. I love using my knowledge of physics and engineering to bridge the gap between the real and virtual computer worlds.}
+
+%----------------------------------------------------------------------------------------
+
+% \end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
