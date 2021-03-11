@@ -1,0 +1,13 @@
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.spl
+*.toc
+*.lot
+*.lof
+*.gz
+.vscode*
+*.acr
+__latexindent_temp.tex
