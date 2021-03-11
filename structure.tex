@@ -25,6 +25,8 @@
 
 \usepackage{supertabular} % Required for the supertabular environment which allows tables to span multiple pages so sections with tables correctly wrap across pages
 
+\usepackage{array} % for custom alignment if supertabular columns
+
 %----------------------------------------------------------------------------------------
 %	DOCUMENT MARGINS
 %----------------------------------------------------------------------------------------
@@ -46,11 +48,11 @@
 %	COLUMN LAYOUT
 %----------------------------------------------------------------------------------------
 
-% \usepackage{paracol} % Required for creating multi-column layouts that can span pages automatically
+\usepackage{paracol} % Required for creating multi-column layouts that can span pages automatically
 
-% \columnratio{0.55,0.45} % The relative ratios of the two columns in the CV
+\columnratio{0.55,0.45} % The relative ratios of the two columns in the CV
 
-% \setlength\columnsep{0.05\textwidth} % Specify the amount of space between the columns
+\setlength\columnsep{0.05\textwidth} % Specify the amount of space between the columns
 
 %----------------------------------------------------------------------------------------
 %	FONTS
@@ -94,6 +96,7 @@ SmallCapsFont=*-SC.ttf
 \definecolor{cuda}{HTML}{3A4E3A}
 \definecolor{rpackage}{HTML}{198CE7}
 \definecolor{qt}{HTML}{3D6117}
+\definecolor{skillcolor}{HTML}{BF656E}
 
 % Other colour options: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
 
@@ -187,6 +190,13 @@ SmallCapsFont=*-SC.ttf
 	\round{
 		{#1$\bullet$}~~{\footnotesize\cvlangfont#2}
 	}{proglang}
+}
+
+% Command for creating skill level plots
+\newcommand{\skilllevel}[2]{%
+    \textcolor{black}{\textsc{#1}}~~~~~~\hfill
+    \foreach \x in {1,...,7}{%
+      \space{\ifnumgreater{\x}{#2}{\color{maingray}\faCircleO}{\color{skillcolor}\faDotCircleO}}}\par%
 }
 
 %----------------------------------------------------------------------------------------
@@ -288,7 +298,7 @@ SmallCapsFont=*-SC.ttf
 		\begin{tikzpicture}
 			\foreach [count=\i] \x/\y in {#1}{
 				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
-				\draw[fill=white,headings](0,\i) rectangle (\y,\i+0.4);
+				\draw[fill=white,skillcolor](0,\i) rectangle (\y,\i+0.4);
 				\node [above right] at (0,\i+0.4) {\x};
 			}
 		\end{tikzpicture}
@@ -359,6 +369,7 @@ SmallCapsFont=*-SC.ttf
 
 		\ifthenelse{\equal{\aboutme}{}}{}{
 			\profilesection{About me}
+			\vspace{-\baselineskip}
 			\begin{justify}
 				\aboutme
 			\end{justify}
@@ -379,7 +390,7 @@ SmallCapsFont=*-SC.ttf
 		%------------------------------------------------
 		
 		\ifthenelse{\equal{\awards}{}}{}{
-			\profilesection{Awards}\\
+			\profilesection{Awards}
 			\awards
 		}
 		

@@ -56,8 +56,6 @@
 
 \begin{document}
 
-% \begin{paracol}{2} % Begin the multi-column environment
-
 %----------------------------------------------------------------------------------------
 %	NAME AND CURRICULUM VITAE TEXT
 %----------------------------------------------------------------------------------------
@@ -138,13 +136,14 @@
 		%------------------------------------------------
 
 		\tableentry{2018}{\textbf{Doctoral research award}}{}
-		\tableentry{}{\textit{Fonds de Recherche du Qu\'{e}bec}}{spaceafter}
+		\tableentry{}{\textit{Fonds de Recherche du Qu\'{e}bec}}{}
+		\tableentry{}{\textsc{56,000 CAD}}{spaceafter}
 
 		%------------------------------------------------
 
 		\tableentry{2017}{\textbf{McGill engineering doctoral award}}{}
-		\tableentry{}{\textit{McGill University}}{spaceafter}
-
+		\tableentry{}{\textit{McGill University}}{}
+		\tableentry{}{\textsc{96,000 CAD}}{spaceafter}
 		%------------------------------------------------
 
 	\end{supertabular}
@@ -187,7 +186,7 @@
 %----------------------------------------------------------------------------------------
 
 % Skill bar section, each skill must have a value between 0 an 6 (float)
-\skills{{Scientific computing/5.0},{Uncertainty quantification/4.5},{Software development/4.0},{{CAD/3D~modeling}/5.7},{Machine learning/4.8},{Optimization/5.5}}
+\skills{{Scientific computing/5.0},{Uncertainty quantification/4.5},{Software development/4.0},{{CAD/3D~modeling}/5.7},{Machine learning/4.8},{Optimization/5.0}}
 
 %----------------------------------------------------------------------------------------
 
@@ -197,23 +196,23 @@
 %	MAJOR RESEARCH PROJECT
 %----------------------------------------------------------------------------------------
 
+\vspace{-\baselineskip} % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
 \section{Research}
 
 {\raggedright\textbf{``Optimization-driven set-based design for dynamic design requirements"}}
 \textit{\center How do you design a component when the design requirements can change at any moment and without advance notice?}
-That is the question my dissertations tries to answer. To do so, I came up with design metrics for qualitative descriptions such as flexibility and robustness. I used optimization, automation and machine learning to obtain thousands of possible designs. My research culminated in a technology transfer at GKN aerospace.
+That is the question my dissertations tries to answer. To do so, I came up with design metrics for qualitative descriptions such as flexibility and robustness. I used optimization, and machine learning to obtain thousands of designs. This is a \textbf{1000 fold} increase in the number of alternatives presented to clients. This culminated in a technology transfer at GKN aerospace.
 
-\programlang{\color{python}}{python}~\programlang{\color{magenta}}{C++}~\programlang{\color{matlab}}{MATLAB}~\programlang{\color{rpackage}}{R}~\round{\href{https://github.com/khbalhandawi/DM_SBD_opt}{\small\faGlobe~Online open-source code}}{proglang}
+\programlang{\color{python}}{python}~\programlang{\color{magenta}}{C++}~\programlang{\color{matlab}}{MATLAB}~\programlang{\color{rpackage}}{R}~\round{\href{https://github.com/khbalhandawi/DM_SBD_opt}{\small\faGlobe~Online open-source code}}{proglang}~\round{\href{https://www.chalmers.se/en/departments/ims/news/Pages/Optimizationdriven-setbased-design-.aspx}{\small\faGlobe~Online news article}}{proglang}
 
 \medskip % Extra whitespace before the next section
 
 {\raggedright\textbf{``Optimization of infectious disease prevention policies using agent-based modeling"}}
-\textit{\center How can we apply the principles of design and decision making to help bring the pandemic under control?}
-To answer this question, I modeled how an infectious disease spreads in a small population. Diseases such as COVID-19 spread through social interaction. Intelligent agents can be used to model a complex social system. Optimization can be used to determine the critical amount of intervention necessary to keep the disease in check.
+\textit{\center How can we apply the principles of design and decision-making to help bring the pandemic under control?}
+To answer this question, I modeled how an infectious disease spreads in a small population. Diseases such as COVID-19 spread through social interaction. I programmed intelligent agents to model a complex social system. I used optimization to determine the critical amount of intervention necessary to keep the disease in check. The policies I obtained had a socio-economic impact that is \textbf{5 times less} than that of a complete lock-down.
 
 \programlang{\color{magenta}}{C++}~\programlang{\color{cuda}}{CUDA}~\programlang{\color{python}}{python}~\programlang{\color{qt}}{Qt}~\round{\href{https://github.com/khbalhandawi/COVID_SIM}{\small\faGlobe~Online open-source code}}{proglang}
-
-\medskip % Extra whitespace before the next section
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -238,8 +237,8 @@ To answer this question, I modeled how an infectious disease spreads in a small 
 {Systems Optimization Lab, McGill University} % Employer
 {Postdoctoral Researcher} % Job title
 {
-	$\bullet$ Build and interpret data-driven models for COVID-19.\\
-	$\bullet$ Prepare teaching course material for optimization courses.
+	$\bullet$ Built and implemented a COVID-19 predictive model in a time of uncertainty.\\
+	$\bullet$ Came up with a project for students to understand multidisciplinary optimization.
 } % Description
 
 %------------------------------------------------
@@ -249,8 +248,8 @@ To answer this question, I modeled how an infectious disease spreads in a small 
 {McGill University} % Employer
 {Research and teaching assistant} % Job title
 {
-	$\bullet$ Supervise and teach undergraduate courses\\
-	$\bullet$ Advance the fields of design optimization and surrogate modeling.
+	$\bullet$ Came up with new ways to teach programming skills to engineering students.\\
+	$\bullet$ Used design optimization and set-based design to give designers a competitive edge.
 }  % Description
 
 %------------------------------------------------
@@ -266,140 +265,51 @@ To answer this question, I modeled how an infectious disease spreads in a small 
 
 %------------------------------------------------
 
-\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+\vspace{-\baselineskip} % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
 
 %----------------------------------------------------------------------------------------
-%	PUBLICATIONS
+%	COMPUTER SKILLS
 %----------------------------------------------------------------------------------------
 
-\section{Publications}
+\section{Computer Skills}
 
-% Example \longformdescription{} command to add another publication:
+\columnratio{0.6,0.4} % The relative ratios of the three columns in the references
 
-%\longformpublication{Reference (format this manually as desired)}
+\setlength\columnsep{0.01\textwidth} % Specify the amount of space between the columns
 
-%------------------------------------------------
+\begin{paracol}{2} % Begin the multi-column environment
 
-% \longformpublication{\textbf{Freeman, G. R.} (1996). Chemistry of Multiply Charged Negative Molecular Ions and Clusters in the Gas Phase:  Terrestrial and in Intense Galactic Magnetic Fields. \textit{The Journal of Physical Chemistry}, \textit{100}(11), 4331-4338.}
-
-% \longformpublication{Jacobsen, F. M., Gee, N., \textbf{Freeman, G. R.} (1986). Electron mobility in liquid krypton as function of density, temperature, and electric field strength. \textit{Physical Review A}, \textit{34}(3): 2329-2335.}
-
-%------------------------------------------------
-
-% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
-
-% Example \doipublication{} command to add another publication:
-
-%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
-
-% All four parameters are required (can be empty though)
-% A value of "firstauthor" in the third parameter will print the DOI in bold
-% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
-
-%------------------------------------------------
-
-\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-
-	%------------------------------------------------
-
-	\doipublication{2021}{}{firstauthor}{spaceafter}{Optimization of Infectious Disease Prevention and Control Policies Using Agent-based Modeling}
-	\doipublication{2021}{}{firstauthor}{spaceafter}{Optimization of Design Margins Allocation When Making Use of Additive Remanufacturing}
-	% \doipublication{2021}{}{}{spaceafter}{Novel Aerial Firefighting System For Suppression of Incipient Cladding Fires}
-
-	%------------------------------------------------
-
-	\doipublication{2020}{https://asmedigitalcollection.asme.org/mechanicaldesign/article-abstract/143/2/021702/1085767}{firstauthor}{spaceafter}{Scalable Set-based Design Optimization and Remanufacturing for Meeting Changing Requirements}
-
-	%------------------------------------------------
-
-	\doipublication{2019}{https://www.cambridge.org/core/journals/proceedings-of-the-international-conference-on-engineering-design/article/lifecycle-costdriven-system-dynamics-approach-for-considering-additive-remanufacturing-or-repair-in-aeroengine-component-design/E6288AA6947FED87C8AD308E3CA62788}{}{}{A Lifecycle Cost-driven System Dynamics Approach for Considering Additive Re-manufacturing}
-	\doipublication{}{https://www.cambridge.org/core/journals/proceedings-of-the-international-conference-on-engineering-design/article/lifecycle-costdriven-system-dynamics-approach-for-considering-additive-remanufacturing-or-repair-in-aeroengine-component-design/E6288AA6947FED87C8AD308E3CA62788}{}{spaceafter}{or Repair in Aero-engine Component Design}
-
+	\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.4\columnwidth}>{\raggedright\arraybackslash}p{0.6\columnwidth}} % Start a table with three columns, the table will ensure everything is aligned
+		\tableentry{OS's ~~\faDesktop}{\faWindows ~~~\faLinux ~~~\faApple}{spaceafter}
+		\tableentry{Libraries ~~\faCogs}{Qt, PyTorch, TensorFlow, CUDA, Intel MPI, OpenCL}{spaceafter}
+		\tableentry{Source control ~~\faCodeFork}{Git, Perforce}{spaceafter}
+		\tableentry{IDE's ~~\faListAlt}{VSCode, Xcode, Visual Studio}{}
+	\end{supertabular}
+		
+	%----------------------------------------------------------------------------------------
 	
+	\switchcolumn % Switch to the next paracol column
+	
+	%----------------------------------------------------------------------------------------
 
-	%------------------------------------------------
+	\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.01\columnwidth}r} % Start a table with three columns, the table will ensure everything is aligned
 
-\end{supertabular}
+		%------------------------------------------------
+	
+		\tableentry{}{\skilllevel{Python}{7}}{}
+		\tableentry{}{\skilllevel{C++}{6}}{}
+		\tableentry{}{\skilllevel{VB}{4}}{}
+		\tableentry{}{\skilllevel{R}{3}}{}
+		\tableentry{}{\skilllevel{Matlab}{7}}{}
+		\tableentry{}{\skilllevel{Javascript}{4}}{}
+	
+		%------------------------------------------------
+	
+	\end{supertabular}
 
-\medskip % Extra whitespace before the next section
-
-% %----------------------------------------------------------------------------------------
-% %	COMPUTER SKILLS
-% %----------------------------------------------------------------------------------------
-
-% \section{Computer Skills}
-
-% % Example \tableentry{} command to add another line:
-
-% %\tableentry{Heading}{Content}{spaceafter}
-
-% % All 3 parameters must be supplied but any can be empty if you don't need them
-% % A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
-
-% %------------------------------------------------
-
-% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-
-% 	%------------------------------------------------
-
-% 	\tableentry{Beginner}{Java, MS DOS}{spaceafter}
-
-% 	%------------------------------------------------
-
-% 	\tableentry{Intermediate}{Javascript, Python, HTML, CSS,}{}
-% 	\tableentry{}{Microsoft Windows}{}
-% 	\tableentry{}{Computer Hardware \& Support}{spaceafter}
-
-% 	%------------------------------------------------
-
-% 	\tableentry{Expert}{Perl, Unix, \LaTeX}{spaceafter}
-
-% 	%------------------------------------------------
-
-% \end{supertabular}
-
-% \begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
-% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-% 	\begin{barchart}{5.5}
-% 		\baritem{JavaScript}{60}
-% 		\baritem{PHP}{100}
-% 		\baritem{SASS/LESS}{70}
-% 		\baritem{Bootstrap}{70}
-% 		\baritem{Git}{40}
-% 		\baritem{LaTeX}{60}
-% 	\end{barchart}
-% \end{minipage}
-
-% %----------------------------------------------------------------------------------------
-% %	COMMUNICATION SKILLS
-% %----------------------------------------------------------------------------------------
-
-% \section{Communication Skills}
-
-% % Example \tableentry{} command to add another line:
-
-% %\tableentry{Heading}{Content}{spaceafter}
-
-% % All 3 parameters must be supplied but any can be empty if you don't need them
-% % A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
-
-% %------------------------------------------------
-
-% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-
-% 	%------------------------------------------------
-
-% 	\tableentry{Conferences}{Oral Presentation at the Annual MIT}{}
-% 	\tableentry{}{Theoretical Physics Conference -- 1987}{spaceafter}
-
-% 	%------------------------------------------------
-
-% 	\tableentry{Posters}{Poster at the Meeting of the American}{}
-% 	\tableentry{}{Physical Society -- 1985}{spaceafter}
-
-% 	%------------------------------------------------
-
-% \end{supertabular}
+	%----------------------------------------------------------------------------------------
+	
+\end{paracol}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS DESCRIPTION
@@ -413,15 +323,11 @@ To answer this question, I modeled how an infectious disease spreads in a small 
 
 %------------------------------------------------
 
-\longformdescription{Goal Oriented}{I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgement to immediately act based on consensus to achieve goals quickly and efficiently.}
+\longformdescription{\faBullseye~~Goal Oriented}{I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgement to immediately act based on consensus to achieve goals quickly and efficiently.}
 
-\longformdescription{Physical Dexterity}{I specialize in gymnastics and calethtinics training for sound body and mind necessary to maintain focus needed for innovative problem-solving.}
+\longformdescription{\faLineChart~~Passionate}{I have been interested in computers and video games for as long as I can remember. I love using my physics and engineering knowledge to bridge the gap between real and virtual computer worlds.}
 
-\longformdescription{Passionate}{I have been interested computers and video games as long as I can remember. I love using my knowledge of physics and engineering to bridge the gap between the real and virtual computer worlds.}
-
-%----------------------------------------------------------------------------------------
-
-% \end{paracol}
+\longformdescription{\faUniversalAccess~~Physical Dexterity}{I specialize in gymnastics and calethtinics training for sound body and mind necessary to maintain the focus needed for innovative problem-solving.}
 
 %----------------------------------------------------------------------------------------
 
