@@ -38,10 +38,11 @@
 
 % If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
 
-\profilepic{} % Profile picture
+% \profilepic{profilepic.jpg} % Profile picture
+\profilepic{}
 
 \cvname{Khalil Al Handawi, PhD} % Your name
-\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+\cvjobtitle{} % Job title/career
 
 \cvdate{} % Date of birth
 \cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
@@ -60,11 +61,11 @@
 %	NAME AND CURRICULUM VITAE TEXT
 %----------------------------------------------------------------------------------------
 
-\parbox[top][0.06\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+\parbox[top][0.05\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
 	\vspace{0.005\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\centering % Centre text
-	{\sffamily\LARGE \cvname}\\\medskip % Your name
-	{\sffamily\Large\color{headings}\textit \cvjobtitle}\\ % Your profession
+	{\sffamily\LARGE \cvname} % Your name
+	% {\sffamily\Large\color{headings}\textit \cvjobtitle}\\ % Your profession
 	% {\Huge\color{headings}\cvtextfont Curriculum Vitae}
 }
 
@@ -79,7 +80,7 @@
 %	 ABOUT ME
 %----------------------------------------------------------------------------------------
 
-\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+\aboutme{} % To have no About Me section, just remove all the text and leave \aboutme{}
 
 %----------------------------------------------------------------------------------------
 %	 EDUCATION
@@ -136,50 +137,55 @@
 		%------------------------------------------------
 
 		\tableentry{2018}{\textbf{Doctoral research award}}{}
-		\tableentry{}{\textit{Fonds de Recherche du Qu\'{e}bec}}{}
-		\tableentry{}{\textsc{56,000 CAD}}{spaceafter}
+		\tableentry{}{\textit{Fonds de Recherche du Qu\'{e}bec}}{spaceafter}
 
 		%------------------------------------------------
 
 		\tableentry{2017}{\textbf{McGill engineering doctoral award}}{}
-		\tableentry{}{\textit{McGill University}}{}
-		\tableentry{}{\textsc{96,000 CAD}}{spaceafter}
+		\tableentry{}{\textit{McGill University}}{spaceafter}
+
+		%------------------------------------------------
+
+		\tableentry{2013}{\textbf{ADNOC Graduate fellowship}}{}
+		\tableentry{}{\textit{Khalifa University}}{spaceafter}
+
 		%------------------------------------------------
 
 	\end{supertabular}
 }
 
 %----------------------------------------------------------------------------------------
-%	 REFERENCES
+% 	 REFERENCES
 %----------------------------------------------------------------------------------------
 
-\references{
-	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+% \references{
+% 	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
 
-		%------------------------------------------------
+% 		%------------------------------------------------
 
-		\tableentry{}{\textbf{Prof. Michael Kokkolaras}}{spaceafter}
-		\tableentry{Position}{Associate Professor}{}
-		\tableentry{Employer}{\href{https://www.mcgill.ca/mecheng/}{Department of Mechanical}}{}
-		\tableentry{}{\href{https://www.mcgill.ca/}{Engineering, \textit{McGill Univeristy}}}{spaceafter}
-		\tableentry{Email}{\href{mailto:michael.kokkolaras@mcgill.ca}{michael.kokkolaras@mcgill.ca}}{}
+% 		\tableentry{}{\textbf{Prof. Michael Kokkolaras}}{spaceafter}
+% 		\tableentry{Position}{Associate Professor}{}
+% 		\tableentry{Employer}{\href{https://www.mcgill.ca/mecheng/}{Department of Mechanical}}{}
+% 		\tableentry{}{\href{https://www.mcgill.ca/}{Engineering, \textit{McGill Univeristy}}}{spaceafter}
+% 		\tableentry{Email}{\href{mailto:michael.kokkolaras@mcgill.ca}{michael.kokkolaras@mcgill.ca}}{}
 
-		% %------------------------------------------------
+% 		% %------------------------------------------------
 
-		% \tableentry{}{}{} % Creates some additional whitespace between the references
+% 		% \tableentry{}{}{} % Creates some additional whitespace between the references
 
-		% %------------------------------------------------
+% 		% %------------------------------------------------
 
-		% \tableentry{}{\textbf{Prof. Nader Vahdati}}{spaceafter}
-		% \tableentry{Position}{Associate Professor}{}
-		% \tableentry{Employer}{\href{}{Department of Mechanical}}{}
-		% \tableentry{}{\href{https://www.ku.ac.ae/}{Engineering, \textit{Khalifa Univeristy}}}{spaceafter}
-		% \tableentry{Email}{\href{mailto:nader.vahdati@ku.ac.ae}{nader.vahdati@ku.ac.ae}}{}
+% 		% \tableentry{}{\textbf{Prof. Nader Vahdati}}{spaceafter}
+% 		% \tableentry{Position}{Associate Professor}{}
+% 		% \tableentry{Employer}{\href{}{Department of Mechanical}}{}
+% 		% \tableentry{}{\href{https://www.ku.ac.ae/}{Engineering, \textit{Khalifa Univeristy}}}{spaceafter}
+% 		% \tableentry{Email}{\href{mailto:nader.vahdati@ku.ac.ae}{nader.vahdati@ku.ac.ae}}{}
 
-		%------------------------------------------------
+% 		%------------------------------------------------
 
-	\end{supertabular}
-}
+% 	\end{supertabular}
+% }
+\references{}
 
 %----------------------------------------------------------------------------------------
 %	 SKILLS
@@ -187,6 +193,42 @@
 
 % Skill bar section, each skill must have a value between 0 an 6 (float)
 \skills{{Scientific computing/5.0},{Uncertainty quantification/4.5},{Software development/4.0},{{CAD/3D~modeling}/5.7},{Machine learning/4.8},{Optimization/5.0}}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL ITEMS
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+
+% \additional{
+
+% 	\longformdescription{\faBullseye~~Goal Oriented}{I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgement to immediately act based on consensus to achieve goals quickly and efficiently.}
+
+% 	\longformdescription{\faLineChart~~Passionate}{I have been interested in computers and video games for as long as I can remember. I love using my physics and engineering knowledge to bridge the gap between real and virtual computer worlds.}
+
+% 	\longformdescription{\faUniversalAccess~~Physical Dexterity}{I specialize in gymnastics and calethtinics training for sound body and mind necessary to maintain the focus needed for innovative problem-solving.}
+% }
+
+\additional{
+
+	%------------------------------------------------
+
+	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+		%------------------------------------------------
+
+		\tableentry{\LARGE\faConnectdevelop}{Artificial intelligence in design}{spaceafter}
+		\tableentry{\LARGE\faSliders}{Design for changing requirements}{spaceafter}
+		\tableentry{\LARGE\faCodepen}{Numerical simulation}{spaceafter}
+		\tableentry{\LARGE\faBullseye}{Systems optimization}{spaceafter}
+		\tableentry{\LARGE\faAreaChart}{Surrogate modelling}{spaceafter}
+		%------------------------------------------------
+
+	\end{supertabular}
+
+}
 
 %----------------------------------------------------------------------------------------
 
@@ -202,7 +244,7 @@
 
 {\raggedright\textbf{``Optimization-driven set-based design for dynamic design requirements"}}
 \textit{\center How do you design a component when the design requirements can change at any moment and without advance notice?}
-That is the question my dissertations tries to answer. To do so, I came up with design metrics for qualitative descriptions such as flexibility and robustness. I used optimization, and machine learning to obtain thousands of designs. This is a \textbf{1000 fold} increase in the number of alternatives presented to clients. This culminated in a technology transfer at GKN aerospace.
+That is the question my dissertation tries to answer. To do so, I came up with design metrics for qualitative descriptions such as flexibility and robustness. I used optimization, and machine learning to obtain thousands of designs. This is a \textbf{1000 fold} increase in the number of alternatives presented to clients in the aerospace industry. This culminated in a technology transfer at GKN aerospace.
 
 \programlang{\color{python}}{python}~\programlang{\color{magenta}}{C++}~\programlang{\color{matlab}}{MATLAB}~\programlang{\color{rpackage}}{R}~\round{\href{https://github.com/khbalhandawi/DM_SBD_opt}{\small\faGlobe~Online open-source code}}{proglang}~\round{\href{https://www.chalmers.se/en/departments/ims/news/Pages/Optimizationdriven-setbased-design-.aspx}{\small\faGlobe~Online news article}}{proglang}
 
@@ -213,6 +255,8 @@ That is the question my dissertations tries to answer. To do so, I came up with 
 To answer this question, I modeled how an infectious disease spreads in a small population. Diseases such as COVID-19 spread through social interaction. I programmed intelligent agents to model a complex social system. I used optimization to determine the critical amount of intervention necessary to keep the disease in check. The policies I obtained had a socio-economic impact that is \textbf{5 times less} than that of a complete lock-down.
 
 \programlang{\color{magenta}}{C++}~\programlang{\color{cuda}}{CUDA}~\programlang{\color{python}}{python}~\programlang{\color{qt}}{Qt}~\round{\href{https://github.com/khbalhandawi/COVID_SIM}{\small\faGlobe~Online open-source code}}{proglang}
+
+\medskip % Extra whitespace before the next section
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -271,21 +315,43 @@ To answer this question, I modeled how an infectious disease spreads in a small 
 %	COMPUTER SKILLS
 %----------------------------------------------------------------------------------------
 
-\section{Computer Skills}
+\section{Skills}
 
-\columnratio{0.6,0.4} % The relative ratios of the three columns in the references
+\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.3\columnwidth}@{\hspace{0.5\tabcolsep}}c>{\raggedright\arraybackslash}p{0.6\columnwidth}} % Start a table with three columns, the table will ensure everything is aligned
+	\tableentrythree{Operating systems}{\faDesktop}{\faWindows ~~~\faLinux ~~~\faApple}{spaceafter}
+	\tableentrythree{Scientific libraries}{\faCogs}{Qt, PyTorch, TensorFlow, CUDA, Intel MPI, OpenCL}{spaceafter}
+	\tableentrythree{Source control}{\faCodeFork}{Git, Perforce}{spaceafter}
+	\tableentrythree{Interactive development environments}{\faListAlt}{VSCode, Xcode, Visual Studio}{}
+\end{supertabular}
+
+%------------------------------------------------
+
+\medskip % Extra whitespace before the next section
+
+%------------------------------------------------
+
+\columnratio{0.5,0.5} % The relative ratios of the three columns in the references
 
 \setlength\columnsep{0.01\textwidth} % Specify the amount of space between the columns
+\setlength{\columnseprule}{0.4pt}
 
 \begin{paracol}{2} % Begin the multi-column environment
-
-	\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.4\columnwidth}>{\raggedright\arraybackslash}p{0.6\columnwidth}} % Start a table with three columns, the table will ensure everything is aligned
-		\tableentry{OS's ~~\faDesktop}{\faWindows ~~~\faLinux ~~~\faApple}{spaceafter}
-		\tableentry{Libraries ~~\faCogs}{Qt, PyTorch, TensorFlow, CUDA, Intel MPI, OpenCL}{spaceafter}
-		\tableentry{Source control ~~\faCodeFork}{Git, Perforce}{spaceafter}
-		\tableentry{IDE's ~~\faListAlt}{VSCode, Xcode, Visual Studio}{}
-	\end{supertabular}
 		
+	\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.15\linewidth}l} % Start a table with three columns, the table will ensure everything is aligned
+
+		%------------------------------------------------
+		\tableentry{\faCommentO}{\textsc{Spoken Languages}}{spaceafter}
+		\tableentry{English}{\skilllevel{Verbal}{9}}{}
+		\tableentry{}{\skilllevel{Written}{8}}{}
+		\tableentry{Arabic}{\skilllevel{Verbal}{9}}{}
+		\tableentry{}{\skilllevel{Written}{8}}{}
+		\tableentry{French}{\skilllevel{Verbal}{1}}{}
+		\tableentry{}{\skilllevel{Written}{4}}{}
+	
+		%------------------------------------------------
+	
+	\end{supertabular}
+
 	%----------------------------------------------------------------------------------------
 	
 	\switchcolumn % Switch to the next paracol column
@@ -295,7 +361,7 @@ To answer this question, I modeled how an infectious disease spreads in a small 
 	\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.01\columnwidth}r} % Start a table with three columns, the table will ensure everything is aligned
 
 		%------------------------------------------------
-	
+		\tableentry{}{\faCode~~~~~\textsc{Programming Languages}}{spaceafter}
 		\tableentry{}{\skilllevel{Python}{7}}{}
 		\tableentry{}{\skilllevel{C++}{6}}{}
 		\tableentry{}{\skilllevel{VB}{4}}{}
@@ -311,24 +377,19 @@ To answer this question, I modeled how an infectious disease spreads in a small 
 	
 \end{paracol}
 
-%----------------------------------------------------------------------------------------
-%	SKILLS DESCRIPTION
-%----------------------------------------------------------------------------------------
+%------------------------------------------------
 
-\section{Skills}
-
-% Example \longformdescription{} command to add another section:
-
-%\longformdescription{Heading}{Description}
+\medskip % Extra whitespace before the next section
 
 %------------------------------------------------
 
-\longformdescription{\faBullseye~~Goal Oriented}{I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgement to immediately act based on consensus to achieve goals quickly and efficiently.}
+\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.3\columnwidth}@{\hspace{0.5\tabcolsep}}c>{\raggedright\arraybackslash}p{0.6\columnwidth}} % Start a table with three columns, the table will ensure everything is aligned
+	\tableentrythree{Communication skills}{\faUsers}{Excellent written and verbal presentation skills.}{}
+	\tableentrythree{}{}{Data analysis, proposal writing, and questionnaire design.}{}
+	\tableentrythree{}{}{Attention to detail and ability to identify underlying trends and patterns.}{}
+\end{supertabular}
 
-\longformdescription{\faLineChart~~Passionate}{I have been interested in computers and video games for as long as I can remember. I love using my physics and engineering knowledge to bridge the gap between real and virtual computer worlds.}
-
-\longformdescription{\faUniversalAccess~~Physical Dexterity}{I specialize in gymnastics and calethtinics training for sound body and mind necessary to maintain the focus needed for innovative problem-solving.}
-
+\let\clearpage\relax % remove final blank page
 %----------------------------------------------------------------------------------------
 
 \end{document}

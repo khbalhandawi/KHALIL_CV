@@ -39,7 +39,7 @@
 	top=0.5cm,
 	bottom=0.2cm,
 	letterpaper, % Paper size, change to letterpaper for US letter size
-	%showframe, % Uncomment to show how the type block is set on the page -- typically for debugging
+	% showframe, % Uncomment to show how the type block is set on the page -- typically for debugging
 }
 
 % \RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.2cm,nohead,nofoot]{geometry}
@@ -158,6 +158,11 @@ SmallCapsFont=*-SC.ttf
 % Command for entering a separate table row -- used as a generic visual element for any section that uses a two column table
 \newcommand{\tableentry}[3]{
 	\textsc{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]} % First the heading, then content, then a conditional insertion of whitespace if the third parameter has any content in it
+}
+
+% Command for entering a separate table row -- used as a generic visual element for any section that uses a three column table
+\newcommand{\tableentrythree}[4]{
+	\textsc{#1} & {#2} & {#3}\expandafter\ifstrequal\expandafter{#4}{}{\\}{\\[6pt]} % First the heading, then content, then the location, then a conditional insertion of whitespace if the third parameter has any content in it
 }
 
 % Command for entering a long-form description where there is a title on one line and a paragraph description below it
@@ -285,6 +290,7 @@ SmallCapsFont=*-SC.ttf
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
 \newcommand{\education}[1]{\renewcommand{\education}{#1}}
 \newcommand{\references}[1]{\renewcommand{\references}{#1}}
+\newcommand{\additional}[1]{\renewcommand{\additional}{#1}}
 \newcommand{\awards}[1]{\renewcommand{\awards}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
@@ -399,6 +405,13 @@ SmallCapsFont=*-SC.ttf
 		\ifthenelse{\equal{\references}{}}{}{
 			\profilesection{References}\\
 			\references
+		}
+
+		%------------------------------------------------
+
+		\ifthenelse{\equal{\additional}{}}{}{
+			\profilesection{Research interests}\\
+			\additional
 		}
 
 
