@@ -1,0 +1,138 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{sol.research.mcgill.ca} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{0.0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge \cvname}\\\medskip % Your name
+}
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
+			\ifthenelse{\equal{\cvgithub}{}}{}{\raisebox{-1pt}{\faGithub} & \href{https://\cvgithub}{\cvgithub} \\} % GitHub profile
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\raisebox{-1pt}{\faLinkedinSquare} & \href{https://\cvlinkedin}{\cvlinkedin} \\} % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+\end{paracol}
+
+\medskip % Extra whitespace before the next section
+\rule[0pt]{\textwidth}{1pt}\\
+%----------------------------------------------------------------------------------------
+%	ADDRESS
+%----------------------------------------------------------------------------------------
+\today\\[6pt]
+Andrea Malloni\\
+HR manager, Human Resources\\
+\textit{NVIDIA}\\
+Toronto, Ontario, Canada\\[6pt] \medskip
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+Dear Ms. Malloni,
+
+\medskip % Extra whitespace before the next section
+
+I am very excited to learn of the opportunity to work at NVIDIA as a Compute Performance Developer Technology Engineer. I have researched the work and research done at NVIDIA and within the Compute Developer Technology (Devtech) team, and I believe that I have a unique combination of engineering and computer science skills that would add a lot of value to your team and research capabilities.
+
+\medskip % Extra whitespace before the next section
+
+Ever since I was a child after my Dad gifted me my very own PC, I went to town playing video games and upgrading my PC with each new generation of GPUs. Seeing massive performance enhancements between different generations of GPUs got me thinking about whether all this computational horsepower can be used to simulate the real world instead of just video games. I was thrilled to learn about the release of CUDA in 2007 which enables high performance scientific computing on GPUs. I decided to seek the highest engineering degree possible from a world-class university such as McGill University with an emphasis on computational approaches to solving real-world engineering problems. To my surprise, most commercial simulation software used in engineering did not take advantage of GPU acceleration and relied on CPU parallel processing instead. Engineering structural and fluid dynamics simulations involve a lot of linear algebra which CUDA and cuBLAS excel at. I could not accelerate my simulations using CUDA due to the proprietary nature of such software.
+
+\medskip % Extra whitespace before the next section
+
+I opted for creating my own simulation programs in C++ where, all linear algebra operations are accelerated using CUDA and was mind-blown by the performance enhancements. I managed to apply the principles of GPU computing to a wide range of problems in engineering, machine learning, and until recently, epidemiological models as well! To the best of my knowledge, I was one of the very first researchers to GPU accelerate agent-based models in epidemiology. I obtained very promising results that predict the spread of COVID-19 in local urban centers using this improved simulation tool. The results have been submitted for publication in a COVID-19 special issue of the IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI). In addition to my scientific computing experience, I specialize in numerical optimization. I have used my knowledge of optimization to not only optimize software but real-world engineering products and systems. I have applied optimization to optimize aircraft, aeroengines and decision-making in operations research.
+
+\medskip % Extra whitespace before the next section
+
+Combining my background in optimization and scientific computing can add a lot of value to the NVIDIA's Devtech team by optimizing both the software components of scientific computing applications and the hardware architecture of the GPU used to run them. I want to mention that working at a leading AI and computing company such as NVIDIA is a personal dream and goal of mine and I feel that NVIDIA could offer me the opportunity to contribute to this exciting and ever-changing field. I hope that you enjoy perusing my profile and interests and looking forward to the chance to discuss my research contributions with your recruiting team. I also hope to learn as much as possible about the exciting and cutting-edge research being done at NVIDIA!
+
+\medskip % Extra whitespace before the next section
+
+Yours sincerely,
+
+\medskip % Extra whitespace before the next section
+
+Khalil Al Handawi
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
