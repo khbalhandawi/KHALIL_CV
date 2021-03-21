@@ -87,7 +87,8 @@ SmallCapsFont=*-SC.ttf
 \definecolor{text}{HTML}{2b2b2b} % Main document font colour, off-black
 \definecolor{headings}{HTML}{701112} % Dark red colour for headings
 \definecolor{shade}{HTML}{F5DD9D} % Peach colour for the contact information box
-\definecolor{linkcolor}{HTML}{641c1d} % 25% desaturated headings colour for links
+% \definecolor{linkcolor}{HTML}{641c1d} % 25% desaturated headings colour for links
+\definecolor{linkcolor}{HTML}{0000ff} % 25% desaturated headings colour for links
 \definecolor{sidecolor}{HTML}{E7E7E7} % Grey sidebar color
 \definecolor{python}{HTML}{0E5484}
 \definecolor{maingray}{HTML}{B9B9B9}
@@ -275,7 +276,7 @@ SmallCapsFont=*-SC.ttf
 	% \addtolength\TotalSectionLength{-\SectionTitleLength}% Subtract the section title width from the total width
 	\addtolength\TotalSectionLength{-2.22221pt}% Modifier to remove overfull box warning
 	\vspace{5pt}% Whitespace before the section title
-	{\color{headings} \scshape\LARGE #1 \\\rule[0.3\baselineskip]{\TotalSectionLength}{0.5pt}}% Print the title and auto-width rule
+	{\color{headings} \scshape\LARGE #1 \\\rule[0.3\baselineskip]{\TotalSectionLength}{0.1pt}}% Print the title and auto-width rule
 }
 
 % \titleformat{\section}{\color{headings}\scshape\LARGE\raggedright}{}{0em}{}[\color{black}\titlerule] % Define the \section format
@@ -291,6 +292,7 @@ SmallCapsFont=*-SC.ttf
 \newcommand{\education}[1]{\renewcommand{\education}{#1}}
 \newcommand{\references}[1]{\renewcommand{\references}{#1}}
 \newcommand{\additional}[1]{\renewcommand{\additional}{#1}}
+\newcommand{\publications}[1]{\renewcommand{\publications}{#1}}
 \newcommand{\awards}[1]{\renewcommand{\awards}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
@@ -414,6 +416,12 @@ SmallCapsFont=*-SC.ttf
 			\additional
 		}
 
+		%------------------------------------------------
+
+		\ifthenelse{\equal{\publications}{}}{}{
+			\profilesection{Publications}\\
+			\publications
+		}
 
 
 	\end{textblock}
