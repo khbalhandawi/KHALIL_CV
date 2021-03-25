@@ -80,7 +80,7 @@
 %	 ABOUT ME
 %----------------------------------------------------------------------------------------
 
-\aboutme{} % To have no About Me section, just remove all the text and leave \aboutme{}
+\aboutme{I am a researcher with 4 years of experience in simulation-based design, optimization, and high-performance computing. I enjoy working with large multidisciplinary teams and projects and love the prospect of mentoring and supervising other aspiring engineers.} % To have no About Me section, just remove all the text and leave \aboutme{}
 
 %----------------------------------------------------------------------------------------
 %	 EDUCATION
@@ -109,7 +109,7 @@
 
 		\educationentry{2009 -- 2013} % Duration
 		{Bachelor of Science} % Degree
-		{First Class Honours} % Honours, achievements or distinctions (e.g. first class honours)
+		{} % Honours, achievements or distinctions (e.g. first class honours)
 		{Mechanical Engineering} % Department
 		{Khalifa University} % Institution
 
@@ -143,13 +143,6 @@
 
 		\tableentry{2017}{\textbf{McGill engineering doctoral award}}{}
 		\tableentry{}{\textit{McGill University}}{spaceafter}
-
-		%------------------------------------------------
-
-		\tableentry{2013}{\textbf{ADNOC graduate fellowship}}{}
-		\tableentry{}{\textit{Khalifa University}}{spaceafter}
-
-		%------------------------------------------------
 
 	\end{supertabular}
 }
@@ -202,14 +195,7 @@
 
 %------------------------------------------------
 
-% \additional{
-
-% 	\longformdescription{\faBullseye~~Goal Oriented}{I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgement to immediately act based on consensus to achieve goals quickly and efficiently.}
-
-% 	\longformdescription{\faLineChart~~Passionate}{I have been interested in computers and video games for as long as I can remember. I love using my physics and engineering knowledge to bridge the gap between real and virtual computer worlds.}
-
-% 	\longformdescription{\faUniversalAccess~~Physical Dexterity}{I specialize in gymnastics and calethtinics training for sound body and mind necessary to maintain the focus needed for innovative problem-solving.}
-% }
+% \additional{}
 
 \additional{
 	%------------------------------------------------
@@ -217,11 +203,9 @@
 
 		%------------------------------------------------
 
-		\tableentry{\LARGE\faConnectdevelop}{Artificial intelligence in design}{spaceafter}
-		\tableentry{\LARGE\faSliders}{Design for changing requirements}{spaceafter}
+		\tableentry{\Large\faConnectdevelop}{Artificial intelligence in design}{spaceafter}
 		\tableentry{\LARGE\faCodepen}{Numerical simulation}{spaceafter}
 		\tableentry{\LARGE\faBullseye}{Systems optimization}{spaceafter}
-		\tableentry{\LARGE\faAreaChart}{Surrogate modelling}{spaceafter}
 		%------------------------------------------------
 
 	\end{supertabular}
@@ -255,20 +239,28 @@
 \section{Research}
 
 {\raggedright\textbf{``Optimization of infectious disease prevention policies using agent-based modeling"}}
-\textit{\center How can we apply the principles of design and decision-making to help bring the pandemic under control?}
-To answer this question, I modeled how an infectious disease spreads in a small population. Diseases such as COVID-19 spread through social interaction. I programmed intelligent agents to model a complex social system. I used optimization to determine the critical amount of intervention necessary to keep the disease in check. I used GPU acceleration for the agent-based simulation and obtained performance enhancements of up to \textbf{100X} a CPU simulation. The policies I obtained had a socio-economic impact that is \textbf{5 times less} than that of a complete lock-down.
 
-\programlang{\color{magenta}}{C++}~\programlang{\color{cuda}}{CUDA}~\programlang{\color{python}}{python}~\programlang{\color{qt}}{Qt}~\round{\href{https://github.com/khbalhandawi/COVID_SIM}{\small\faGlobe~Online open-source code}}{proglang}
+\textsc{Research question:} \textit{ How can we apply the principles of design and decision-making to help bring the pandemic under control?}
+
+\textsc{Outcomes:}\vspace{-0.5em} \programlang{\color{magenta}}{C++}~\programlang{\color{cuda}}{CUDA}~\programlang{\color{python}}{python}~\programlang{\color{qt}}{Qt}~\round{\href{https://github.com/khbalhandawi/COVID_SIM}{\small\faGlobe~Open-source code}}{proglang}\\[1pt]
+
+$\bullet$ Epiodomological model based on intelligent agents that can model \textbf{complex social systems}\\[1pt]
+$\bullet$ Optimal health policies to keep the disease in check\\[1pt]
+$\bullet$ GPU-accelerated agent-based simulation at least \textbf{100X} faster than CPU simulations\\[1pt]
+$\bullet$ Policies with socio-economic impact that is \textbf{5 times less} than that of a complete lock-down
 
 \medskip % Extra whitespace before the next section
 
 {\raggedright\textbf{``Optimization-driven set-based design for dynamic design requirements"}}
-\textit{\center How do you design a component when the design requirements can change at any moment and without advance notice?}
-That is the question my dissertation tries to answer. To do so, I came up with design metrics for qualitative descriptions such as flexibility and robustness. I used optimization, and machine learning to obtain thousands of designs. This is a \textbf{1000 fold} increase in the number of alternatives presented to clients in the aerospace industry. This culminated in a technology transfer at GKN aerospace to provide them with a \textbf{competitive edge} and shorten lead times.
 
-\programlang{\color{python}}{python}~\programlang{\color{magenta}}{C++}~\programlang{\color{matlab}}{MATLAB}~\programlang{\color{rpackage}}{R}~\round{\href{https://github.com/khbalhandawi/DM_SBD_opt}{\small\faGlobe~Online open-source code}}{proglang}~\round{\href{https://www.chalmers.se/en/departments/ims/news/Pages/Optimizationdriven-setbased-design-.aspx}{\small\faGlobe~Online news article}}{proglang}
+\textsc{Research question:} \textit{How do you design a component when the design requirements can change at any moment and without advance notice?}
 
-\medskip % Extra whitespace before the next section
+\textsc{Outcomes:}\vspace{-0.5em} \programlang{\color{python}}{python}~\programlang{\color{magenta}}{C++}~\programlang{\color{matlab}}{MATLAB}~\programlang{\color{rpackage}}{R}~\round{\href{https://github.com/khbalhandawi/DM_SBD_opt}{\small\faGlobe~Open-source code}}{proglang}~\round{\href{https://www.chalmers.se/en/departments/ims/news/Pages/Optimizationdriven-setbased-design-.aspx}{\small\faGlobe~Online news article}}{proglang}\\[1pt]
+
+$\bullet$ \textbf{Design metrics} for qualitative descriptions such as flexibility and robustness\\[1pt]
+$\bullet$ Machine learning model to \textbf{encode expensive structural simulations}\\[1pt]
+$\bullet$ Inference engine for generating \textbf{thousands} of feasible conceptual designs\\[1pt]
+$\bullet$ Technology transfer at GKN aerospace to help \textbf{shorten product lead times}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -289,7 +281,7 @@ That is the question my dissertation tries to answer. To do so, I came up with d
 %------------------------------------------------
 
 \workposition{Current, from Jan 2021} % Duration
-{} % FT/PT (full time or part time)
+{FT} % FT/PT (full time or part time)
 {Systems Optimization Lab, McGill University} % Employer
 {Postdoctoral Researcher} % Job title
 {
@@ -398,7 +390,7 @@ That is the question my dissertation tries to answer. To do so, I came up with d
 \begin{supertabular}{>{\raggedleft\arraybackslash}p{0.3\columnwidth}@{\hspace{0.5\tabcolsep}}c>{\raggedright\arraybackslash}p{0.6\columnwidth}} % Start a table with three columns, the table will ensure everything is aligned
 	\tableentrythree{Communication skills}{\faUsers}{Excellent written and verbal presentation skills.}{}
 	\tableentrythree{}{}{Data analysis, proposal writing, and questionnaire design.}{}
-	\tableentrythree{}{}{Attention to detail and ability to identify underlying trends and patterns.}{}
+	\tableentrythree{Interpersonal skills}{\faCommentsO}{Love working with others as a team, learning from them, and teaching them.}{}
 \end{supertabular}
 
 \let\clearpage\relax % remove final blank page

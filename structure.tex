@@ -394,6 +394,13 @@ SmallCapsFont=*-SC.ttf
 
 		\profilesection{Expertise}\\
 		\skills
+		
+		%------------------------------------------------
+
+		\ifthenelse{\equal{\additional}{}}{}{
+			\profilesection{Research interests}\\
+			\additional
+		}
 
 		%------------------------------------------------
 		
@@ -407,13 +414,6 @@ SmallCapsFont=*-SC.ttf
 		\ifthenelse{\equal{\references}{}}{}{
 			\profilesection{References}\\
 			\references
-		}
-
-		%------------------------------------------------
-
-		\ifthenelse{\equal{\additional}{}}{}{
-			\profilesection{Research interests}\\
-			\additional
 		}
 
 		%------------------------------------------------
