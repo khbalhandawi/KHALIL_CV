@@ -201,7 +201,7 @@ SmallCapsFont=*-SC.ttf
 % Command for creating skill level plots
 \newcommand{\skilllevel}[2]{%
     \textcolor{black}{\textsc{#1}}~~~~~~\hfill
-    \foreach \x in {1,...,7}{%
+    \foreach \x in {1,...,5}{%
       \space{\ifnumgreater{\x}{#2}{\color{maingray}\faCircleO}{\color{skillcolor}\faDotCircleO}}}\par%
 }
 
@@ -391,14 +391,14 @@ SmallCapsFont=*-SC.ttf
 		}
 
 		%------------------------------------------------
-
-		\profilesection{Expertise}\\
-		\skills
+		
+		% \profilesection{Expertise}\\
+		% \skills
 		
 		%------------------------------------------------
 
 		\ifthenelse{\equal{\additional}{}}{}{
-			\profilesection{Research interests}\\
+			\profilesection{Research experience}\\
 			\additional
 		}
 

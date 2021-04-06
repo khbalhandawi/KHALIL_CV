@@ -202,10 +202,23 @@
 	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
 
 		%------------------------------------------------
-
-		\tableentry{\Large\faConnectdevelop}{Artificial intelligence in design}{spaceafter}
-		\tableentry{\LARGE\faCodepen}{Numerical simulation}{spaceafter}
-		\tableentry{\LARGE\faBullseye}{Systems optimization}{spaceafter}
+		\tableentry{\LARGE\faBullseye}{\large\textsc{Systems optimization}}{spaceafter}
+		\tableentry{}{Multi-disciplinary optimization}{}
+		\tableentry{}{Gradient-based optimization}{}
+		\tableentry{}{Stochastic optimization}{}
+		\tableentry{}{Derivative-free optimization}{spaceafter}
+		\tableentry{\LARGE\faCodepen}{\large\textsc{Numerical simulation}}{spaceafter}
+		\tableentry{}{Finite element modeling}{}
+		\tableentry{}{Agent-based modeling}{}
+		\tableentry{}{Surrogate modeling}{spaceafter}
+		\tableentry{\Large\faConnectdevelop}{\large\textsc{Machine learning}}{spaceafter}
+		\tableentry{}{Hyperparameter optimization}{}
+		\tableentry{}{Feature engineering}{}
+		\tableentry{}{Classification and regression}{}
+		\tableentry{}{Sequence completion models (RNNs)}{spaceafter}
+		\tableentry{\Large\faBarChart}{\large\textsc{Uncertainty quantification}}{spaceafter}
+		\tableentry{}{Reliability-based design}{}
+		\tableentry{}{Monte Carlo simulation}{}
 		%------------------------------------------------
 
 	\end{supertabular}
@@ -323,35 +336,32 @@ $\bullet$ Technology transfer at GKN aerospace to help \textbf{shorten product l
 
 \begin{supertabular}{>{\raggedleft\arraybackslash}p{0.3\columnwidth}@{\hspace{0.5\tabcolsep}}c>{\raggedright\arraybackslash}p{0.6\columnwidth}} % Start a table with three columns, the table will ensure everything is aligned
 	\tableentrythree{Operating systems}{\faDesktop}{\faWindows ~~~\faLinux ~~~\faApple}{spaceafter}
-	\tableentrythree{Scientific libraries}{\faCogs}{Qt, PyTorch, TensorFlow, CUDA, Intel MPI, OpenCL}{spaceafter}
+	\tableentrythree{Scientific libraries}{\faCogs}{Qt, PyTorch, CUDA, Eigen, dlib}{spaceafter}
 	\tableentrythree{Source control}{\faCodeFork}{Git, Perforce}{spaceafter}
-	\tableentrythree{Interactive development environments}{\faListAlt}{VSCode, Xcode, Visual Studio}{}
+	\tableentrythree{Interactive development environments}{\faListAlt}{VSCode, Xcode, Visual Studio}{spaceafter}
 \end{supertabular}
 
 %------------------------------------------------
 
-\medskip % Extra whitespace before the next section
-
-%------------------------------------------------
-
-\columnratio{0.5,0.5} % The relative ratios of the three columns in the references
+\columnratio{0.53,0.47} % The relative ratios of the three columns in the references
 
 \setlength\columnsep{0.01\textwidth} % Specify the amount of space between the columns
-\setlength{\columnseprule}{0.4pt}
+\setlength{\columnseprule}{0.1pt}
 
 \begin{paracol}{2} % Begin the multi-column environment
-		
-	\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.15\linewidth}l} % Start a table with three columns, the table will ensure everything is aligned
+
+	%----------------------------------------------------------------------------------------
+
+	\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.14\columnwidth}l} % Start a table with three columns, the table will ensure everything is aligned
 
 		%------------------------------------------------
-		\tableentry{\faCommentO}{\textsc{Spoken Languages}}{spaceafter}
-		\tableentry{English}{\skilllevel{Verbal}{9}}{}
-		\tableentry{}{\skilllevel{Written}{8}}{}
-		\tableentry{Arabic}{\skilllevel{Verbal}{9}}{}
-		\tableentry{}{\skilllevel{Written}{8}}{}
-		\tableentry{French}{\skilllevel{Verbal}{1}}{}
-		\tableentry{}{\skilllevel{Written}{4}}{}
-	
+		\tableentry{\faDatabase}{\textsc{Data manipulation}}{spaceafter}
+		\tableentry{Python}{\skilllevel{Visualization}{5}}{}
+		\tableentry{}{\skilllevel{Data mining}{3}}{}
+		\tableentry{}{\skilllevel{Machine learning}{4}}{}
+		\tableentry{Matlab}{\skilllevel{Transfer learning}{2}}{}
+		\tableentry{}{\skilllevel{Simulink}{5}}{}
+
 		%------------------------------------------------
 	
 	\end{supertabular}
@@ -362,17 +372,15 @@ $\bullet$ Technology transfer at GKN aerospace to help \textbf{shorten product l
 	
 	%----------------------------------------------------------------------------------------
 
-	\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.01\columnwidth}r} % Start a table with three columns, the table will ensure everything is aligned
+	\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.07\columnwidth}l} % Start a table with three columns, the table will ensure everything is aligned
 
 		%------------------------------------------------
-		\tableentry{}{\faCode~~~~~\textsc{Programming Languages}}{spaceafter}
-		\tableentry{}{\skilllevel{Python}{7}}{}
-		\tableentry{}{\skilllevel{C++}{6}}{}
-		\tableentry{}{\skilllevel{VB}{4}}{}
-		\tableentry{}{\skilllevel{R}{3}}{}
-		\tableentry{}{\skilllevel{Matlab}{7}}{}
-		\tableentry{}{\skilllevel{Javascript}{4}}{}
-	
+		\tableentry{\faCode}{\textsc{Software and HPC}}{spaceafter}
+		\tableentry{C++}{\skilllevel{OOP}{5}}{}
+		\tableentry{}{\skilllevel{User interface}{3}}{}
+		\tableentry{}{\skilllevel{Parallel processing}{3}}{}
+		\tableentry{}{\skilllevel{GPU computing}{4}}{}
+		\tableentry{}{\skilllevel{Image processing}{3}}{}
 		%------------------------------------------------
 	
 	\end{supertabular}
@@ -388,9 +396,10 @@ $\bullet$ Technology transfer at GKN aerospace to help \textbf{shorten product l
 %------------------------------------------------
 
 \begin{supertabular}{>{\raggedleft\arraybackslash}p{0.3\columnwidth}@{\hspace{0.5\tabcolsep}}c>{\raggedright\arraybackslash}p{0.6\columnwidth}} % Start a table with three columns, the table will ensure everything is aligned
+	\tableentrythree{Spoken Languages}{\faCommentO}{English (Fluent), Arabic (Fluent), French (Basic)}{spaceafter}
 	\tableentrythree{Communication skills}{\faUsers}{Excellent written and verbal presentation skills.}{}
 	\tableentrythree{}{}{Data analysis, proposal writing, and questionnaire design.}{}
-	\tableentrythree{Interpersonal skills}{\faCommentsO}{Love working with others as a team, learning from them, and teaching them.}{}
+	\tableentrythree{Interpersonal skills}{\faCommentsO}{Love working with others as a team, learning from them, and teaching others.}{}
 \end{supertabular}
 
 \let\clearpage\relax % remove final blank page
