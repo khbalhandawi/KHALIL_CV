@@ -45,7 +45,7 @@
 
 \cvdate{} % Date of birth
 \cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
-\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvnumberphone{} % Phone number
 \cvsite{khbalhandawi.github.io} % Personal website
 \cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
 \cvgithub{github.com/khbalhandawi} % GitHub
@@ -81,7 +81,7 @@
 		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
 			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
 			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
-			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+			\ifthenelse{\equal{\cvnumberphone}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
 			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
 			\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\small\faGlobe} & \href{https://\cvsite}{\cvsite} \\} % Website
 			\ifthenelse{\equal{\cvgithub}{}}{}{\raisebox{-1pt}{\faGithub} & \href{https://\cvgithub}{\cvgithub} \\} % GitHub profile
@@ -244,7 +244,7 @@
 
 	%------------------------------------------------
 
-	\workposition{Aug 2012 –- May 2012} % Duration
+	\workposition{Aug 2012 -- May 2012} % Duration
 	{} % FT/PT (full time or part time)
 	{Yokogawa} % Employer
 	{Abu Dhabi, UAE} % Location
@@ -540,13 +540,13 @@ I led and supervised a team of engineering students to design and produce a vehi
 	
 	%------------------------------------------------
 	
-	\tableentryraw{Team leader of the first team to successfully qualify and complete the Baja SAE competition}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
+	\tableentryraw{Team leader of the first team to successfully qualify and complete the Baja SAE competition}{\textsc{Khalifa University, Abu Dhabi, UAE}}{}
 
-	\tableentryraw{Awarded 2nd place in the Abu Dhabi Solar Challenge (10,000 AED)}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
+	\tableentryraw{Awarded 2nd place in the Abu Dhabi Solar Challenge (10,000 AED)}{\textsc{Khalifa University, Abu Dhabi, UAE}}{}
 
-	\tableentryraw{Recognition for the commitment of time, support and inspiration to the Graduate School's and the Graduate Student Affair's events}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
+	\tableentryraw{Recognition for voluntary commitment to the Graduate School's and the Graduate Student Affair's events}{\textsc{Khalifa University, Abu Dhabi, UAE}}{}
 
-	\tableentryraw{Graduated Honors with distinction (2,000 AED)}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
+	\tableentryraw{Graduated Honors with distinction (2,000 AED)}{\textsc{Khalifa University, Abu Dhabi, UAE}}{}
 	
 	\tableentryraw{Made it to the Provost's list 3 times}{\textsc{Khalifa University, Abu Dhabi, UAE}}{}
 	
@@ -566,13 +566,17 @@ I led and supervised a team of engineering students to design and produce a vehi
 
 %------------------------------------------------
 
-\textbf{\large Refereed Journal Articles}\medskip
+\textbf{\large Submitted preprints}\medskip \hrule \medskip
 
 \longformpublication{\textbf{K. Al Handawi} and M. Kokkolaras (2021). Optimization of infectious disease prevention and control policies using agent-based modeling. \textit{IEEE Transactions on Emerging Topics in Computational Intelligence}, (\textit{Under Review})\\
 \textit{funded by NSERC discovery grant}}
 
 \longformpublication{\textbf{K. Al Handawi}, M. Panarotto, P. Andersson, O. Isaksson and M. Kokkolaras (2021). Optimization of design margins allocation when making use of additive remanufacturing. \textit{Journal of Mechanical Design}, (\textit{Under Review})\\
 \textit{funded partially by NSERC, FRQNT, CARIC and EU Horizon 2020 research and innovation programme}}
+
+%------------------------------------------------
+
+\textbf{\large Refereed Journal Articles}\medskip \hrule \medskip
 
 \longformpublication{M. Chehadeh, M. Wahbah, M. Awad, O. AbdulHay, \textbf{K. Al Handawi}, L. Seneviratne, I. Greatbatch and Y. Zweiri (2021). Novel aerial firefighting system for suppression of incipient cladding fires. \textit{Journal of Field Robotics}, (\textit{In Press})\\
 \textit{funded by Emaar Properties PJSC}}
