@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{khbalhandawi.github.io} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{0.0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge \cvname}\\\medskip % Your name
+}
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
+			\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\faGlobe} & \href{https://\cvsite}{\cvsite} \\} % GitHub profile
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\raisebox{-1pt}{\faLinkedinSquare} & \href{https://\cvlinkedin}{\cvlinkedin} \\} % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+\end{paracol}
+
+\medskip % Extra whitespace before the next section
+\rule[0pt]{\textwidth}{1pt}\\
+%----------------------------------------------------------------------------------------
+%	ADDRESS
+%----------------------------------------------------------------------------------------
+\today\\[6pt]
+Siemens Digital Industries Software\\
+East Lansing, MI, United States Of America\\
+Re: Senior Software Engineer (SISW) application\\[6pt] \medskip
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+Dear HEEDS team manager,
+
+\medskip % Extra whitespace before the next section 
+I would like to express my enthusiasm and excitement for the opportunity to be a part of Siemens digital industries and work with leading industry experts on developing cutting-edge simulation and computational solutions. I have learned about this position through my colleague, Dr. Ahmed Bayoumy from the HEEDS team.
+
+\medskip % Extra whitespace before the next section
+
+I believe that my experience during my doctoral studies is well-aligned with the work being done at HEEDS and the role that I would be filling. My PhD dissertation focused on surrogate modeling and surrogate-based optimization to help explore large design spaces with relatively low computational effort. I also used advanced data visualization tools such as parallel coordinates and 2D projections of high-dimensional hypersurfaces to communicate results. This work resulted in a set-based design toolbox for my industrial collaborators at GKN Aerospace, Sweden. 
+
+\medskip % Extra whitespace before the next section
+
+I also worked on public health projects during my doctoral studies and developed an epidemiological simulation application for predicting the trajectory of the pandemic. The simulation was interactive and employed a Qt user interface for displaying results and allowing the user to asses the impact of different public health policies in realtime. The computations were accelerated using the CUDA C++ API.
+
+\medskip % Extra whitespace before the next section
+
+I am also very excited for the opportunity to work with a diverse range of products and projects within HEEDS and collaborate with a multidisciplinary team. My lab specializes in multidisciplinary design optimization for coordinating the engineering activities of multidisciplinary teams and organizations. I am also very interested in providing training workshops and modules for the features that I develop at HEEDS as part of such interdisciplinary collaborations.
+
+\medskip % Extra whitespace before the next section
+
+Although I am happy with my current job working as a researcher at McGill and coming up with my own research ideas, guiding and supervising students to make their ideas a reality, I wanted to explore something different that I could only find at Siemens. That is the opportunity to work with a multidisciplinary team and bring people's ideas together.
+
+\medskip % Extra whitespace before the next section
+
+I believe that my strong mathematical and simulation skills, experience in software development, and understanding of the industry's simulation needs will add a lot of value to the development efforts of the HEEDS team. I hope you enjoy going through my profile and my projects on my website (\href{https://khbalhandawi.github.io/projects/}{https://khbalhandawi.github.io/projects/}) and I hope we can discuss all of this. Needless to say, I am a huge fan of the technologies and products of Siemens digital industries on which I based my doctoral studies. I feel that this passion will push me far beyond my abilities.
+
+% I realize that being a research scientist entails three things: 1) Mentorship and supervision acumen 2) Strong research skills 3) Good communication skills to present key takeaways from cutting-edge research.
+
+% I have ample experience with all three fields and thrive on mentoring and teaching my students. Nothing gives me a greater sense of joy than hearing about the accomplishments of my students. As you can tell from my career profile, I made it a habit to always engage in research and mentorship simultaneously and never turned away anyone that asks for my opinion or guidance.
+
+% I have a strong mathematical background in research related to numerical optimization, simulation and data-driven models. I combined these three aspects to automate time-consuming simulation-based design problems in the aerospace industry and was able to transform my ideas into industrial practice through the training programs and workshops that I conducted for our industrial partners (GKN Aerospace). Due to my multidisciplinary skillset I even ventured into epidemiology when the COVID-19 pandemic struck and developed detailed agent-based models (accelerated by CUDA) for forecasting the trajectory of the epidemic. I came up intervention policies that help governments make decisions when little is known about the pandemic.
+
+
+\medskip % Extra whitespace before the next section
+
+Yours sincerely,
+
+\medskip % Extra whitespace before the next section
+
+Khalil Al Handawi
+
+\begin{figure*}[h]
+	\includegraphics[width=0.2\textwidth]{Signiture.png}
+\end{figure*}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
