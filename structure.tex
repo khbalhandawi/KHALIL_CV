@@ -60,16 +60,28 @@
 
 \usepackage{fontspec} % Required for specifying custom fonts under XeLaTeX
 
-\setmainfont{EBGaramond}[ % Make the default font EBGaramond
-Path=fonts/, % The font is provided with the template in the fonts folder
-UprightFont=*-Regular.ttf,
-BoldFont=*-Bold.ttf,
-BoldItalicFont=*-BoldItalic.ttf,
-ItalicFont=*-Italic.ttf,
-SmallCapsFont=*-SC.ttf
-]
+%% EBGaramond
+% \setmainfont{EBGaramond}[ % Make the default font EBGaramond
+% Path=fonts/, % The font is provided with the template in the fonts folder
+% UprightFont=*-Regular.ttf,
+% BoldFont=*-Bold.ttf,
+% BoldItalicFont=*-BoldItalic.ttf,
+% ItalicFont=*-Italic.ttf,
+% SmallCapsFont=*-SC.ttf
+% ]
 
-\newfontfamily\cvtextfont[Path=fonts/]{freebooterscript} % Create a new font family for the cursive font Freebooter Script, provided with the template in the fonts folder
+\defaultfontfeatures{Scale=MatchLowercase}
+%% Latin Modern Roman
+\setmainfont[
+    Ligatures=TeX,
+    SmallCapsFont={Latin Modern Roman Caps},
+	SmallCapsFeatures={Scale=0.8},
+    SlantedFont={* Slanted},
+    ItalicFeatures  = {
+        SmallCapsFont = {LMRomanCaps10-Oblique}
+    },
+	Scale=0.95,
+    ]{Latin Modern Roman}
 
 \newfontfamily\cvlangfont{Courier New} % Create a new font family for programming languages
 
@@ -194,20 +206,21 @@ SmallCapsFont=*-SC.ttf
 		\expandafter\ifstrequal\expandafter{#1}{}{}{#1}
 		\expandafter\ifstrequal\expandafter{#2}{}{}{\hspace{6pt}\footnotesize{(#2)}}
 	} % Duration and conditional full time/part time text
-	\expandafter\ifstrequal\expandafter{#3}{}{}{& {\raggedright\large #3}} % Employer
-	\expandafter\ifstrequal\expandafter{#4}{}{}{& {\raggedright\textsc{#4}}\\} % Location
-	\expandafter\ifstrequal\expandafter{#5}{}{}{& {\raggedright\large\textit{\textbf{#5}}}\\[4pt]} % Job title
+	\expandafter\ifstrequal\expandafter{#3}{}{}{& {\textbf{#3}}} % Employer
+	\expandafter\ifstrequal\expandafter{#4}{}{}{\hfill {\raggedright\textsc{#4}}\\} % Location
+	\expandafter\ifstrequal\expandafter{#5}{}{}{& {\textit{{#5}}}\\[4pt]} % Job title
 	\expandafter\ifstrequal\expandafter{#6}{}{}{& #6} % Description
-	\expandafter\ifstrequal\expandafter{#7}{}{\\}{\\[6pt]}
+	\expandafter\ifstrequal\expandafter{#7}{}{}{\\[6pt]}
 }
 
 % Command for entering a separate qualification
-\newcommand{\educationentry}[5]{
+\newcommand{\educationentry}[6]{
 	\textsc{#1} & \textbf{#2} % Duration and degree
 	\expandafter\ifstrequal\expandafter{#5}{}{}{& {\raggedright\textit{#5}}\\} % Institution
 	\expandafter\ifstrequal\expandafter{#4}{}{}{& #4} % Department
-	\expandafter\ifstrequal\expandafter{#3}{}{}{, {\small\textsc{#3}}\\[6pt]} % Honours, achievements or distinctions (e.g. first class honours)
-}
+	\expandafter\ifstrequal\expandafter{#3}{}{}{, {\small\textsc{#3}}} % Honours, achievements or distinctions (e.g. first class honours)
+	\expandafter\ifstrequal\expandafter{#6}{}{\\}{\\[6pt]}
+	}
 
 % Command for entering a separate table row -- used as a generic visual element for any section that uses a two column table
 \newcommand{\tableentry}[3]{
@@ -217,6 +230,11 @@ SmallCapsFont=*-SC.ttf
 % Command for entering a separate table row -- used as a generic visual element for any section that uses a two column table
 \newcommand{\tableentryraw}[3]{
 	#1 & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]} % First the heading, then content, then a conditional insertion of whitespace if the third parameter has any content in it
+}
+
+% Command for entering a separate table row -- used as a generic visual element for any section that uses a two column table
+\newcommand{\tableentrytwo}[3]{
+	{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]} % First the heading, then content, then a conditional insertion of whitespace if the third parameter has any content in it
 }
 
 % Command for entering a separate table row -- used as a generic visual element for any section that uses a two column table
