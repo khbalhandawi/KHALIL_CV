@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{khbalhandawi.github.io} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{0.0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	%----------------------------------------------------------------------------------------
+	%	ADDRESS
+	%----------------------------------------------------------------------------------------
+	\today\\[6pt]
+	Apple, Special Projects Group\\
+	Santa Clara Valley (Cupertino), California, United States\\
+	Re: Sensor Modeling, Simulation and Analysis Engineer\\[6pt] \medskip
+}
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
+			\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\faGlobe} & \href{https://\cvsite}{\cvsite} \\} % GitHub profile
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\raisebox{-1pt}{\faLinkedinSquare} & \href{https://\cvlinkedin}{\cvlinkedin} \\} % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+\end{paracol}
+
+\medskip % Extra whitespace before the next section
+\rule[0pt]{\textwidth}{1pt}\\
+
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+Dear Talent acquisition manager,
+
+\medskip % Extra whitespace before the next section 
+I have always been fascinated by autonomous technology and have been conducting research into this field for about a decade. I believe that advancements in automation can reduce the need to focus on everyday mundane tasks giving people more freedom to focus on creative and innovative tasks. The Apple family has made major strides in this field and I would love to be exposed to some of the state-of-the-art autonomous systems developed by Apple. This will not only help me advance my career, but will allow me to contribute to groundbreaking technology that has a worldwide impact. 
+
+\medskip % Extra whitespace before the next section
+
+I believe that my research experience is well-aligned with the work being done at Apple R\&D and the role that I would be filling. My PhD dissertation focused on design automation of aerospace structures and the use of optimization and advanced data visualizations (parallel coordinates and hypersurfaces) to explore thousands of design alternatives. I also used Monte-Carlo simulation techniques to estimate various design attributes such as reliability against uncertain loads and requirements. This work was translated into industrial practice during my research visits to GKN aeroengine systems where I hosted engineering workshops and presentations related to my research into design optimization and uncertainty modeling. My collective PhD experience will allow me to develop parametric evaluation frameworks for various sensor designs and configurations and conduct the necessary sensitivity analyses (using post-optimality analysis or multi-objective optimization) to get the most out of Apple's sensor technology.
+
+\medskip % Extra whitespace before the next section
+
+I also conducted research visits to my alma mater, Khalifa University, where I worked on sensor fusion projects related to Unmanned aerial vehicles (UAVs). These drones are difficult to control using positioning systems (such as GPS and motion capture systems) due to their high latencies and low frequency signals. I managed to develop a sensor fusion algorithm for combining high frequency inertial measurement unit (IMU) signals with low frequency motion capture signals for attitude estimation. The estimated attitude can be transformed to an inertial reference frame to be used for control applications. This experience has provided me with the theoretical and practical knowledge needed for developing sensor fusion algorithms that can take advantage of the individual strengths of the available sensors on any given platform.
+
+\medskip % Extra whitespace before the next section
+
+During my masters, I worked in the area of photonic sensors and waveguides for corrosion detection of oil and gas structures. I worked with various type of waveguides such as continuous glass fibers and fiber Bragg gratings which can be used for distributed and localized measurements, respectively. I used optical time-domain refractometry to interrogate fiber optic-based sensors and provide a spatial map of corrosion hot spots on steel structures. I used spectrometry techniques to interrogate fiber Bragg grating sensors and detect mechanical properties such as strain and temperature which are correlated to the corrosion rate of the structure they are affixed to. I constructed a novel testing setup for validating and verifying all the previous sensors under accelerated corrosion. I also developed a software tool in MATLAB and LabVIEW to calibrate the sensors and extract the relationship between various photonic effects (transduction) and corrosion rates (output signal). All of these skills are necessary for validating, verifying, and calibrating sensors tailored to the industry's needs.
+
+\medskip % Extra whitespace before the next section
+
+Recently, I have been working with recurrent neural networks (RNNs) and encoder/decoder paradigms for forecasting COVID-19 pandemic trajectories for use in hospitals across Qu{\'e}bec and have come up with an innovative way to tune such models (hyperparameter optimization) using stochastic optimization methods. I believe that deep learning paradigms based on RNNs can compliment existing signal processing tools at Apple pertaining to time series data or any signal where temporal effects are concerned. 
+
+\medskip % Extra whitespace before the next section
+
+I also have massive amounts of experience with scalable scientific computing and is able to leverage and use parallel computing libraries and APIs such as openMP and CUDA across multiple programming languages such as MATLAB, Python, and C/C++ which will be invaluable when it comes to sensor deployment and integration into Apple's software systems. I am also adept at maintaining and deploying code repositories using source control which will come in handy when partnering with different teams and subject matter experts on sensory algorithms.
+
+\medskip % Extra whitespace before the next section
+
+Although I am happy with my current job working as a researcher at McGill and coming up with my own research ideas, I wanted to explore something different that I could only find at Apple. That is the opportunity to work with a multidisciplinary team and bring people's ideas together. I believe that my strong mathematical and simulation skills coupled with my experience in instrumentation and software development will add a lot of value to autonomous technology R\&D at Apple and help us both realize our vision of a better tomorrow for everyone around the world. I hope you enjoy going through my profile and my projects on my website (\href{https://khbalhandawi.github.io/projects/}{https://khbalhandawi.github.io/projects/}) and I hope there is mutual interest in an opportunity to work together.
+
+\medskip % Extra whitespace before the next section
+
+Yours sincerely,
+
+\medskip % Extra whitespace before the next section
+
+Khalil Al Handawi
+
+\begin{figure*}[h]
+	\includegraphics[width=0.15\textwidth]{Signiture.png}
+\end{figure*}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
