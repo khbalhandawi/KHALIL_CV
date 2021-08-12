@@ -60,14 +60,27 @@
 
 \usepackage{fontspec} % Required for specifying custom fonts under XeLaTeX
 
-\setmainfont{EBGaramond}[ % Make the default font EBGaramond
-Path=fonts/, % The font is provided with the template in the fonts folder
-UprightFont=*-Regular.ttf,
-BoldFont=*-Bold.ttf,
-BoldItalicFont=*-BoldItalic.ttf,
-ItalicFont=*-Italic.ttf,
-SmallCapsFont=*-SC.ttf
-]
+\defaultfontfeatures{Scale=MatchLowercase}
+%% Latin Modern Roman
+\setmainfont[
+    Ligatures=TeX,
+    SmallCapsFont={Latin Modern Roman Caps},
+	SmallCapsFeatures={Scale=0.79},
+    SlantedFont={* Slanted},
+    ItalicFeatures  = {
+        SmallCapsFont = {LMRomanCaps10-Oblique}
+    },
+	Scale=0.95,
+    ]{Latin Modern Roman}
+
+% \setmainfont{EBGaramond}[ % Make the default font EBGaramond
+% Path=fonts/, % The font is provided with the template in the fonts folder
+% UprightFont=*-Regular.ttf,
+% BoldFont=*-Bold.ttf,
+% BoldItalicFont=*-BoldItalic.ttf,
+% ItalicFont=*-Italic.ttf,
+% SmallCapsFont=*-SC.ttf
+% ]
 
 \newfontfamily\cvtextfont[Path=fonts/]{freebooterscript} % Create a new font family for the cursive font Freebooter Script, provided with the template in the fonts folder
 

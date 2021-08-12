@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{sol.research.mcgill.ca} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{0.0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\LARGE \cvname}\\\medskip % Your name
+}
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
+			\ifthenelse{\equal{\cvgithub}{}}{}{\raisebox{-1pt}{\faGithub} & \href{https://\cvgithub}{\cvgithub} \\} % GitHub profile
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\raisebox{-1pt}{\faLinkedinSquare} & \href{https://\cvlinkedin}{\cvlinkedin} \\} % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+\end{paracol}
+
+\medskip % Extra whitespace before the next section
+\rule[0pt]{\textwidth}{1pt}\\
+%----------------------------------------------------------------------------------------
+%	ADDRESS
+%----------------------------------------------------------------------------------------
+\today\\[6pt]
+\textit{Canadian Medical Protective Association (CMPA)}\\
+875 Carling Ave,\\
+Ottawa, Ontario, Canada, K1S 5P1\\[6pt] \medskip
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+Dear Hiring manager,
+
+% alternative powertrains and light-weighting are studied separately in the literature
+% Interesting to identify causal loops in the LCA module and exploit dynamic LCA analyses
+% Interesting to factor in the effects of the COVID pandemic on fleet vehicle kilometers and GHG for 2020/2021
+% Multidiscplinary optimization of several submodule policies that are coordinated by the LCA module (e.g. GHG emissions vs fleet fuel use vs vehicle characteristics vs material recovery rates) Vehicle weight minimization trade-off with performance and features
+
+\medskip % Extra whitespace before the next section 
+I am very excited to learn of the opportunity to work as a Health Services Researcher at CMPA. I have been working on solving healthcare related problems during my PhD and postdoctoral fellowship and have published a number of relevant scientific papers related to the subject of evidence-based diagnosis and projections. I have a good awareness regarding existing literature in the medical field related to diagnosis and life expectancy (with emphasis on COVID-19 patients). I have experience developing epidemiological models from the ground up and have used said models to inform public health policies for combatting the spread of COVID-19. I also have a solid background in mathematics, optimization, ad machine learning which is necessary for leveraging evidence to identify trends and make predictions.
+
+% As a matter fact, I have just published article that is very pertinent to this topic in the IEEE Transactions on Computational intelligence (preprint: \href{https://www.gerad.ca/en/papers/G-2021-07/view}{https://www.gerad.ca/en/papers/G-2021-07/view}). 
+
+\medskip % Extra whitespace before the next section
+
+I have developed an agent-based model for modeling the spread of COVID-19 in a sample population. Agent-based models are expensive simulations that use random seeds to model uncertainty regarding population dynamics and demographics. The random seeds result in a stochastic outcome that is difficult to interpret when making public health policies using the agent-based model. I have collaborated with researchers at Polytechnique Montréal and the group for research in decision analysis (GERAD) to develop a state-of-the-art derivative-free optimization algorithm known as stochastic mesh adaptive direct search (StoMADS) for solving stochastic optimization problems. The algorithm showed superior performance in comparison to other conventional optimization algorithms such as genetic algorithms. This research is useful when there is a lack of evidence or data regarding the dynamics of the disease and is useful for making decisions in the early phases of a pandemic when little is known about the disease.
+
+\medskip % Extra whitespace before the next section
+
+In contrast to the previous research, I have developed a machine learning model for forecasting COVID-19 incidence using cross-sectional patient data. I used 12 months of COVID-19 patient data admitted to the Rafik Hariri University Hospital to forecast the national incidence rate in Lebanon. This approach is useful when sufficient evidence and data is available to train the machine learning model. This model will also be used to support public health policy-making. I used StoMADS to tune the hyperparameters of the neural network used for forecasting incidence. This is because training neural networks involves random dropout, and initial weights. The final model has been deployed as a web app for retrospective validation and testing (\href{https://covid-forecaster-lebanon.herokuapp.com/}{https://covid-forecaster-lebanon.herokuapp.com/}) This research is of particular importance to the work done at CMPA since data from large databases such as OHIP can leveraged to train such models and extract useful information.
+
+\medskip % Extra whitespace before the next section
+
+My strong mathematical background in research related to numerical optimization, simulation and data-driven models stems from my research during my PhD. I conducted research into all three areas to automate time-consuming simulation-based design problems in the aerospace industry and was able to transform my ideas into industrial practice through the training programs and workshops that I conducted for our industrial partners (GKN Aerospace).
+
+\medskip % Extra whitespace before the next section
+
+I realize that being a researcher entails three things: 1) Mentorship and supervision acumen 2) Strong research skills 3) Good communication skills to present key takeaways from cutting-edge research. I have ample experience with all three fields and thrive on mentoring and teaching my students. Nothing gives me a greater sense of joy than hearing about the accomplishments of my students. As you can tell from my career profile, I made it a habit to always engage in research and mentorship simultaneously and never turned away anyone that asks for my opinion or guidance. I also have considerable experience communicating and publishing scientific research as can be seen from the numerous journal articles and conference papers that I have authored. Good communication and presentation skills are key for getting recognition at such events.
+
+\medskip % Extra whitespace before the next section
+
+It would be a great pleasure and honor to work and collaborate with CMPA researchers. I am looking to expand my professional network and reach a broader audience. I feel that CMPA is the perfect place for me to translate my research into practice by interacting with stakeholders and clinicians and have an impact on the healthcare standards and quality available to all Canadians. This unique opportunity is the reason for my application for this position and I look forward to hearing back from the recruitment and technical teams.
+
+\medskip % Extra whitespace before the next section
+
+Yours sincerely,
+
+\medskip % Extra whitespace before the next section
+
+Khalil Al Handawi
+
+\begin{figure*}[h]
+	\includegraphics[width=0.15\textwidth]{Signiture.png}
+\end{figure*}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
