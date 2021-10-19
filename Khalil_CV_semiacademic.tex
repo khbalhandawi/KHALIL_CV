@@ -61,8 +61,8 @@
 %	NAME AND CURRICULUM VITAE TEXT
 %----------------------------------------------------------------------------------------
 
-\parbox[top][0.07\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
-	\vspace{-0.00\textheight} % Reduce whitespace above the parbox to separate it from the main content
+\parbox[top][0.05\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.05\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\raggedright % left align text
 	{\Huge \textbf{\cvname}}\\\medskip % Your name
 }
@@ -75,13 +75,13 @@
 %	COLOURED CONTACT DETAILS BOX
 %----------------------------------------------------------------------------------------
 
-\parbox[top][0.07\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
-	\vspace{0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+\parbox[top][0.05\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.01\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\colorbox{shade}{ % Create the coloured box
 		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
 			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
 			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
-			\ifthenelse{\equal{\cvnumberphone}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+			% \ifthenelse{\equal{\cvnumberphone}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
 			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
 			\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\small\faGlobe} & \href{https://\cvsite}{\cvsite} \\} % Website
 			\ifthenelse{\equal{\cvgithub}{}}{}{\raisebox{-1pt}{\faGithub} & \href{https://\cvgithub}{\cvgithub} \\} % GitHub profile
@@ -103,22 +103,21 @@
 
 	%------------------------------------------------
 	
-	\tableentrytwo{\textbf{Research}}{Design under uncertainty. Additive manufacturing. Multidisciplinary design optimization. Decision making using Agent-based modeling. Instrumentation and state estimation.}{spaceafter}
+	\tableentrytwo{\textbf{Research}}{Design under uncertainty. Additive manufacturing. Multidisciplinary design optimization. Decision making using Agent-based modeling. Instrumentation and state estimation.}{}
 
 	\tableentrytwo{\textbf{Technical}}{}{}
 	\tableentrytwo{\textsc{Engineering systems}}{-~~Design for flexibility and robustness}{}
 	\tableentrytwo{}{-~~Reliability and uncertainty quantification (Monte-Carlo with importance sampling)}{spaceafter}
 	\tableentrytwo{\textsc{Modeling and}}{-~~Finite element methods (thermomechanical, structural, electromagnetic)}{}
-	\tableentrytwo{\textsc{simulation:}}{-~~Agent-based methods}{}
-	\tableentrytwo{}{-~~System dynamics models}{spaceafter}
+	\tableentrytwo{\textsc{simulation:}}{-~~Agent-based methods, System dynamics models}{spaceafter}
+	% \tableentrytwo{}{-~~System dynamics models}{spaceafter}
 	\tableentrytwo{\textsc{Optimization:}}{-~~Blackbox and derivative-free optimization (Mesh-adaptive direct search)}{}
-	\tableentrytwo{}{-~~Multidisciplinary optimization (Non-hierarchical analytical target cascading)}{}
+	% \tableentrytwo{}{-~~Multidisciplinary optimization (Non-hierarchical analytical target cascading)}{}
 	\tableentrytwo{}{-~~Stochastic optimization}{spaceafter}
 	\tableentrytwo{\textsc{Machine learning:}}{-~~Deep learning (Recurrent neural networks)}{}
-	\tableentrytwo{}{-~~Reinforcement learning (Q-learning)}{}
 	\tableentrytwo{}{-~~Hyperparameter optimization}{spaceafter}
 
-	\tableentrytwo{\textbf{Software}}{MATLAB and Simulink (Deep learning toolbox, global optimization toolbox), Python (numpy, pandas, PyTorch, matplotlib), C++ (CUDA, OpenMP, Qt)}{}
+	\tableentrytwo{\textbf{Software}}{MATLAB and Simulink, Python ( pandas, PyTorch, matplotlib), C++ (CUDA, OpenMP, Qt)}{}
 	\tableentrytwo{}{FEA (Abaqus, ANSYS), CAD (SOLIDWORKS, NX Siemens), DAQ (NI LabVIEW)}{}
 
 	%------------------------------------------------
@@ -204,7 +203,19 @@
 
 	%------------------------------------------------
 
-	\workposition{Jan 2021 -- present} % Duration
+	\workposition{Sep 2021 -- present} % Duration
+	{} % FT/PT (full time or part time)
+	{Systems Engineering Design Lab, Chalmers University of Technology} % Employer
+	{Gothenburg, Sweden} % Location
+	{Postdoctoral Researcher} % Job title
+	{}{} % Description
+	\tableentry{$\bullet$}{Integrate my doctoral research on design under uncertainty into the activities of the SED Lab.}{}
+	\tableentry{$\bullet$}{Conduct research into design margins and links to probablistic quantities such as reliability.}{}
+	\tableentry{$\bullet$}{Foster collaborations with the industry (GKN Aerospace) and write research proposals.}{spaceafter}
+
+	%------------------------------------------------
+
+	\workposition{Jan 2021 -- Aug 2021} % Duration
 	{} % FT/PT (full time or part time)
 	{Systems Optimization Lab, McGill University} % Employer
 	{Montr\'{e}al, Canada} % Location
@@ -398,7 +409,7 @@
 \textbf{\large Submitted preprints}\medskip \hrule \medskip
 
 \longformpublication{
-A. Khalil, \textbf{K. Al Handawi}, I. Chamseddine, Z. Mohsen, A. Abdel Nour, R. Feghali and M. Kokkolaras (2021). Predicting COVID-19 incidences from patients’ viral load using deep-learning. \textit{medRxiv}} \href{https://doi.org/10.1101/2021.08.14.21262064}{doi: 10.1101/2021.08.14.21262064}
+A. Khalil, \textbf{K. Al Handawi}, Z. Mohsen, A. Abdel Nour, R. Feghali, I. Chamseddine and M. Kokkolaras (2021). Predicting COVID-19 incidences from patients’ viral load using deep-learning. \textit{medRxiv}} \href{https://doi.org/10.1101/2021.08.14.21262064}{doi: 10.1101/2021.08.14.21262064}
 
 %------------------------------------------------
 
@@ -407,7 +418,7 @@ A. Khalil, \textbf{K. Al Handawi}, I. Chamseddine, Z. Mohsen, A. Abdel Nour, R. 
 \longformpublication{\textbf{K. Al Handawi} and M. Kokkolaras (2021). Optimization of infectious disease prevention and control policies using artificial life. \textit{IEEE Transactions on Emerging Topics in Computational Intelligence}, \href{https://doi.org/10.1109/TETCI.2021.3107496}{doi: 10.1109/TETCI.2021.3107496}
 ~\textit{funded by an NSERC discovery grant}}
 
-\longformpublication{\textbf{K. Al Handawi}, M. Panarotto, P. Andersson, O. Isaksson and M. Kokkolaras (2021). Optimization of design margins allocation when making use of additive remanufacturing, \textit{144}(1): pp 012001. \href{https://doi.org/10.1115/1.4051607}{doi: 10.1115/1.4051607}\\
+\longformpublication{\textbf{K. Al Handawi}, M. Panarotto, P. Andersson, O. Isaksson and M. Kokkolaras (2021). Optimization of design margins allocation when making use of additive remanufacturing. \textit{Journal of Mechanical Design}, \textit{144}(1): pp 012001. \href{https://doi.org/10.1115/1.4051607}{doi: 10.1115/1.4051607}\\
 \textit{funded partially by NSERC, FRQNT, CARIC and EU Horizon 2020 research and innovation programme}}
 
 \longformpublication{M. Chehadeh, M. Wahbah, M. Awad, O. AbdulHay, \textbf{K. Al Handawi}, L. Seneviratne, I. Greatbatch and Y. Zweiri (2021). Novel aerial firefighting system for suppression of incipient cladding fires. \textit{Journal of Field Robotics}, (\textit{In Press})\\
