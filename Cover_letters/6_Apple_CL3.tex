@@ -1,0 +1,153 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{khbalhandawi.github.io} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{0.0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	%----------------------------------------------------------------------------------------
+	%	ADDRESS
+	%----------------------------------------------------------------------------------------
+	\today\\[6pt]
+	Apple, Camera Hardware team\\
+	San Diego, California, United States\\
+	Re: Mechanical Engineer, Finite Element Analysis (FEA)\\[6pt] \medskip
+}
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
+			\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\faGlobe} & \href{https://\cvsite}{\cvsite} \\} % GitHub profile
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\raisebox{-1pt}{\faLinkedinSquare} & \href{https://\cvlinkedin}{\cvlinkedin} \\} % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+\end{paracol}
+
+\medskip % Extra whitespace before the next section
+\rule[0pt]{\textwidth}{1pt}\\
+
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+Dear Talent acquisition manager,
+
+\medskip % Extra whitespace before the next section 
+I am very excited to learn of the opportunity to work with Apple as a mechanical FEA engineer. I have been working with mechanical simulations and product design problems for the better part of a decade as a researcher. Although my experience is purely academic, I have worked a lot with industry liaisons throughout my career, be it in the aerospace or energy sectors.
+
+\medskip % Extra whitespace before the next section
+
+I believe that my research and work experience is well-aligned with the Finite Element Analysis (FEA) role at Apple's Camera Hardware team. My PhD dissertation focused on design automation of aerospace structures and the use of optimization and advanced data visualizations (parallel coordinates and hypersurfaces) to explore thousands of design alternatives. I also used Monte-Carlo simulation techniques to estimate various design attributes such as reliability against uncertain loads and requirements. This work was translated into industrial practice during my research visits to GKN aeroengine systems where I hosted engineering workshops and presentations related to my research into design optimization and uncertainty modeling. My collective PhD experience will allow me to develop parametric simulation frameworks for various camera hardware and products and conduct the necessary sensitivity analyses (using post-optimality analysis or multi-objective optimization) to get the most out of Apple's products. This experience has also taught me about the importance of technology transfer and the ability to communicate engineering solutions to multidisciplinary teams.
+
+\medskip % Extra whitespace before the next section
+
+I also helped develop GKN's product design platform, Engineering Workbench (EWB), which includes a cost of CAD models, FEM simulations, and some CFD and thermal loading simulations to test the performance of their aeroengine components. I worked specifically on the design of the turbine rear frame (TRF) of an aeroengine which experiences structural and thermal loads and explored remanufacturing options that include additive manufacturing to stiffen the structure of the TRF and allow it to exceed its performance envelope.  This experience has taught me how to set up high fidelity simulation models and automate them to perform design space exploration. I hope to bring such analysis techniques to Apple's Camera Hardware team and help identify potential design improvements and bottlenecks.
+
+\medskip % Extra whitespace before the next section
+
+During my masters, I worked in the area of photonic sensors and waveguides for corrosion detection of oil and gas structures. I worked with fiber Bragg gratings which can be used for localized strain measurements. I used spectrometry techniques to interrogate fiber Bragg grating sensors and detect mechanical properties such as strain and temperature which are correlated to the corrosion rate of the structure they are affixed to. I constructed a novel testing setup for validating and verifying all the previous sensors under accelerated corrosion. I also developed a software tool in MATLAB and LabVIEW to calibrate the sensors and extract the relationship between various photonic effects (transduction) and corrosion rates (output signal). I then reproduced the experimental results in an FEA simulation using Abaqus. All of these skills are necessary for validating, verifying, and calibrating mechanical simulation models to cater to the industry's needs.
+
+\medskip % Extra whitespace before the next section
+
+I have also worked in in the area of applied machine learning to construct surrogate models of expensive FEA simulations. Such surrogates can be used in lieu of the expensive simulation models to accelerate design space exploration algorithms and help guide optimization algorithms towards global optima. I believe that my understanding of such techniques can help the Camera Hardware team get the most out of their computational resources when faced with expensive simulations.
+
+\medskip % Extra whitespace before the next section
+
+I also have massive amounts of experience with scalable scientific computing and is able to leverage and use parallel computing libraries and APIs such as openMP and CUDA across multiple programming languages such as MATLAB, Python, and C/C++ which will be invaluable when it comes to writing our own solvers, if necessary or postprocessing of finite element output databases. I am also adept at maintaining and deploying code repositories using source control which will come in handy when trying to deploy and maintain parametric simulation models that rely on Abaqus python APIs.
+
+\medskip % Extra whitespace before the next section
+
+Finally, I took advanced mechanics of materials courses at the PhD level and learned about advanced material models including rubber elasticity, viscoelasticity, composites, cellular materials, and architectured materials.
+
+I understand that this position has been posted a while ago but I have only come across it recently. I feel very enthusiastic for this role as I feel that it perfectly matches my training and skillset. I am willing to work as a trainee under the Camera Hardware team until there is another opportunity for a more permanent role. I feel that Apple has something different to offer compared to other employers and that is the opportunity to work with a multidisciplinary team and bring people's ideas together. I believe that my strong mathematical and simulation skills coupled with my experience in design automation and optimization in the aerospace industry will add a lot of value Apple's Camera-based products and help us both realize our vision of a better tomorrow for everyone around the world. Please feel free to check out my portfolio and projects on my website (\href{https://khbalhandawi.github.io/projects/}{https://khbalhandawi.github.io/projects/}) and I hope there is mutual interest in an opportunity to work together.
+
+\medskip % Extra whitespace before the next section
+
+Yours sincerely,
+
+\medskip % Extra whitespace before the next section
+
+Khalil Al Handawi
+
+\begin{figure*}[h]
+	\includegraphics[width=0.15\textwidth]{Signiture.png}
+\end{figure*}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
