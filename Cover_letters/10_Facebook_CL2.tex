@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{khbalhandawi.github.io} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{0.0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	%----------------------------------------------------------------------------------------
+	%	ADDRESS
+	%----------------------------------------------------------------------------------------
+	\today\\[6pt]
+	Meta\\
+	Fremont, Montr\'{e}al, Canada\\
+	Re: Postdoctoral Researcher, Artificial Intelligence | Chercheur ou chercheuse postdoctoral(e)\\[6pt] \medskip
+}
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
+			\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\faGlobe} & \href{https://\cvsite}{\cvsite} \\} % GitHub profile
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\raisebox{-1pt}{\faLinkedinSquare} & \href{https://\cvlinkedin}{\cvlinkedin} \\} % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+\end{paracol}
+
+\medskip % Extra whitespace before the next section
+\rule[0pt]{\textwidth}{1pt}\\
+
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+Dear Talent acquisition manager,
+
+\medskip % Extra whitespace before the next section 
+I have always been fascinated by multidisciplinary engineering and design and have been conducting research in this field for about a decade. My research suggests that multidisciplinary design optimization and transparent communication and coordination between various subsystems is key to an efficient product platform able to not only perform its intended function but also adapt to new and unforeseen requirements. The Meta family has a wide range of product platforms involving hundreds of specialized teams and it is of great interest to me to help coordinate their efforts and provide the world with unprecedented connectivity and technology solutions.
+
+\medskip % Extra whitespace before the next section
+
+My lab, where I did my doctoral studies specializes in design optimization and machine learning for coordinating the engineering activities of multidisciplinary teams and organizations. I believe that my research experience is well-aligned with the work being done at Meta R\&D and the role that I would be filling as a postdoctoral researcher in artificial intelligence. My PhD dissertation focused on design automation of aerospace structures and the use of optimization and advanced data visualizations (parallel coordinates and hypersurfaces) to explore thousands of design alternatives. I also used Monte-Carlo simulation techniques to estimate various design attributes such as reliability against uncertain loads and requirements. The design problems that I solved involved multiple interacting disciplinary analyses (structural, additive manufacturing, and lifecycle cost analyses). I also used surrogate models and supervised learning techniques to create models in lieu of complex simulation models to reduce the computational effort needed to conduct certain analyses.
+
+\medskip % Extra whitespace before the next section
+
+This work was translated into industrial practice during my research visits to GKN aeroengine systems where I hosted engineering workshops and presentations related to my research into design optimization and uncertainty modeling. My collective PhD experience will allow me to develop optimization frameworks for various various product and prototyping platforms and conduct the necessary sensitivity analyses (using post-optimality analysis or multi-objective optimization) to get the most out of Meta's technology and products.
+
+\medskip % Extra whitespace before the next section
+
+Recently, after obtaining my PhD degree, I have been working with recurrent neural networks (RNNs) and encoder/decoder paradigms (Seq2Seq) models for now-casting COVID-19 pandemic trajectories for use in hospitals across Qu{\'e}bec and have come up with an innovative way to tune such models (hyperparameter optimization) using stochastic optimization methods. I believe that deep learning paradigms based on RNNs and DNNs can compliment multidisciplinary analyses by providing computationally low-cost predictions for certain subsystem analyses and can help coordinate the efforts of multidisciplinary teams by communicating data-driven models and response surfaces of the entire design space instead of discrete design solutions. I also lectured the engineering systems optimization course at McGill University and conceived a multidisciplinary optimization (MDO) project for the students with applications to supersonic jet design to teach the students about the importance of non-hierarchal MDO formulations for tightly coupled design problems.
+
+\medskip % Extra whitespace before the next section
+
+I also have massive amounts of experience with scalable scientific computing and is able to leverage and use parallel computing libraries and APIs such as openMP and CUDA across multiple programming languages such as MATLAB, Python, and C/C++ which will be invaluable when it comes to simulation model deployment and integration into Meta's software systems. I am also adept at maintaining and deploying code repositories using source control which will come in handy when partnering with different teams and subject matter experts on prototyping logistics and various other product platforms.
+
+\medskip % Extra whitespace before the next section
+
+I also conducted research visits to my alma mater, Khalifa University, where I worked on sensor fusion projects related to Unmanned aerial vehicles (UAVs). These drones are difficult to control using positioning systems (such as GPS and motion capture systems) due to their high latencies and low frequency signals. I managed to develop a sensor fusion algorithm for combining high frequency inertial measurement unit (IMU) signals with low frequency motion capture signals for attitude estimation and subsequent use for control applications. I also repurposed a commercial UAV (DJI Wind4) for firefighting applications by reverse engineering it and adding an extinguishant payload and delivery subsystem. This experience provided me with experience in working with electrical and control engineers to deliver a product that meets the needs of the client (autonomous firefighting technology) and should reflect on my ability to work with various teams and disciplines within the Meta family.
+
+\medskip % Extra whitespace before the next section
+
+Although I am happy with my current job working as a researcher at McGill and coming up with my own research ideas, I wanted to explore something different that I could only find at Meta. That is the opportunity to work with a multidisciplinary team and bring people's ideas together. I believe that my strong mathematical and simulation skills coupled with my experience in aerospace engineering, automotive engineering, structural simulation, engineering design, and software development will add a lot of value to optimization R\&D at Meta and help us both realize our vision of a better tomorrow for everyone around the world. I hope you enjoy going through my profile and my projects on my website (\href{https://khbalhandawi.github.io/projects/}{https://khbalhandawi.github.io/projects/}) and I hope there is mutual interest in an opportunity to work together.
+
+\medskip % Extra whitespace before the next section
+
+Yours sincerely,
+
+\medskip % Extra whitespace before the next section
+
+Khalil Al Handawi
+
+\begin{figure*}[h]
+	\includegraphics[width=0.15\textwidth]{Signiture.png}
+\end{figure*}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
