@@ -131,7 +131,9 @@
 	{CGPA: 4.00} % Honours, achievements or distinctions (e.g. first class honours)
 	{Mechanical Engineering} % Department
 	{McGill University} % Institution
-
+	\tableentrythree{Concentraion}{Engineering design and optimization}{}{}
+	\tableentrythree{Dissertation}{\textit{Optimization driven set-based design under uncertain requirements}}{}{spaceafter}
+	
 	%------------------------------------------------
 
 	\educationentry{Aug 2013 -- Dec 2015} % Duration
@@ -139,7 +141,9 @@
 	{CGPA: 4.00} % Honours, achievements or distinctions (e.g. first class honours)
 	{Mechanical Engineering} % Department
 	{Khalifa University} % Institution
-
+	\tableentrythree{Concentraion}{Instrumentation and photonics}{}{}
+	\tableentrythree{Dissertation}{\textit{Internal corrosion detection of oil and gas pipelines using fiber optics}}{}{spaceafter}
+	
 	%------------------------------------------------
 
 	\educationentry{Aug 2009 -- June 2013} % Duration
@@ -147,7 +151,7 @@
 	{First Class Honours, CGPA: 3.97} % Honours, achievements or distinctions (e.g. first class honours)
 	{Mechanical Engineering} % Department
 	{Khalifa University} % Institution
-
+	\tableentrythree{Capstone project}{\textit{Development of a human operated mobile hexapod platform}}{}{}
 	%------------------------------------------------
 
 \end{supertabular}
@@ -170,9 +174,24 @@
 
 % All 7 parameters must be supplied but any can be empty if you don't need them
 
+\textbf{\large Research}\medskip
+
 %------------------------------------------------
 
 \begin{supertabular}{>{\raggedleft\arraybackslash}p{0.17\linewidth}p{0.6\linewidth}>{\raggedleft\arraybackslash}p{0.17\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+
+	\workposition{Sep 2021 -- Dec 2021} % Duration
+	{} % FT/PT (full time or part time)
+	{Systems Engineering Design Lab, Chalmers University of Technology} % Employer
+	{G\"{o}teborg, Sweden} % Location
+	{Postdoctoral Researcher} % Job title
+	{}{} % Description
+	\tableentry{$\bullet$}{Integrate my doctoral research (design under uncertainty) into SED lab activities.}{}
+	\tableentry{$\bullet$}{Develop a design margins library for engineering change propagation management.}{}
+	\tableentry{$\bullet$}{Research design margins and links to probabilistic quantities(reliability).}{}
+	\tableentry{$\bullet$}{Foster collaboration with industry (GKN Aerospace) and write research proposals.}{spaceafter}
 
 	%------------------------------------------------
 
@@ -181,19 +200,26 @@
 	{Systems Optimization Lab, McGill University} % Employer
 	{Montr\'{e}al, Canada} % Location
 	{Postdoctoral Researcher} % Job title
-	{$\bullet$ Built and implemented a COVID-19 predictive model in a time of uncertainty.}{} % Description
-	\tableentry{}{$\bullet$ Came up with a project that lets students explore multidisciplinary optimization for designing an aircraft.}{spaceafter}
-
-
+	{}{} % Description
+	\tableentry{$\bullet$}{Developed a deep learning now-casting model for COVID-19 trajectories based on cross-sectional patient data.}{}
+	\tableentry{$\bullet$}{Applied novel stochastic optimization techniques for hyperparameter optimization problems in machine learning.}{}
+	\tableentry{$\bullet$}{Built and published a stochastic model of the spread of COVID-19 in a population using agent-based approaches to identify optimal public health policies.}{spaceafter}
+	
 	%------------------------------------------------
 
 	\workposition{Jan 2017 -- Jan 2021} % Duration
 	{} % FT/PT (full time or part time)
 	{McGill University} % Employer
 	{Montr\'{e}al, Canada} % Location
-	{Research and teaching assistant} % Job title
-	{$\bullet$ Came up with new ways to teach programming skills to engineering students.}{}  % Description
-	\tableentry{}{$\bullet$ Advanced the field of design optimization to generate thousands of design alternatives and potential cost savings spanning decades of operating costs.}{spaceafter}
+	{Research assistant} % Job title
+	{}{}  % Description
+	\tableentry{$\bullet$}{Awarded Fonds de Recherche du Qu\'{e}bec (FRQNT) grant (56,000 CAD).}{}
+	\tableentry{$\bullet$}{Developed mathematical frameworks for quantifying design flexibility and robustness and managing uncertain requirements in aircraft system and subsystem design.}{}
+	\tableentry{$\bullet$}{Developed a thermomechanical simulation model for modeling additive manufacturing repair and life extension processes using transient coupled thermal/mechanical FEA simulations.}{}
+	\tableentry{$\bullet$}{Write automation scripts using NX Siemens and Abaqus Python APIs to automate geometry generation, meshing, anaylsis, and postprocessing of parametric simulations.}{}
+	\tableentry{$\bullet$}{Co-developed a novel lifecycle cost model based on system dynamics to model the effect of life extension on lifecycle costs.}{}
+	\tableentry{$\bullet$}{Used machine learning models to substitute expensive thermomechanical simulations in design studies and developed a variant of kernel smoothing for estimating the sensitivity of design solutions to different requirements by using a Jacobian matrix.}{spaceafter}
+
 	%------------------------------------------------
 
 	\workposition{Jan 2016 -- Jan 2017} % Duration
@@ -201,19 +227,10 @@
 	{Asset Integrity Management Systems Lab, Khalifa University} % Employer
 	{Abu Dhabi, UAE} % Location
 	{Research Assistant} % Job title
-	{$\bullet$ Came up with corrosion monitoring devices and software that saved the industry \$1,000,000 worth of maintenance costs.}{} % Description
-	\tableentry{}{$\bullet$ Developed a wide range of fiber optic sensors that cost a fraction of their electrical counterparts.}{spaceafter}
-
-	%------------------------------------------------
-
-	\workposition{Aug 2013 -- Dec 2015} % Duration
-	{} % FT/PT (full time or part time)
-	{Khalifa University} % Employer
-	{Abu Dhabi, UAE} % Location
-	{Graduate Research Assistant} % Job title
-	{$\bullet$ Lead the 1st national team to ever compete in the international SAE competition.}{} % Description
-	\tableentry{}{$\bullet$ Built, designed and competed in the first Abu Dhabi Solar Challenge.}{spaceafter}
-
+	{}{} % Description
+	\tableentry{$\bullet$}{Developed corrosion monitoring devices and software that helped offset pipeline maintenance costs.}{}
+	\tableentry{$\bullet$}{Developed a wide range of fiber optic sensors that cost a fraction of their electrical counterparts.}{spaceafter}
+	
 	%------------------------------------------------
 
 \end{supertabular}
@@ -226,7 +243,7 @@
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\textbf{\large Industry}\medskip \hrule \medskip
+\hrule \medskip \textbf{\large Industry}\medskip
 
 %------------------------------------------------
 
@@ -234,13 +251,16 @@
 
 	%------------------------------------------------
 
-	\workposition{Jan 2017 -- Jan 2020} % Duration
+	\workposition{June 2017 -- Jan 2020} % Duration
 	{} % FT/PT (full time or part time)
 	{GKN Aerospace Engine Systems} % Employer
 	{Trolh\"{a}ttan, Sweden} % Location
 	{Visiting researcher} % Job title
-	{$\bullet$ Transfer academic research to the industry by providing training and workshops.}{} % Description
-	\tableentry{}{$\bullet$ Collect information about industrial workflows to guide academic research.}{spaceafter}
+	{}{}  % Description
+	\tableentry{$\bullet$}{Participated in a technology transfer to translate my research on optimization into industrial practice by provided training modules and workshops to GKN engineers (MATLAB and Python).}{}
+	\tableentry{$\bullet$}{Surveyed GKN engineers about their experience designing areoengine components for engine system manufacturers to create a timeline of expected design updates and changes. This data formed the basis of a case study for my research on design for flexibility and robustness.}{}
+	\tableentry{$\bullet$}{Set up advanced design automation and exploration tools to be used as part of GKN's workflow (engineering workbench) by integrated parametric design software (NX Siemens) with simulation software (Abaqus and ANSYS) to evaluate hundreds of concepts for a turbine rear frame.}{spaceafter}
+
 
 	%------------------------------------------------
 
@@ -249,8 +269,70 @@
 	{Yokogawa} % Employer
 	{Abu Dhabi, UAE} % Location
 	{Engineering intern} % Job title
-	{$\bullet$ Created software and programs for industrial plant operation and control using Distributed Control Systems.}{} % Description
-	\tableentry{}{$\bullet$ Visited the main headquarters in Japan to represent the Abu Dhabi National Oil Company.}{spaceafter}
+	{}{} % Description
+	\tableentry{$\bullet$}{Created software and programs for industrial plant operation and control using Distributed Control Systems.}{}
+	\tableentry{$\bullet$}{Visited the main headquarters in Japan to represent the Abu Dhabi National Oil Company.}{spaceafter}
+
+	%------------------------------------------------
+
+\end{supertabular}
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+%	MANAGEMENT EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\hrule \medskip \textbf{\large Management}\medskip 
+
+%------------------------------------------------
+
+\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.17\linewidth}p{0.6\linewidth}>{\raggedleft\arraybackslash}p{0.17\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+
+	\workposition{Jan 2021 -- present} % Duration
+	{} % FT/PT (full time or part time)
+	{BPGIC holdings Limited} % Employer
+	{Dubai, UAE} % Location
+	{Non-executive independent member of board of directors} % Job title
+	{}{} % Description
+	\tableentry{$\bullet$}{Make decisions on the BPGIC holdings Limited board of directors to further the company's objective of expanding its operations in the energy sector.}{}
+	\tableentry{$\bullet$}{Attend quarterly board of directors meetings and provide expert opinion and advice.}{spaceafter}
+
+	%------------------------------------------------
+
+	\workposition{Jan 2017 -- present} % Duration
+	{} % FT/PT (full time or part time)
+	{Systems Optimization Lab, McGill University} % Employer
+	{Montr\'{e}al, Canada} % Location
+	{Website manager} % Job title
+	{}{} % Description
+	\tableentry{$\bullet$}{Update the lab's website and disseminate new research to the public.}{}
+	\tableentry{$\bullet$}{\href{http://www.sol.research.mcgill.ca/}{http://www.sol.research.mcgill.ca/}.}{spaceafter}
+
+	%------------------------------------------------
+
+	\workposition{Jan 2014 -- Aug 2015} % Duration
+	{} % FT/PT (full time or part time)
+	{Solar car project, Khalifa University} % Employer
+	{Abu Dhabi, UAE} % Location
+	{Maintenance and procurement manager} % Job title
+	{}{} % Description
+	\tableentry{$\bullet$}{Designed a cutting edge engineering workshop for building and maintaining electric solar vehicles.}{spaceafter}
+
+	%------------------------------------------------
+
+	\workposition{Jun 2011 -- May 2013} % Duration
+	{} % FT/PT (full time or part time)
+	{Baja SAE team, Khalifa University} % Employer
+	{Abu Dhabi, UAE} % Location
+	{Project team manager} % Job title
+	{}{} % Description
+	\tableentry{$\bullet$}{Was elected to lead the team during the Baja SAE 2013 and 2015 international competitions.}{}
+	\tableentry{$\bullet$}{Saw the project to completion and was recognized for leading the first UAE national team to participate in the Baja SAE competition.}{spaceafter}
 
 	%------------------------------------------------
 
@@ -266,34 +348,33 @@
 
 \section{Teaching and supervision}
 
+\textbf{\large Teaching} \medskip 
+
 %------------------------------------------------
 
 \begin{supertabular}{>{\raggedleft\arraybackslash}p{0.17\linewidth}>{\raggedright\arraybackslash}p{0.6\linewidth}>{\raggedleft\arraybackslash}p{0.17\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
 
+	\tableentrythree{Jan 2021 – April 2021}{Lectured the engineering systems optimization class (MEHC 559) and developed MATLAB training modules and projects related to multidisciplinary optimization (NoHiMDO) with applications to aircraft design.}{McGill University, Montr\'{e}al, Canada}{spaceafter}
+
 	%------------------------------------------------
 
 	\tableentrythree{Sep 2018 – Dec 2019}{Teaching assistant for the mechanical lab (MECH 362) course for 3 semesters – prepared lab manuals, conducted labs, graded student reports, and provided feedback.}{McGill University, Montr\'{e}al, Canada}{spaceafter}
-	\tableentrythree{}{}{}{}
 
 	%------------------------------------------------
 
 	\tableentrythree{Jan 2018 – May 2018}{Teaching assistant for the Engineering Professional Practice (FACC 400) course for 1 semester – Conducted town halls, substituted lecturers, and provided feedback to students.}{McGill University, Montr\'{e}al, Canada}{spaceafter}
-	\tableentrythree{}{}{}{}
 
 	%------------------------------------------------
 
 	\tableentrythree{Jan 2014 – May 2014}{Teaching assistant for the System dynamics and controls course (including preparing lab sessions, office hours for students and grading midterm examinations). The TA duties also included conducting lab sessions (Transient systems and multiple degree of freedom systems).}{Khalifa University, Abu Dhabi, UAE}{spaceafter}
-	\tableentrythree{}{}{}{}
 
 	%------------------------------------------------
 
 	\tableentrythree{Sep 2013 – Dec 2013}{Teaching assistant for the computer aided design course. Conducted computer lab sessions where students were taught CAD basics and guidelines for producing professional engineering drawings.}{Khalifa University, Abu Dhabi, UAE}{spaceafter}
-	\tableentrythree{}{}{}{}
 
 	%------------------------------------------------
 
 	\tableentrythree{Sep 2012 – May 2013}{Grader for the Physics II undergraduate course. Graded student assignments, midterms and final examinations.}{Khalifa University, Abu Dhabi, UAE}{spaceafter}
-	\tableentrythree{}{}{}{}
 
 \end{supertabular}
 
@@ -305,7 +386,7 @@
 %	STUDENT EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\textbf{\large ~}\medskip \hrule \medskip
+\hrule \medskip \textbf{\large Supervision} \medskip 
 
 %------------------------------------------------
 
@@ -313,80 +394,23 @@
 
 	%------------------------------------------------
 
-	\tableentrythree{Jan 2017 -- Jan 2020}{\textit{\textbf{Asset Integrity Management Systems Lab, Khalifa University}}}{Abu Dhabi, UAE}{spaceafter}
-	\tableentry{}{$\bullet$ Student name: Safieh Almahmoud (Masters student)}{} % Description
-	\tableentry{}{~~~Affiliation: Khalifa University}{}
-	\tableentry{}{~~~Domain: Solid mechanics, instrumentation, and photonics}{spaceafter}
-	\tableentry{}{$\bullet$ Student name: Tasneem Osman (Masters student)}{} % Description
-	\tableentry{}{~~~Affiliation: Khalifa University}{}
-	\tableentry{}{~~~Domain: Solid mechanics, instrumentation, and acoustics}{spaceafter}
+	\tableentrythree{Jan 2016 -- Jan 2017}{\textit{\textbf{Asset Integrity Management Systems Lab, Khalifa University}}}{Abu Dhabi, UAE}{spaceafter}
+	\tableentry{$\bullet$}{Student name: Safieh Almahmoud (Masters student)}{} % Description
+	\tableentry{}{Affiliation: Khalifa University}{}
+	\tableentry{}{Domain: Solid mechanics, instrumentation, and photonics}{spaceafter}
+	\tableentry{$\bullet$}{Student name: Tasneem Osman (Masters student)}{} % Description
+	\tableentry{}{Affiliation: Khalifa University}{}
+	\tableentry{}{Domain: Solid mechanics, instrumentation, and acoustics}{spaceafter}
 
 	%------------------------------------------------
 	\tableentrythree{Jan 2014 –- Aug 2015}{\textit{\textbf{Senior graduation project, Khalifa University}}}{Abu Dhabi, UAE}{spaceafter}
-	\tableentry{}{$\bullet$ Student name: Yazan Hindawi (Bachelors student)}{} % Description
-	\tableentry{}{~~~Affiliation: Khalifa University}{}
-	\tableentry{}{~~~Domain: Solid mechanics, instrumentation, and robotics}{spaceafter}
-	\tableentry{}{$\bullet$ Student name: Ali Shamlan (Masters student)}{} % Description
-	\tableentry{}{~~~Affiliation: Khalifa University}{}
-	\tableentry{}{~~~Domain: Solid mechanics, instrumentation, and robotics}{spaceafter}
+	\tableentry{$\bullet$}{Student name: Yazan Hindawi (Bachelors student)}{} % Description
+	\tableentry{}{Affiliation: Khalifa University}{}
+	\tableentry{}{Domain: Solid mechanics, instrumentation, and robotics}{spaceafter}
+	\tableentry{$\bullet$}{Student name: Ali Shamlan (Masters student)}{} % Description
+	\tableentry{}{Affiliation: Khalifa University}{}
+	\tableentry{}{Domain: Solid mechanics, instrumentation, and robotics}{spaceafter}
 	
-	%------------------------------------------------
-
-\end{supertabular}
-
-%------------------------------------------------
-
-\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
-
-%----------------------------------------------------------------------------------------
-%	MANAGEMENT EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-\textbf{\large Management}\medskip \hrule \medskip
-
-%------------------------------------------------
-
-\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.17\linewidth}p{0.6\linewidth}>{\raggedleft\arraybackslash}p{0.17\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
-
-	%------------------------------------------------
-
-	\workposition{Jan 2021 -- present} % Duration
-	{} % FT/PT (full time or part time)
-	{BPGIC holdings Limited} % Employer
-	{Dubai, UAE} % Location
-	{Non-executive independent member of board of directors} % Job title
-	{$\bullet$ Make decisions on the BPGIC holdings Limited board of directors to further the company's objective of expanding its operations in the energy sector.}{} % Description
-	\tableentry{}{$\bullet$ Attend quarterly board of directors meetings and provide expert opinion and advice.}{spaceafter}
-
-	%------------------------------------------------
-
-	\workposition{Jan 2017 -- present} % Duration
-	{} % FT/PT (full time or part time)
-	{Systems Optimization Lab, McGill University} % Employer
-	{Montr\'{e}al, Canada} % Location
-	{Website manager} % Job title
-	{$\bullet$ Update the lab's website and disseminate new research to the public.}{} % Description
-	\tableentry{}{$\bullet$ \href{http://www.sol.research.mcgill.ca/}{http://www.sol.research.mcgill.ca/}.}{spaceafter}
-
-	%------------------------------------------------
-
-	\workposition{Jan 2014 -- Aug 2015} % Duration
-	{} % FT/PT (full time or part time)
-	{Solar car project, Khalifa University} % Employer
-	{Abu Dhabi, UAE} % Location
-	{Maintenance and procurement manager} % Job title
-	{$\bullet$ Designed a cutting edge engineering workshop for building and maintaining electric solar vehicles.}{spaceafter} % Description
-
-	%------------------------------------------------
-
-	\workposition{Jun 2011 -- May 2013} % Duration
-	{} % FT/PT (full time or part time)
-	{Baja SAE team, Khalifa University} % Employer
-	{Abu Dhabi, UAE} % Location
-	{Project team manager} % Job title
-	{$\bullet$ Was elected to lead the team during the Baja SAE 2013 and 2015 international competitions.}{} % Description
-	\tableentry{}{$\bullet$ Saw the project to completion and was recognized for leading the first UAE national team to participate in the Baja SAE competition.}{spaceafter}
-
 	%------------------------------------------------
 
 \end{supertabular}
@@ -399,21 +423,72 @@
 %	MAJOR RESEARCH PROJECT
 %----------------------------------------------------------------------------------------
 
-\section{Research}
+\section{Description of selected publications}
 
-{\raggedright\textbf{``Optimization-driven set-based design for dynamic design requirements"}}
-\textit{\center How do you design a component when the design requirements can change at any moment and without advance notice?}
-That is the question my dissertation tries to answer. To do so, I came up with design metrics for qualitative descriptions such as flexibility and robustness. I used optimization, automation and machine learning to obtain thousands of possible designs. This is a \textbf{1000 fold} increase in the number of alternatives that are presented during client meetings in the industry. By exploring all these alternatives, potential cost savings in the order of \textbf{millions} of dollars can be made over a period of decades. My research culminated in a technology transfer at GKN aerospace so that engineers can go to work, incorporating these algorithms in their workflows and give GKN a \textbf{competitive edge}.
+{\raggedright\textbf{``Scalable set-based design optimization and remanufacturing for meeting changing requirements"}}
+\textit{\center How do you quantify the remanufacturability of a product before it goes into production?}\\
 
-\programlang{\color{python}}{python}~\programlang{\color{magenta}}{C++}~\programlang{\color{matlab}}{MATLAB}~\programlang{\color{rpackage}}{R}~\round{\href{https://github.com/khbalhandawi/DM_SBD_opt}{\small\faGlobe~Online open-source code}}{proglang}~\round{\href{https://www.chalmers.se/en/departments/ims/news/Pages/Optimizationdriven-setbased-design-.aspx}{\small\faGlobe~Online news article}}{proglang}
+This question was motivated by the advent of novel manufacturing technologies such as additive manufacturing (AM) and their enormous potential to enable a circular economy recovery activities such as remanufacturing. In this paper, I highlight this potential and answer the above research question by using quantitative metrics to measure the design's remanufacturability when using additive or conventional subtractive manufacturing processes.
+
+The metric was derived from the principle of design changeability, and the concept of scalability specifically. It was found that scalability is relevant to remanufacturing as it defines the potential for restoring product specifications to its original or better-than-original levels. I mathematically formulated a metric for scalability and used it in design space exploration (DSE) of an aeroengine component at GKN Aerospace engine systems to identify a set of scalable designs that are eligible for remanufacturing via additive manufacturing. The results show great promise and allow designers to incorporate the principles of sustainable manufacturing and design early in the product development cycle.
+
+\programlang{\color{python}}{python}
+~\programlang{\color{matlab}}{MATLAB}
+~\programlang{\color{black}}{NX Siemens}
+~\programlang{\color{black}}{Abaqus}
+~\programlang{\color{black}}{Thermomechanical simulation}
+~\programlang{\color{black}}{Design space exploration (DSE)}
+~\programlang{\color{black}}{Surrogate modeling}
+~\round{\href{https://asmedigitalcollection.asme.org/mechanicaldesign/article-abstract/143/2/021702/1085767/Scalable-Set-Based-Design-Optimization-and}{\small\faGlobe~DOI: 10.1115/1.4047908}}{proglang}
+
+{\raggedright\textbf{``Optimization of design margins allocation when making use of additive remanufacturing"}}
+\textit{\center How do you design a component when the design requirements can change at any moment and without advance notice?}\\
+
+That is the question my dissertation tries to answer. To answer this question, I needed to identify the mechanisms by which products are able to mitigate requirement changes. The literature suggested passive methods such as the use of design margins and active methods such as changing the product's design. Each method has its advantages and disadvantages and balancing the two strategies within a product is key to cost-effective mitigation of changing requirements. I assessed different aeroengine product designs (from GKN aerospace) against a wide variety of requirement change scenarios (using Monte Carlo simulation) to identify those designs that absorbed the most change without negatively impacting the product's performance (in terms of weight and redesign cost). The results of the study show promise and the open-source design tool that was developed allows designers to conceive of lean products despite the uncertain design requirements they have to work with.
+
+\programlang{\color{python}}{python}
+~\programlang{\color{magenta}}{C++}
+~\programlang{\color{matlab}}{MATLAB}
+~\programlang{\color{rpackage}}{R}
+~\programlang{\color{black}}{NX Siemens}
+~\programlang{\color{black}}{Abaqus}
+~\programlang{\color{black}}{Monte Carlo simulation}
+~\programlang{\color{black}}{Uncertainty quantification}
+~\round{\href{https://github.com/khbalhandawi/DM_SBD_opt}{\small\faGlobe~Online open-source code}}{proglang}
+~\round{\href{https://asmedigitalcollection.asme.org/mechanicaldesign/article-abstract/144/1/012001/1112332/Optimization-of-Design-Margins-Allocation-When?redirectedFrom=fulltext}{\small\faGlobe~DOI: 10.1115/1.4051607}}{proglang}
+
 
 \medskip % Extra whitespace before the next section
 
-{\raggedright\textbf{``Optimization of infectious disease prevention policies using agent-based modeling"}}
-\textit{\center How can we apply the principles of design and decision making to help bring the pandemic under control?}
-To answer this question, I modeled how an infectious disease spreads in a small population. Diseases such as COVID-19 spread through social interaction. I programmed intelligent agents to model a complex social system. Optimization can be used to determine the critical amount of intervention necessary to keep the disease in check. I used these algorithms to reduce the number of hospitalizations beneath the healthcare capacity while reducing the socio-economic cost of interventions by up to \textbf{5 times} compared to a complete lock-down.
+{\raggedright\textbf{``Optimization of Infectious Disease Prevention and Control Policies Using Artificial Life"}}
+\textit{\center How can we apply the principles of design and decision making to help bring the pandemic under control?}\\
 
-\programlang{\color{magenta}}{C++}~\programlang{\color{cuda}}{CUDA}~\programlang{\color{python}}{python}~\programlang{\color{qt}}{Qt}~\round{\href{https://github.com/khbalhandawi/COVID_SIM}{\small\faGlobe~Online open-source code}}{proglang}
+Although this project is not directly relevant to the discipline of materials science and industrial engineering, I found it quite useful for my design research. This is because most design problems involve a fair bit of uncertainty at all stages of the product development process. Being able to explore the design space under uncertainty is a very challenging problem mathematically. This project exemplifies such design problems by treating the public health policies for an epidemic as design solutions. 
+
+I modeled how an infectious disease spreads in a small population. Diseases such as COVID-19 spread through social interaction. I programmed intelligent agents to model a complex social system. I used stochastic derivative-free optimization to determine the critical amount of intervention necessary to keep the disease in check without negatively affecting the economy. I used the stochastic optimization algorithm to reduce the number of hospitalizations beneath the healthcare capacity while reducing the socio-economic cost of interventions by up to \textbf{5 times} compared to a complete lock-down. Such tradeoffs are quite common in the engineering design world and I plan to use stochastic design exploration strategies in my future design research.
+
+\programlang{\color{magenta}}{C++}
+~\programlang{\color{cuda}}{CUDA}
+~\programlang{\color{python}}{python}
+~\programlang{\color{qt}}{Qt}
+~\programlang{\color{black}}{Stochastic optimization}
+~\programlang{\color{black}}{Agent-based modeling}
+~\round{\href{https://github.com/khbalhandawi/COVID_SIM}{\small\faGlobe~Online open-source code}}{proglang}
+~\round{\href{https://ieeexplore.ieee.org/abstract/document/9532002}{\small\faGlobe~DOI: 10.1109/TETCI.2021.3107496}}{proglang}
+
+\medskip % Extra whitespace before the next section
+
+{\raggedright\textbf{``A lifecycle cost-driven system dynamics
+approach for considering additive re-manufacturing or repair in aero-engine component design"}}
+\textit{\center How can we minimize the lifecycle cost when considering additve remanufactuing life extension strategies?}\\
+
+I collaborated with a colleague that developed a novel lifecycle cost (LCC) model based on system dynamics to capture the causal loops that often arise in LCC modeling. Such casual loops include viscous cycles, where increasing one parameter leads to another increasing which in turn results in the former parameter increasing even more. Such loops are difficult to capture in traditional time-driven activity-based LCC modeling and hence the need for a system dynamics model. The developed LCC model was used to explore different life extension strategies for aeroengine products from an LCC perspective. I formulated and solved an optimization problem that captures the tradeoff between life extension strategies that favor ``design for-life'' versus strategies that favor frequent life extension and maintenance. Me and my colleague managed to present a tool for obtaining the optimal life extension schedule such that LCC is minimized.
+
+\programlang{\color{matlab}}{MATLAB}
+~\programlang{\color{black}}{Simulink}
+~\programlang{\color{black}}{Lifecycle cost (LCC)}
+~\programlang{\color{black}}{System dynamics modeling}
+~\round{\href{https://www.cambridge.org/core/journals/proceedings-of-the-international-conference-on-engineering-design/article/lifecycle-costdriven-system-dynamics-approach-for-considering-additive-remanufacturing-or-repair-in-aeroengine-component-design/E6288AA6947FED87C8AD308E3CA62788}{\small\faGlobe~DOI: 10.1017/dsi.2019.140}}{proglang}
 
 \medskip % Extra whitespace before the next section
 
@@ -421,39 +496,125 @@ To answer this question, I modeled how an infectious disease spreads in a small 
 %	PREVIOUS RESEARCH PROJECT
 %----------------------------------------------------------------------------------------
 
-{\raggedright\textbf{``Corrosion monitoring along infrastructures using distributed fiber optic sensing"}}\\
-Oil pipelines are monitored for corrosion on regular intervals using conventional tools. A real-time monitoring solution was developed to avoid spontaneous failures that may occur between inspection intervals using distributed fiber optic sensors which are intrinsically safe. The sensor that we developed consisted of a silica core and a polymer cladding coated with a metal layer from the pipeline’s construction which upon corrosion exposes it to hydrocarbons altering its refractive index. Intensity of a travelling pulse drops and is captured by reflectometry techniques. The system was simulated, and a laboratory scale setup was developed to validate the model and test the solution. Our setup featured advanced fiber optic sensors (fiber Bragg grating (FBG)), interrogators (optical time domain reflectometer (OTDR)), and spectral analyzers controlled and operated by LabVIEW data acquisition software. We also relied heavily on MATLAB simulations to construct and verify the setup.
+{\raggedright\textbf{``Strain based FBG sensor for real-time corrosion rate monitoring in pre-stressed structures"}}\\
+Oil pipelines are monitored for corrosion on regular intervals using conventional tools. This activity accrues massive maintenance costs on the pipeline operator. I tried to mitigate maintenance costs by developing a passive realtime corrosion monitoring product. This research was my first exposure to the industrial world and the importance of developing cost-effective solutions. Furthermore, this was my first real product-design problem, where I employed the principles of product development to arrive at a prototype solution that the industry can readily test.
+I used concept elimination to find a solution that best fulfils the requirements of oil pipeline operators of being intrinsically safe and requiring minimal energy to operate. I arrived at a concept that uses fiber optics to transmit and receive signals from the pipeline without needed much energy to excite the laser and posing no electrical hazards to the pipeline environment. This sensor consists of fiber Bragg grating (FBG), which is used to sense the change in the pipeline's hoop stress as a result of internal corrosion and localized thinning of its inner diameter. The system was simulated, and a laboratory scale prototype was 3D printed to validate and test the solution. Our setup featured advanced fiber optic sensors (fiber Bragg grating (FBG)) and spectral analyzers controlled and operated by LabVIEW data acquisition software. I also relied heavily on MATLAB and Abaqus simulations to construct and verify the setup.
 
-\programlang{\color{black}}{fiber Bragg grating (FBG)}~\programlang{\color{black}}{optical time domain reflectometery (OTDR)}~\programlang{\color{black}}{LabVIEW}~\programlang{\color{matlab}}{MATLAB}
-
-\medskip % Extra whitespace before the next section
-
-{\raggedright\textbf{``Development of a human operated mobile hexapod platform"}}\\
-I designed and developed of a six-legged hexapod platform that employed a hydraulic system to actuate each of the six robotic manipulators used for locomotion. The control and distribution of the hydraulic power was controlled through state-of-the art technology employing hydraulic servo-valves. As of today, the design stands at a total weight of 3 tons and occupies a space of 5m x 2m x 3m high. The robotic manipulator which constitutes a leg of the hexapod was reverse engineered and repurposed for walking from a used hydraulic excavator manufactured by JCB. I made a faithful reproduction of the 3D CAD model in SOLIDWORKS by taking measurements from the physical excavator so that the necessary modifications can be designed and manufactured. Most modifications were manufactured manually using a milling machine, lathe, and MIG/TIG welding. More complex parts where tolerances are critical were machined via a CNC milling machine. Once the mechanical setup was built, I used kinematics, and rotation matrices to compute the necessary actuation for tracking a given trajectory. I used and configured a microcontroller (Arduino) to provide the actuation signal to the servo-valves that distribute hydraulic power throughout the hexapod and achieved smooth tracking of the target trajectory that I provided.
-
-\programlang{\color{black}}{SOLIDWORKS}~\programlang{\color{black}}{manufacturing}~\programlang{\color{black}}{CNC machining}~\programlang{\color{black}}{kinematics}~\programlang{\color{black}}{rotation matrices}~\programlang{\color{black}}{Arduino}
+\programlang{\color{black}}{LabVIEW}
+~\programlang{\color{black}}{Abaqus}
+~\programlang{\color{matlab}}{MATLAB}
+~\programlang{\color{black}}{Fiber Bragg grating (FBG)}
+~\round{\href{https://www.sciencedirect.com/science/article/abs/pii/S0925400516308528}{\small\faGlobe~DOI: 10.1016/j.snb.2016.05.167}}{proglang}
 
 \medskip % Extra whitespace before the next section
+
+% {\raggedright\textbf{``Development of a human operated mobile hexapod platform"}}\\
+% I designed and developed of a six-legged hexapod platform that employed a hydraulic system to actuate each of the six robotic manipulators used for locomotion. The control and distribution of the hydraulic power was controlled through state-of-the art technology employing hydraulic servo-valves. As of today, the design stands at a total weight of 3 tons and occupies a space of 5m x 2m x 3m high. The robotic manipulator which constitutes a leg of the hexapod was reverse engineered and repurposed for walking from a used hydraulic excavator manufactured by JCB. I made a faithful reproduction of the 3D CAD model in SOLIDWORKS by taking measurements from the physical excavator so that the necessary modifications can be designed and manufactured. Most modifications were manufactured manually using a milling machine, lathe, and MIG/TIG welding. More complex parts where tolerances are critical were machined via a CNC milling machine. Once the mechanical setup was built, I used kinematics, and rotation matrices to compute the necessary actuation for tracking a given trajectory. I used and configured a microcontroller (Arduino) to provide the actuation signal to the servo-valves that distribute hydraulic power throughout the hexapod and achieved smooth tracking of the target trajectory that I provided.
+
+% \programlang{\color{black}}{SOLIDWORKS}
+% ~\programlang{\color{black}}{manufacturing}
+% ~\programlang{\color{black}}{CNC machining}
+% ~\programlang{\color{black}}{kinematics}
+% ~\programlang{\color{black}}{rotation matrices}
+% ~\programlang{\color{black}}{Arduino}
+
+% \medskip % Extra whitespace before the next section
+
+% %----------------------------------------------------------------------------------------
+% %	EXTRACURRICULAR PROJECTS
+% %----------------------------------------------------------------------------------------
+% \newpage
+% \section{Extracurricular projects}
+
+% {\raggedright\textbf{``Khalifa university Solar Car Project"}}\\
+% I was part of the Khalifa University Solar Car Team which successfully developed and commissioned the \textbf{first} solar vehicle in The United Arab Emirates. The vehicle was of outstanding performance and competed in The Abu Dhabi Solar Challenge (January 15th – 19th 2015) earning \textbf{second place} in the race with 2 minutes behind the leading team (University of Michigan, Ann Arbor). My responsibilities in the team included aerodynamic design of the body and driver canopy using ANSYS Fluent. Furthermore, after the design stage my main responsibilities were to oversee the manufacturing of the various components needed to operate the vehicle as well as procure the equipment needed to build and maintain the vehicle. In order to fabricate the monocoque carbon fiber chassis of the vehicle, I collaborated with a team of solar car designers at \textbf{Tokai University, Japan}. The project provided a lot of hands-on inter-disciplinary experience in instrumentation, mechanical, and electrical design.
+
+% \programlang{\color{black}}{aerodynamic design}
+% ~\programlang{\color{black}}{ANSYS Fluent}
+% ~\programlang{\color{black}}{carbon fiber}
+% ~\round{\href{https://www.thenationalnews.com/business/technology/solar-team-awaits-its-day-in-the-sun-1.601904}{\small\faGlobe
+% ~Online news article}}{proglang}
+
+% \medskip % Extra whitespace before the next section
+
+% {\raggedright\textbf{``Khalifa university Baja SAE Project"}}\\
+% I led and supervised a team of engineering students to design and produce a vehicle to compete in the SAE Baja Event during the summer of 2015. This project provides extensive hands-on experience on fabrication of various automotive parts using CNC technology, welding and conventional machining. Furthermore, I acquired a lot of experience throughout the design process on CAD modeling (SOLIDWORKS, Autodesk AutoCAD) and simulation (FEA Analysis of the Chassis using ANSYS mechanical APDL). The built design qualified for the Baja SAE 2015 annual competition in Maryland, United States, which was the university’s first undertaking in competing oversees. Being the team’s first encounter with oversees competitions, the vehicle passed rigorous technical inspection requirements and successfully completed all the events and the endurance race arriving at a rank of \textbf{58 out of a total of 100} competing international university teams.
+
+% \programlang{\color{black}}{SOLIDWORKS, Autodesk AutoCAD}
+% ~\programlang{\color{black}}{manufacturing}
+% ~\programlang{\color{black}}{CNC machining}
+% ~\programlang{\color{black}}{ANSYS mechanical APDL}
+
+% \medskip % Extra whitespace before the next section
 
 %----------------------------------------------------------------------------------------
-%	EXTRACURRICULAR PROJECTS
+%	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\newpage
-\section{Extracurricular projects}
 
-{\raggedright\textbf{``Khalifa university Solar Car Project"}}\\
-I was part of the Khalifa University Solar Car Team which successfully developed and commissioned the \textbf{first} solar vehicle in The United Arab Emirates. The vehicle was of outstanding performance and competed in The Abu Dhabi Solar Challenge (January 15th – 19th 2015) earning \textbf{second place} in the race with 2 minutes behind the leading team (University of Michigan, Ann Arbor). My responsibilities in the team included aerodynamic design of the body and driver canopy using ANSYS Fluent. Furthermore, after the design stage my main responsibilities were to oversee the manufacturing of the various components needed to operate the vehicle as well as procure the equipment needed to build and maintain the vehicle. In order to fabricate the monocoque carbon fiber chassis of the vehicle, I collaborated with a team of solar car designers at \textbf{Tokai University, Japan}. The project provided a lot of hands-on inter-disciplinary experience in instrumentation, mechanical, and electrical design.
+\section{Publications}
 
-\programlang{\color{black}}{aerodynamic design}~\programlang{\color{black}}{ANSYS Fluent}~\programlang{\color{black}}{carbon fiber}~\round{\href{https://www.thenationalnews.com/business/technology/solar-team-awaits-its-day-in-the-sun-1.601904}{\small\faGlobe~Online news article}}{proglang}
+% Example \longformdescription{} command to add another publication:
+
+%\longformpublication{Reference (format this manually as desired)}
+
+%------------------------------------------------
+
+\textbf{\large Submitted preprints}\medskip \hrule \medskip
+
+\longformpublication{
+A. Khalil, \textbf{K. Al Handawi}, Z. Mohsen, A. Abdel Nour, R. Feghali, I. Chamseddine and M. Kokkolaras (2021). Predicting COVID-19 incidences from patients’ viral load using deep-learning. \textit{medRxiv}} \href{https://doi.org/10.1101/2021.08.14.21262064}{doi: 10.1101/2021.08.14.21262064}
+
+%------------------------------------------------
+
+\textbf{\large Refereed Journal Articles}\medskip \hrule \medskip
+
+\longformpublication{\textbf{K. Al Handawi} and M. Kokkolaras (2021). Optimization of infectious disease prevention and control policies using artificial life. \textit{IEEE Transactions on Emerging Topics in Computational Intelligence}, \href{https://doi.org/10.1109/TETCI.2021.3107496}{doi: 10.1109/TETCI.2021.3107496}
+~\textit{funded by an NSERC discovery grant}}
+
+\longformpublication{\textbf{K. Al Handawi}, M. Panarotto, P. Andersson, O. Isaksson and M. Kokkolaras (2021). Optimization of design margins allocation when making use of additive remanufacturing. \textit{Journal of Mechanical Design}, \textit{144}(1): pp 012001. \href{https://doi.org/10.1115/1.4051607}{doi: 10.1115/1.4051607}\\
+\textit{funded partially by NSERC, FRQNT, CARIC and EU Horizon 2020 research and innovation programme}}
+
+\longformpublication{M. Chehadeh, M. Wahbah, M. Awad, O. AbdulHay, \textbf{K. Al Handawi}, L. Seneviratne, I. Greatbatch and Y. Zweiri (2021). Novel aerial firefighting system for suppression of incipient cladding fires. \textit{Journal of Field Robotics}, (\textit{In Press})\\
+\textit{funded by Emaar Properties PJSC}}
+
+\longformpublication{\textbf{K. Al Handawi}, P. Andersson, M. Panarotto, O. Isaksson and M. Kokkolaras (2020). Scalable set-based design optimization and remanufacturing for meeting changing requirements. \textit{Journal of Mechanical Design}, \textit{143}(2): pp 021702. \href{http://dx.doi.org/10.1115/1.4047908}{doi: 10.1115/1.4047908}\\
+\textit{funded partially by NSERC, FRQNT, CARIC and EU Horizon 2020 research and innovation programme}}
+
+\longformpublication{\textbf{K. Al Handawi}, N. Vahdati, O. Shiryayev and L. Lawand (2017). Analytical modeling tool for design of hydrocarbon sensitive optical fibers. \textit{Sensors}, \textit{17}(10): pp 2227. \href{http://dx.doi.org/10.3390/s17102227}{doi: 10.3390/s17102227}\\
+\textit{funded by Abu Dhabi National Oil Company}}
+
+\longformpublication{L. Lawand, O. Shiryayev, \textbf{K. Al Handawi}, N. Vahdati and P. Rostron (2017). Corrosivity sensor for exposed pipelines based on wireless energy transfer. \textit{Sensors}, \textit{17}(6): pp 1238. \href{http://dx.doi.org/10.3390/s17061238}{doi: 10.3390/s17061238}\\
+\textit{funded by Abu Dhabi National Oil Company}}
+
+\longformpublication{\textbf{K. Al Handawi}, N. Vahdati, P. Rostron, L. Lawand and O. Shiryayev (2016). Strain-based FBG sensor for real-time corrosion rate monitoring in pre-stressed structures. \textit{Sensors and Actuators B: Chemical}, \textit{236}: pp 276 -- 285. \href{http://dx.doi.org/10.1016/j.snb.2016.05.167}{doi: 10.1016/j.snb.2016.05.167}\\
+\textit{funded by Abu Dhabi National Oil Company}}
+
+%------------------------------------------------
+
+\textbf{\large Refereed Conference Papers}\medskip \hrule \medskip
+
+\longformpublication{\textbf{K. Al Handawi}, P. Andersson, M. Panarotto, O. Isaksson and M. Kokkolaras (2020). Scalable set-based design optimization and remanufacturing for meeting changing requirements. \textit{in Proceedings of the International Design Engineering Technical Conferences \& Computers and Information in Engineering Conference}, Virtual conference, IDETC2020.}
+
+\longformpublication{L. Lawand, \textbf{K. Al Handawi}, M. Panarotto, P. Andersson, O. Isaksson and M. Kokkolaras (2019). A lifecycle cost-driven system dynamics approach for considering additive re-manufacturing or repair in aero-engine component design. \textit{in Proceedings of the Design Society: International Conference on Engineering Design}, Delft, Netherlands, ICED19: pp 1343 -- 1352. \href{http://dx.doi.org/10.1017/dsi.2019.140}{doi: 10.1017/dsi.2019.140}}
+
+\longformpublication{\textbf{K. Al Handawi}, L. Lawand , P. Andersson, R. Brommesson, O. Isaksson and M. Kokkolaras (2018). Integrating additive manufacturing and repair strategies of aeroengine components in the computational multi-disciplinary engineering design process. \textit{in Proceedings of NordDesign}, Link\"{o}ping, Sweden, NordDesign 2018.}
+
+\longformpublication{\textbf{K. Al Handawi}, N. Vahdati, O. Shiryayev, and L. Lawand (2016). Corrosion monitoring along infrastructures using distributed fiber optic sensing. \textit{in Proceedings of SPIE Smart Structures/NDE, International Society for Optics and Photonics, Sensors and Smart Structures Technologies for Civil, Mechanical, and Aerospace Systems}, Las Vegas, USA, SPIE2016. \href{http://dx.doi.org/10.1117/12.2218820}{doi: 10.1117/12.2218820}}
+
+\longformpublication{L. Lawand, O. Shiryayev, \textbf{K. Al Handawi}, N. Vahdati and P. Rostron (2016). Corrosivity monitoring system using RFID-based sensors. \textit{in Proceedings of SPIE Smart Structures/NDE, International Society for Optics and Photonics, Sensors and Smart Structures Technologies for Civil, Mechanical, and Aerospace Systems}, Las Vegas, USA, SPIE2016. \href{http://dx.doi.org/10.1117/12.2218813}{doi: 10.1117/12.2218813}}
+
+%------------------------------------------------
+
+\textbf{\large Poster presentations}\medskip \hrule \medskip
+
+\longformpublication{\textbf{K. Al Handawi}, P. Andersson, O. Isaksson and M. Kokkolaras (2019). Scalable set-based design solutions for product remanufacturing. \textit{International Conference on Engineering Design}, Delft, Netherlands, ICED19.}
+
+\longformpublication{\textbf{K. Al Handawi}, L. Lawand, T. Hitchcox, Y. F. Zhao and M. Kokkolaras (2018). Additive manufacturing optimization and simulation platform for repairing and remanufacturing of aerospace components. \textit{CRIAQ RDV Forum}, Montr\'{e}al, Canada.}
+
+%------------------------------------------------
 
 \medskip % Extra whitespace before the next section
 
-{\raggedright\textbf{``Khalifa university Baja SAE Project"}}\\
-I led and supervised a team of engineering students to design and produce a vehicle to compete in the SAE Baja Event during the summer of 2015. This project provides extensive hands-on experience on fabrication of various automotive parts using CNC technology, welding and conventional machining. Furthermore, I acquired a lot of experience throughout the design process on CAD modeling (SOLIDWORKS, Autodesk AutoCAD) and simulation (FEA Analysis of the Chassis using ANSYS mechanical APDL). The built design qualified for the Baja SAE 2015 annual competition in Maryland, United States, which was the university’s first undertaking in competing oversees. Being the team’s first encounter with oversees competitions, the vehicle passed rigorous technical inspection requirements and successfully completed all the events and the endurance race arriving at a rank of \textbf{58 out of a total of 100} competing international university teams.
-
-\programlang{\color{black}}{SOLIDWORKS, Autodesk AutoCAD}~\programlang{\color{black}}{manufacturing}~\programlang{\color{black}}{CNC machining}~\programlang{\color{black}}{ANSYS mechanical APDL}
-
-\medskip % Extra whitespace before the next section
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS
@@ -489,6 +650,46 @@ I led and supervised a team of engineering students to design and produce a vehi
 		\item Computer aided design
 		\item Computer aided engineering
 		\item Manufacturing
+	\end{itemize}
+
+	%----------------------------------------------------------------------------------------
+	
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+%	SPECIAL ELECTIVE COURSES
+%----------------------------------------------------------------------------------------
+
+\section{Course work}
+
+%------------------------------------------------
+
+\columnratio{0.5,0.5} % The relative ratios of the three columns in the references
+
+\setlength\columnsep{0.05\textwidth} % Specify the amount of space between the columns
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+	\begin{itemize}\itemsep0em 
+		\item Advanced mechanics of materials
+		\item Engineering systems optimization
+		\item Continuum mechanics
+		\item Applied numerical methods
+		\item Applied finite element analysis
+	\end{itemize}
+		
+	%----------------------------------------------------------------------------------------
+	
+	\switchcolumn % Switch to the next paracol column
+	
+	%----------------------------------------------------------------------------------------
+
+	\begin{itemize}\itemsep0em 
+		\item Material engineering and corrosion
+		\item Measurements and instrumentation
+		\item Advanced vibrations
+		\item Fracture mechanics	
+		\item Viscous and compressible fluid flows
 	\end{itemize}
 
 	%----------------------------------------------------------------------------------------
@@ -539,7 +740,9 @@ I led and supervised a team of engineering students to design and produce a vehi
 \begin{supertabular}{>{\raggedright\arraybackslash}p{0.77\linewidth}>{\raggedleft\arraybackslash}p{0.19\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
 	
 	%------------------------------------------------
-	
+
+	\tableentryraw{Awarded 2nd place for final problem presentation and winner of best data visualization in the 11th Montreal Industreal Problem Solving Workshop}{\textsc{IVADO, Universit\'{e} de Montr\'{e}al, Canada}}{}
+
 	\tableentryraw{Team leader of the first team to successfully qualify and complete the Baja SAE competition}{\textsc{Khalifa University, Abu Dhabi, UAE}}{}
 
 	\tableentryraw{Awarded 2nd place in the Abu Dhabi Solar Challenge (10,000 AED)}{\textsc{Khalifa University, Abu Dhabi, UAE}}{}
@@ -553,71 +756,6 @@ I led and supervised a team of engineering students to design and produce a vehi
 	%------------------------------------------------
 	
 \end{supertabular}
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-
-\section{Publications}
-
-% Example \longformdescription{} command to add another publication:
-
-%\longformpublication{Reference (format this manually as desired)}
-
-%------------------------------------------------
-
-\textbf{\large Submitted preprints}\medskip \hrule \medskip
-
-\longformpublication{\textbf{K. Al Handawi} and M. Kokkolaras (2021). Optimization of infectious disease prevention and control policies using agent-based modeling. \textit{IEEE Transactions on Emerging Topics in Computational Intelligence}, (\textit{Under Review})\\
-\textit{funded by NSERC discovery grant}}
-
-\longformpublication{\textbf{K. Al Handawi}, M. Panarotto, P. Andersson, O. Isaksson and M. Kokkolaras (2021). Optimization of design margins allocation when making use of additive remanufacturing. \textit{Journal of Mechanical Design}, (\textit{Under Review})\\
-\textit{funded partially by NSERC, FRQNT, CARIC and EU Horizon 2020 research and innovation programme}}
-
-%------------------------------------------------
-
-\textbf{\large Refereed Journal Articles}\medskip \hrule \medskip
-
-\longformpublication{M. Chehadeh, M. Wahbah, M. Awad, O. AbdulHay, \textbf{K. Al Handawi}, L. Seneviratne, I. Greatbatch and Y. Zweiri (2021). Novel aerial firefighting system for suppression of incipient cladding fires. \textit{Journal of Field Robotics}, (\textit{In Press})\\
-\textit{funded by Emaar Properties PJSC}}
-
-\longformpublication{\textbf{K. Al Handawi}, P. Andersson, M. Panarotto, O. Isaksson and M. Kokkolaras (2020). Scalable set-based design optimization and remanufacturing for meeting changing requirements. \textit{Journal of Mechanical Design}, \textit{143}(2): pp 021702. \href{http://dx.doi.org/10.1115/1.4047908}{doi: 10.1115/1.4047908}\\
-\textit{funded partially by NSERC, FRQNT, CARIC and EU Horizon 2020 research and innovation programme}}
-
-\longformpublication{\textbf{K. Al Handawi}, N. Vahdati, O. Shiryayev and L. Lawand (2017). Analytical modeling tool for design of hydrocarbon sensitive optical fibers. \textit{Sensors}, \textit{17}(10): pp 2227. \href{http://dx.doi.org/10.3390/s17102227}{doi: 10.3390/s17102227}\\
-\textit{funded by Abu Dhabi National Oil Company}}
-
-\longformpublication{L. Lawand, O. Shiryayev, \textbf{K. Al Handawi}, N. Vahdati and P. Rostron (2017). Corrosivity sensor for exposed pipelines based on wireless energy transfer. \textit{Sensors}, \textit{17}(6): pp 1238. \href{http://dx.doi.org/10.3390/s17061238}{doi: 10.3390/s17061238}\\
-\textit{funded by Abu Dhabi National Oil Company}}
-
-\longformpublication{\textbf{K. Al Handawi}, N. Vahdati, P. Rostron, L. Lawand and O. Shiryayev (2016). Strain-based FBG sensor for real-time corrosion rate monitoring in pre-stressed structures. \textit{Sensors and Actuators B: Chemical}, \textit{236}: pp 276 -- 285. \href{http://dx.doi.org/10.1016/j.snb.2016.05.167}{doi: 10.1016/j.snb.2016.05.167}\\
-\textit{funded by Abu Dhabi National Oil Company}}
-
-%------------------------------------------------
-
-\textbf{\large Refereed Conference Papers}\medskip \hrule \medskip
-
-\longformpublication{\textbf{K. Al Handawi}, P. Andersson, M. Panarotto, O. Isaksson and M. Kokkolaras (2020). Scalable set-based design optimization and remanufacturing for meeting changing requirements. \textit{in Proceedings of the International Design Engineering Technical Conferences \& Computers and Information in Engineering Conference}, Virtual conference, IDETC2020.}
-
-\longformpublication{L. Lawand, \textbf{K. Al Handawi}, M. Panarotto, P. Andersson, O. Isaksson and M. Kokkolaras (2019). A lifecycle cost-driven system dynamics approach for considering additive re-manufacturing or repair in aero-engine component design. \textit{in Proceedings of the Design Society: International Conference on Engineering Design}, Delft, Netherlands, ICED19: pp 1343 -- 1352. \href{http://dx.doi.org/10.1017/dsi.2019.140}{doi: 10.1017/dsi.2019.140}}
-
-\longformpublication{\textbf{K. Al Handawi}, L. Lawand , P. Andersson, R. Brommesson, O. Isaksson and M. Kokkolaras (2018). Integrating additive manufacturing and repair strategies of aeroengine components in the computational multi-disciplinary engineering design process. \textit{in Proceedings of NordDesign}, Link\"{o}ping, Sweden, NordDesign 2018.}
-
-\longformpublication{\textbf{K. Al Handawi}, N. Vahdati, O. Shiryayev, and L. Lawand (2016). Corrosion monitoring along infrastructures using distributed fiber optic sensing. \textit{in Proceedings of SPIE Smart Structures/NDE, International Society for Optics and Photonics, Sensors and Smart Structures Technologies for Civil, Mechanical, and Aerospace Systems}, Las Vegas, USA, SPIE2016. \href{http://dx.doi.org/10.1117/12.2218820}{doi: 10.1117/12.2218820}}
-
-\longformpublication{L. Lawand, O. Shiryayev, \textbf{K. Al Handawi}, N. Vahdati and P. Rostron (2016). Corrosivity monitoring system using RFID-based sensors. \textit{in Proceedings of SPIE Smart Structures/NDE, International Society for Optics and Photonics, Sensors and Smart Structures Technologies for Civil, Mechanical, and Aerospace Systems}, Las Vegas, USA, SPIE2016. \href{http://dx.doi.org/10.1117/12.2218813}{doi: 10.1117/12.2218813}}
-
-%------------------------------------------------
-
-\textbf{\large Poster presentations}\medskip \hrule \medskip
-
-\longformpublication{\textbf{K. Al Handawi}, P. Andersson, O. Isaksson and M. Kokkolaras (2019). Scalable set-based design solutions for product remanufacturing. \textit{International Conference on Engineering Design}, Delft, Netherlands, ICED19.}
-
-\longformpublication{\textbf{K. Al Handawi}, L. Lawand, T. Hitchcox, Y. F. Zhao and M. Kokkolaras (2018). Additive manufacturing optimization and simulation platform for repairing and remanufacturing of aerospace components. \textit{CRIAQ RDV Forum}, Montr\'{e}al, Canada.}
-
-%------------------------------------------------
-
-\medskip % Extra whitespace before the next section
 
 %----------------------------------------------------------------------------------------
 %	REVIEW SERVICE
@@ -640,7 +778,7 @@ I led and supervised a team of engineering students to design and produce a vehi
 
 	\tableentryraw{Sensors and Actuators A}{\textsc{2}}{}
 
-	\tableentryraw{IEEE Access}{\textsc{1}}{}
+	\tableentryraw{IEEE Access}{\textsc{3}}{}
 
 	\tableentryraw{Journal of Global Optimization}{\textsc{1}}{}
 	
@@ -653,6 +791,8 @@ I led and supervised a team of engineering students to design and produce a vehi
 	\tableentryraw{IEEE Transactions on Industrial Informatics}{\textsc{1}}{}
 	
 	\tableentryraw{Journal of Mechanical Design}{\textsc{1}}{}
+
+	\tableentryraw{The Aeronautical Journal}{\textsc{3}}{}
 
 	%------------------------------------------------
 	
@@ -690,7 +830,7 @@ I led and supervised a team of engineering students to design and produce a vehi
 		\tableentry{}{\skilllevel{C++}{8}}{}
 		\tableentry{}{\skilllevel{VB}{5}}{}
 		\tableentry{}{\skilllevel{R}{5}}{}
-		\tableentry{}{\skilllevel{Matlab}{8}}{}
+		\tableentry{}{\skilllevel{MATLAB}{8}}{}
 		\tableentry{}{\skilllevel{HTML, CSS}{6}}{}
 		\tableentry{}{\skilllevel{Javascript}{4}}{}
 	
@@ -743,7 +883,7 @@ I led and supervised a team of engineering students to design and produce a vehi
 
 	%------------------------------------------------
 
-	\tableentry{Interactive development environments ~~\faListAlt}{VSCode, Xcode, Visual Studio}{spaceafter}
+	\tableentry{Interactive development environments ~~\faListAlt}{VSCode, Xcode, Visual Studio, RStudio}{spaceafter}
 
 	%------------------------------------------------
 	
@@ -802,7 +942,7 @@ I led and supervised a team of engineering students to design and produce a vehi
 	%----------------------------------------------------------------------------------------
 
 	\begin{itemize}\itemsep0em 
-		\item 3d printing hobbyist
+		\item 3D printing hobbyist
 		\item Car modding (muscle cars) and drag racing
 		\item Tinkering and taking apart any machine and putting it back together!		
 	\end{itemize}
@@ -851,17 +991,29 @@ I led and supervised a team of engineering students to design and produce a vehi
 	
 		%------------------------------------------------
 
-		\tableentry{}{}{spaceafter}
+		% \tableentry{}{}{spaceafter}
 
-		%------------------------------------------------
+		% %------------------------------------------------
 
-		\tableentry{}{\textbf{Prof. Oleg Shiryayev}}{spaceafter}
-		\tableentry{Position}{Assistant Professor}{}
-		\tableentry{Employer}{\href{https://www.mcgill.ca/mecheng/}{Department of Mechanical Engineering}}{}
-		\tableentry{}{\href{https://www.uaf.edu/uaf/}{\textit{University of Alaska Fairbanks}}}{spaceafter}
-		\tableentry{Email}{\href{mailto:oshiryayev@alaska.edu}{oshiryayev@alaska.edu}}{}
+		% \tableentry{}{\textbf{Prof. Oleg Shiryayev}}{spaceafter}
+		% \tableentry{Position}{Assistant Professor}{}
+		% \tableentry{Employer}{\href{https://www.mcgill.ca/mecheng/}{Department of Mechanical Engineering}}{}
+		% \tableentry{}{\href{https://www.uaf.edu/uaf/}{\textit{University of Alaska Fairbanks}}}{spaceafter}
+		% \tableentry{Email}{\href{mailto:oshiryayev@alaska.edu}{oshiryayev@alaska.edu}}{}
 	
-		%------------------------------------------------
+		% %------------------------------------------------
+
+		% \tableentry{}{}{spaceafter}
+
+		% %------------------------------------------------
+
+		% \tableentry{}{\textbf{Prof. Peter Rodgers}}{spaceafter}
+		% \tableentry{Position}{Professor and Associate VP Research Engagement }{}
+		% \tableentry{Employer}{\href{https://www.mcgill.ca/mecheng/}{The Petroleum Institute Research Center}}{}
+		% \tableentry{}{\href{https://www.ku.ac.ae/}{\textit{Khalifa Univeristy}}}{spaceafter}
+		% \tableentry{Email}{\href{mailto:peter.rodgers@ku.ac.ae}{peter.rodgers@ku.ac.ae}}{}
+
+		% %------------------------------------------------
 
 	\end{supertabular}
 
@@ -874,24 +1026,26 @@ I led and supervised a team of engineering students to design and produce a vehi
 	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
 
 	%----------------------------------------------------------------------------------------
-
-		\tableentry{}{\textbf{Prof. Nader Vahdati}}{spaceafter}
-		\tableentry{Position}{Associate Professor}{}
-		\tableentry{Employer}{\href{https://www.mcgill.ca/mecheng/}{Department of Mechanical Engineering}}{}
-		\tableentry{}{\href{https://www.ku.ac.ae/}{\textit{Khalifa Univeristy}}}{spaceafter}
-		\tableentry{Email}{\href{mailto:nader.vahdati@ku.ac.ae}{nader.vahdati@ku.ac.ae}}{}
 	
-	%------------------------------------------------
+		\tableentry{}{\textbf{Prof. Ola Isaksson}}{spaceafter}
+		\tableentry{Position}{Professor}{}
+		\tableentry{Employer}{\href{https://www.chalmers.se/en/departments/ims/Pages/default.aspx}{Department of Industrial and Materials Science}}{}
+		\tableentry{}{\href{https://www.chalmers.se/sv/Sidor/default.aspx}{\textit{Chalmers Univeristy of Technology}}}{spaceafter}
+		\tableentry{Email}{\href{mailto:ola.isaksson@chalmers.se}{ola.isaksson@chalmers.se}}{}
 
-	\tableentry{}{}{spaceafter}
+		%------------------------------------------------
 
-	%------------------------------------------------
+		% \tableentry{}{}{spaceafter}
 
-		\tableentry{}{\textbf{Prof. Peter Rodgers}}{spaceafter}
-		\tableentry{Position}{Professor and Associate VP Research Engagement }{}
-		\tableentry{Employer}{\href{https://www.mcgill.ca/mecheng/}{The Petroleum Institute Research Center}}{}
-		\tableentry{}{\href{https://www.ku.ac.ae/}{\textit{Khalifa Univeristy}}}{spaceafter}
-		\tableentry{Email}{\href{mailto:peter.rodgers@ku.ac.ae}{peter.rodgers@ku.ac.ae}}{}
+		% %------------------------------------------------
+
+		% \tableentry{}{\textbf{Prof. Nader Vahdati}}{spaceafter}
+		% \tableentry{Position}{Associate Professor}{}
+		% \tableentry{Employer}{\href{https://www.mcgill.ca/mecheng/}{Department of Mechanical Engineering}}{}
+		% \tableentry{}{\href{https://www.ku.ac.ae/}{\textit{Khalifa Univeristy}}}{spaceafter}
+		% \tableentry{Email}{\href{mailto:nader.vahdati@ku.ac.ae}{nader.vahdati@ku.ac.ae}}{}
+		
+		% %------------------------------------------------
 
 	\end{supertabular}
 

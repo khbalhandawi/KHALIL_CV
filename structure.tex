@@ -196,8 +196,8 @@ SmallCapsFont=*-SC.ttf
 	} % Duration and conditional full time/part time text
 	\expandafter\ifstrequal\expandafter{#3}{}{}{& {\raggedright\large #3}} % Employer
 	\expandafter\ifstrequal\expandafter{#4}{}{}{& {\raggedright\textsc{#4}}\\} % Location
-	\expandafter\ifstrequal\expandafter{#5}{}{}{& {\raggedright\large\textit{\textbf{#5}}}\\[4pt]} % Job title
-	\expandafter\ifstrequal\expandafter{#6}{}{}{& #6} % Description
+	\expandafter\ifstrequal\expandafter{#5}{}{}{& {\raggedright\large\textit{\textbf{#5}}}} % Job title
+	\expandafter\ifstrequal\expandafter{#6}{}{}{\\[4pt]& #6} % Description
 	\expandafter\ifstrequal\expandafter{#7}{}{\\}{\\[6pt]}
 }
 
@@ -206,12 +206,14 @@ SmallCapsFont=*-SC.ttf
 	\textsc{#1} & \textbf{#2} % Duration and degree
 	\expandafter\ifstrequal\expandafter{#5}{}{}{& {\raggedright\textit{#5}}\\} % Institution
 	\expandafter\ifstrequal\expandafter{#4}{}{}{& #4} % Department
-	\expandafter\ifstrequal\expandafter{#3}{}{}{, {\small\textsc{#3}}\\[6pt]} % Honours, achievements or distinctions (e.g. first class honours)
+	\expandafter\ifstrequal\expandafter{#3}{}{}{, {\small\textsc{#3}}\\} % Honours, achievements or distinctions (e.g. first class honours)
 }
 
 % Command for entering a separate table row -- used as a generic visual element for any section that uses a two column table
 \newcommand{\tableentry}[3]{
-	\textsc{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]} % First the heading, then content, then a conditional insertion of whitespace if the third parameter has any content in it
+	\textsc{#1} % for bullets
+	& #2 % main text
+	\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]} % First the heading, then content, then a conditional insertion of whitespace if the third parameter has any content in it
 }
 
 % Command for entering a separate table row -- used as a generic visual element for any section that uses a two column table
