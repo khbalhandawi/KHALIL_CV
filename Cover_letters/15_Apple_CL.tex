@@ -1,0 +1,174 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{khbalhandawi.github.io} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{0.0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge \cvname}\\\medskip % Your name
+}
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
+			\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\faGlobe} & \href{https://\cvsite}{\cvsite} \\} % GitHub profile
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\raisebox{-1pt}{\faLinkedinSquare} & \href{https://\cvlinkedin}{\cvlinkedin} \\} % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+\end{paracol}
+
+\medskip % Extra whitespace before the next section
+\rule[0pt]{\textwidth}{1pt}\\
+%----------------------------------------------------------------------------------------
+%	ADDRESS
+%----------------------------------------------------------------------------------------
+\today\\[6pt]
+
+
+Apple Special Projects Team\\
+Santa Clara Valley (Cupertino), CA, United States\\
+Re: Sr. Machine Learning Simulation Engineer - SPG\\
+Role Number: 200355037\\[6pt] \medskip
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+Dear hiring manager,
+
+\medskip % Extra whitespace before the next section 
+
+I am postdoctoral fellow at the Université de Montréal, department of computer science and operations research (DIRO), https://diro.umontreal.ca/accueil/ and I am very excited about this particular role and opportunity at Apple because of my  knowledge and understanding of simulation-based engineering design on which my doctorate is based on. I have considerable research experience in this field and particularly, the area of design space exploration. Based on the job description, I can tell that the Apple Special Projects Group is looking for someone that is able reconcile physics-based simulation with data-driven and statistical models.
+
+\medskip % Extra whitespace before the next section
+
+My doctoral and postdoctoral experiences at McGill University and Chalmers University of technology (Sweden), involved the need for accelerating product design through automation and design space exploration. Conventionally, product design relies on physics-based simulation models to evaluate performance, etc. I used an ensemble of statistical models to substitute physics-based models as a means of accelerating the search algorithm. This fits into stream (B) of the job description.
+
+\medskip % Extra whitespace before the next section
+
+For example, I developed a thermo-mechanical simulation model to asses the impact of geometry, process parameters, and design on the performance of an additively manufactured aeroengine part. The computational cost of exploring the high dimensional could be mitigated by the use of statistical models as surrogates for the simulation. Numerical search algorithms were also used to reduce the computational cost of exploring the design space. This work has been published in the Journal of Mechanical Design (JMD), where it was selected for an editor's choice award. 
+
+\medskip % Extra whitespace before the next section
+
+My software development experience comes from small scale projects at various research labs where I have worked. Examples include:
+
+\begin{itemize}
+	\item A tool for performing sensitivity studies on design problems where only observations from simulation models are available \href{https://github.com/khbalhandawi/scale_AM_webapp}{https://github.com/khbalhandawi/scale\_AM\_webapp}.
+	\item A tool for designing under uncertainty by allocating design margins as a buffer against changing requirements \href{https://sed-group.github.io/mvmlib/}{https://sed-group.github.io/mvmlib/}.
+	\item An agent-based model for modelling populations of agents described by individual demographics (used for modeling the spread of diseases in a population). In this project I tried to maximize the throughput of the simulation model by profiling the code and accelerating certain parts of it using parallel compute. This could fit into stream (A) of the job description.\\ 
+	\href{https://github.com/khbalhandawi/COVID_SIM_GPU}{https://github.com/khbalhandawi/COVID\_SIM\_GPU}
+\end{itemize}
+
+\medskip % Extra whitespace before the next section
+
+I understand that the role involves the reinforcement learning branch of ML. I have not worked on any practical projects involving reinforcement learning but it is an area that excites me a lot and I am willing to put a lot of extra effort to bring myself up to speed with the state-of-the-art.  
+
+\medskip % Extra whitespace before the next section
+
+I believe that my strong mathematical and simulation skills, experience in software development, and domain knowledge in mechanical engineering should prove useful for increasing the expressiveness of ML models for physical systems. I feel that being a part of the SPG Team at Apple is way to fulfil my career goals and make an impact in the lives of millions of people. I hope you enjoy going through my profile and my projects on my website. \href{https://khbalhandawi.github.io/projects/}{https://khbalhandawi.github.io/projects/}
+
+
+\medskip % Extra whitespace before the next section
+
+Yours sincerely,
+
+\medskip % Extra whitespace before the next section
+
+Khalil Al Handawi
+
+\begin{figure*}[h]
+	\includegraphics[width=0.2\textwidth]{Signiture.png}
+\end{figure*}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
+% RAW text
+% Dear talent acquisition officer,
+% I am postdoctoral fellow at the Université de Montréal, department of computer science and operations research (DIRO), https://diro.umontreal.ca/accueil/ and I am very excited about this particular role and opportunity at Google because  of my deep knowledge and understanding of simulation-based engineering design on which my doctorate is based on. I have considerable research experience in this field and particularly, the area of design space exploration. Based on the job description, I can tell that the Google NEST team is looking for someone that is able reconcile physics-based simulation with efficient and robust design.
+
+% My doctoral and postdoctoral experiences at McGill University and Chalmers University of technology (Sweden), happen to focus on overcoming the various challenges associated with this area. Although my doctorate focused on aerospace applications (with GKN aerospace in Trollhättan, Sweden as an industry partner) and not smart home technology, I feel that the simulation principles used in both smart home and aerospace products are similar and may overlap sometimes. My particular experience focused on manufacturing aerospace components using additive manufacturing (Directed Energy Deposition) for which I developed thermo-mechanical simulation models (using NX CAD for geometry and pathing, and Abaqus for finite element simulation) to asses the impact of geometry, process parameters, and design on the performance of the aeroengine part being made and check for warping and residual stresses due to the thermal loads. I believe that additive manufacturing technologies can be used in smart home appliances because of the flexibility of the designs that they offer. This is an area where I can come in and contribute. 
+
+% After setting up all the simulation-based models, I automated the workflow using Application Programming Interface (APIs) scripting (NXOpen and Abaqus Python API)  to generate and analyze various parametric designs. We used this to help out our industry partner at GKN aerospace explore thousands of design alternatives and narrow down the design space to a few promising designs. One major challenge that I encountered was the computational cost of running all these simulations. I proposed the use of surrogate modeling and surrogate-assisted optimization to reduce the computational cost and explore the design space iteratively using optimization rather than by sampling (e.g., random sampling and full factorial grids). This work has been published in the Journal of Mechanical Design (JMD), where it was selected for an editor's choice award and will receive recognition from the American Society of Mechanical Engineers (ASME) community during a conference in St. Louis, Missouri.
+
+% I have recently started a position in the Computer Science and Operations Research Department at the Université de Montréal. This opportunity is helping me understand the mathematical foundation of the optimization and statistical modeling tools that I used during my doctorate because I believe that engineering design will rely on a combination of statistical modeling and simulation-based models for design space exploration.
+
+% Finally, I have worked on small scale software development projects at various research labs, particularly the systems engineering design lab at Chalmers University, Sweden to develop open-source python packages for translating design theory into practice and software. This experience has taught me how to work in a team albeit not a large one as would be the case in industry. Nonetheless, I have learned a lot of sound coding practices and package development standards that ensure collaboration and development are possible by others.
+
+% I believe that my strong mathematical and simulation skills, experience in software development, and understanding of the industry's simulation needs will add a lot of value to the development efforts of the Google Nest Team. I hope you enjoy going through my profile and my projects on my website (\href{https://khbalhandawi.github.io/projects/}{https://khbalhandawi.github.io/projects/}) and I hope we can discuss all of this. I feel that being a part of a giant technology firm that provides hundreds of revolutionary products such as Google will allow me to reach my career goals and make an impact in the lives of millions of people, whether it is for those that have a place to call home or those that don't. This is what drives my research and in particular my focus on product design.
