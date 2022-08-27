@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{khbalhandawi.github.io} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{0.0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge \cvname}\\\medskip % Your name
+}
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
+			\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\faGlobe} & \href{https://\cvsite}{\cvsite} \\} % GitHub profile
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\raisebox{-1pt}{\faLinkedinSquare} & \href{https://\cvlinkedin}{\cvlinkedin} \\} % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+\end{paracol}
+
+\medskip % Extra whitespace before the next section
+\rule[0pt]{\textwidth}{1pt}\\
+%----------------------------------------------------------------------------------------
+%	ADDRESS
+%----------------------------------------------------------------------------------------
+\today\\[6pt]
+Ansys, Montr\'{e}al, Qu\'{e}bec, Canada\\
+Re: R\&D Engineer II\\
+w/m - 10867\\[6pt] \medskip
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+Dear hiring manager,
+
+\medskip % Extra whitespace before the next section 
+I would like to express my enthusiasm and excitement for the opportunity to be a part of Ansys and work with leading industry experts on developing cutting-edge simulation and computational solutions. I have worked with complex engineering models for the better part of a decade since the beginning of my graduate studies and have a good understanding of the modeling needs and expectations of various industries ranging from energy, aerospace, and healthcare. I understand, that the position pertains to the computational electromagnetic (CEM) engines of the ANSYS HFSS simulation product. I have experience with other aspects of CAE but have not worked directly with electromagnetic simulations in the past.
+
+\medskip % Extra whitespace before the next section
+
+The main emphasis of my doctoral dissertation was on mitigating uncertainty and change during engineering design. This task required access to a variety of simulation and data-driven models to inform decisions and estimate uncertainty at various stages of engineering design. This task also involved a lot of design automation and required the used automated tools to ingest engineering data and construct suitable surrogate models in terms of how well they approximate the performance and feasibility of the design during design space exploration.
+
+\medskip % Extra whitespace before the next section
+
+I integrated other open-source surrogate modeling libraries as part of my framework to achieve the required objectives of my research. This exposed me to a lot of surrogate modeling software that can be used to inspire and improve existing postprocessing and data visualization workflows at the HFSS simulation product. These tools were developed in both C++, python, and MATLAB and can ported to the language of choice during development. I applied these solutions to real industrial problems in the aerospace industry at GKN Aerospace, Sweden and gained valuable practical experience as a result of doing so.
+
+\medskip % Extra whitespace before the next section
+
+I also worked on public health projects during my postdoctoral studies and developed an epidemiological simulation application for predicting the trajectory of the pandemic. The simulation was interactive and employed a Qt user interface for displaying results and allowing the user to interact with the simulation in realtime. It is from this exercise that I am familiar with sockets and signals to communicate between the C++ backend and the UI. I have also used parallel computation as part of this software project. I used the CUDA C++ API to accelerate linear algebra operations. I also have some experience with the intel MPI API for parallel computation that I have used to run multiple simulations of said model in parallel during optimization studies. This experience helped familiarize me with Object-Oriented Programming (OOP) concepts in C++ development and should prove valuable when attempting to author useful digital solutions, where computational efficiency and cost are key.
+
+\medskip % Extra whitespace before the next section
+
+I also have experience with a number of machine learning frameworks such as PyTorch and automatic differentiation which could prove useful in building models where training data is abundant and in more recent applications, assist with approximating the solutions to known Partial Differential Equations (PDEs) common in engineering simulation (e.g., Navier-Stokes equations).
+
+\medskip % Extra whitespace before the next section
+
+I have recently started a position in the Computer Science and Operations Research Department at the Universit\'{e} de Montr\'{e}al and believe that my network there will be valuable to Ansys when research and development are necessary to push the limits of CEM engines. I am working with Prof. Fabian Bastin, who would be very happy to form collaborations and provide useful insights and contributions to the Ansys development team.
+
+\medskip % Extra whitespace before the next section
+
+Finally, I have worked on small scale software development projects at various research labs, particularly the systems engineering design lab at Chalmers University, Sweden to develop open-source python packages for translating theory into practice and software. This experience has taught me how to work in a team albeit not a large one as would be the case in industry. Nonetheless, I have learned a lot of sound coding practices and package development standards that ensure collaboration and development are possible by others. I am also experienced at using git for source control.
+
+\medskip % Extra whitespace before the next section
+
+I believe that my strong mathematical and simulation skills, experience in software development, and understanding of the industry's simulation needs will add a lot of value to the development efforts of the Ansys. I hope you enjoy going through my profile and my projects on my website and I hope we can discuss all of this. Needless to say, I am a huge fan of the technologies and products of Ansys which were pivotal for my engineering education. I feel that this passion will push me far beyond my abilities.
+
+(\href{https://khbalhandawi.github.io/projects/}{https://khbalhandawi.github.io/projects/})
+
+
+\medskip % Extra whitespace before the next section
+
+Yours sincerely,
+
+\medskip % Extra whitespace before the next section
+
+Khalil Al Handawi
+
+\begin{figure*}[h]
+	\includegraphics[width=0.2\textwidth]{Signiture.png}
+\end{figure*}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
