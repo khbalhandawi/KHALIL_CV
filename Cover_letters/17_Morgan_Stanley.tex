@@ -1,0 +1,145 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{khbalhandawi.github.io} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{0.0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge \cvname}\\\medskip % Your name
+}
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
+			\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\faGlobe} & \href{https://\cvsite}{\cvsite} \\} % GitHub profile
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\raisebox{-1pt}{\faLinkedinSquare} & \href{https://\cvlinkedin}{\cvlinkedin} \\} % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+\end{paracol}
+
+\medskip % Extra whitespace before the next section
+\rule[0pt]{\textwidth}{1pt}\\
+%----------------------------------------------------------------------------------------
+%	ADDRESS
+%----------------------------------------------------------------------------------------
+\today\\[6pt]
+Morgan Stanley, Montr\'{e}al, Qu\'{e}bec, Canada\\
+Re: Python Developer - Infrastructure Observability Engineering\\
+Job Number:  3224568\\[6pt] \medskip
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+Dear hiring manager,
+
+\medskip % Extra whitespace before the next section 
+I would like to express my enthusiasm and excitement for the opportunity develop software solutions for Morgan Stanley. I come from a mechanical engineering background, but I have worked with computational and statistical models for the better part of my career (2017 - present). As a result, I have the sufficient depth of knowledge to understand software development cycles and practices as can be seen in the various software packages that I have authored as part of my academic career.
+
+\medskip % Extra whitespace before the next section
+
+I am currently a post-doctoral research at the department of computer science and operations research (DIRO) at the Universit\'{e} de Montr\'{e}al working under the supervision of Prof. Fabian Bastin, where I am recieving valuable training on computation, simulation, and optimization as part of an industrial project with the international air transport association (IATA). My current research focuses on developing a SQL database for archival and retrieval of flight records over the past decade. The database is intended to provide a data pipeline so that we may draw insights data about the past and current state of the civil aviation network. As part of this experience I have managed to understand database design, mySQL, and various data visualization and processing tools in R and Python.
+
+\medskip % Extra whitespace before the next section
+
+I have also authored several Python libraries to facilitate complex engineering design analyses that are common in the industry. For example, engineers wish to understand the sensitivity of their designs with respect to certain decisions and client requirements. This results in changes that propagate through the various systems of the product (e.g., a change in an aircraft's wing could propagate to the fueselage design). I authored a Python library that performs said sensitivity and change propagation analysis on an engineering system (defined by the user) and returns various results and visualizations to convey the sensitivity results \href{https://sed-group.github.io/mvmlib/index.html}{https://sed-group.github.io/mvmlib/index.html}. Furthermore, I have deployed such modes as flask applications to provide a simpler graphical interface \href{https://github.com/khbalhandawi/scale_AM_webapp}{https://github.com/khbalhandawi/scale\_AM\_webapp}
+
+\medskip % Extra whitespace before the next section
+
+I also worked on public health projects during my postdoctoral studies and developed an epidemiological simulation application for predicting the trajectory of the pandemic. The simulation was interactive and employed a Qt user interface for providing a dashboard that the user can interact with during the simulation in realtime. This was a C++ library but laid out the foundations of object-oriented programming for me. I have also used parallel computation as part of this project (I used CUDA to accelerate linear algebra operations). I also have experience with a number of machine learning frameworks such as PyTorch and automatic differentiation which could prove useful for building statistical models where training data is abundant (e.g., the telemetry data steam that I may be working with at Enterprise Technology \& Services (ETS)). I have also deployed said machine learning models (for COVID-19 forecasting) as flask applications to allow users to infer the pandemic growth rate and make predictions \href{https://covid-forecaster-lebanon.herokuapp.com/}{https://covid-forecaster-lebanon.herokuapp.com/}.
+
+\medskip % Extra whitespace before the next section
+
+Altough, I have worked on software projects for research purposes, this experience has taught me how to collaborate on such projects (through git, etc.) and I learned a lot of sound coding practices. I believe that my strong mathematical and simulation skills, experience in software development, and research skills could add a lot of value to the ETS team. I feel that what I may lack in direct industrial experience, I can more than make up for through my research skills and ability to create novel solutions, while leveraging my engineering background to solve complex problems. I hope you enjoy going through my profile and my projects on my website and I hope we get a chance to discuss my skillset (\href{https://khbalhandawi.github.io/projects/}{https://khbalhandawi.github.io/projects/}).
+
+
+\medskip % Extra whitespace before the next section
+
+Yours sincerely,
+
+\medskip % Extra whitespace before the next section
+
+Khalil Al Handawi
+
+\begin{figure*}[h]
+	\includegraphics[width=0.2\textwidth]{Signiture.png}
+\end{figure*}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
