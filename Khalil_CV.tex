@@ -81,7 +81,7 @@
 		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
 			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
 			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
-			% \ifthenelse{\equal{\cvnumberphone}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+			\ifthenelse{\equal{\cvnumberphone}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
 			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
 			\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\small\faGlobe} & \href{https://\cvsite}{\cvsite} \\} % Website
 			\ifthenelse{\equal{\cvgithub}{}}{}{\raisebox{-1pt}{\faGithub} & \href{https://\cvgithub}{\cvgithub} \\} % GitHub profile
@@ -117,8 +117,8 @@
 	\tableentrytwo{\textsc{Machine learning:}}{-~~Deep learning (recurrent neural networks)}{}
 	\tableentrytwo{}{-~~Hyperparameter optimization}{spaceafter}
 
-	\tableentrytwo{\textbf{Software}}{MATLAB and Simulink, Python (pandas, PyTorch, matplotlib), C++ (CUDA, OpenMP, Qt)}{}
-	\tableentrytwo{}{FEA (Abaqus, ANSYS), CAD (SOLIDWORKS, NX Siemens), DAQ (NI LabVIEW)}{}
+	\tableentrytwo{\textbf{Software}}{MATLAB/Simulink, Python (pandas, PyTorch, matplotlib, flask), C++ (CUDA, OpenMP, Qt)}{}
+	\tableentrytwo{}{R (ggplot2, tidyverse), mySQL, FEA (Abaqus, ANSYS), CAD (SOLIDWORKS, NX Siemens), DAQ (NI LabVIEW)}{}
 
 	%------------------------------------------------
 	
@@ -213,8 +213,20 @@
 	\tableentry{$\bullet$}{Work with the International Air Transport Association (IATA) to develop data analytics solutions for codesharing and flight scheduling in the civil aviation industry.}{}
 	\tableentry{$\bullet$}{Assess the effectiveness and impact of the IATA operation safety audit (IOSA) on air travel accessibility and cooperation between airlines.}{}
 	\tableentry{$\bullet$}{Construct a mariaDB mySQL database for storing flight records spanning the last decade for research purposes.}{}
-	\tableentry{$\bullet$}{Leverage unsupervised learning and expectation maximization algorithms to discover latent variables in the IATA dataset.}{spaceafter}
+	\tableentry{$\bullet$}{Leverage unsupervised learning and expectation maximization algorithms to discover latent variables in the IATA dataset using R, Python, and Julia packages.}{spaceafter}
 	
+	%------------------------------------------------
+	
+	\workposition{Sep 2022 -- Dec 2022} % Duration
+	{} % FT/PT (full time or part time)
+	{Deparment of Mechanical Engineering, McGill University} % Employer
+	{Montr\'{e}al, Canada} % Location
+	{Adjunct Lecturer} % Job title
+	{}{} % Description
+	\tableentry{$\bullet$}{Was the sole instructor of the Engineering System Optimization course (MECH559).}{}
+	\tableentry{$\bullet$}{Developed Python notebooks as teaching aids for the students to understand the implementation of modern optimization algorithms \href{https://github.com/khbalhandawi/MECH559_notebooks/tree/master}{https://github.com/khbalhandawi/MECH559\_notebooks}.}{}
+	\tableentry{$\bullet$}{Modernized the course to use the latest optimization and machine learning tools.}{}
+
 	%------------------------------------------------
 
 	\workposition{Sep 2021 -- Dec 2021} % Duration
@@ -224,7 +236,7 @@
 	{Postdoctoral Researcher} % Job title
 	{}{} % Description
 	\tableentry{$\bullet$}{Integrate my doctoral research on design under uncertainty into the activities of the SED lab.}{}
-	\tableentry{$\bullet$}{Develop a margin analysis library for change propagation management in engineering systems: \href{https://sed-group.github.io/mvmlib/notebooks/strut_example.html}{https://sed-group.github.io/mvmlib/notebooks/strut\_example.html}.}{}
+	\tableentry{$\bullet$}{Authored a Python library for performing margin and change propagation management in engineering systems: \href{https://sed-group.github.io/mvmlib/index.html}{https://sed-group.github.io/mvmlib/index.html}.}{}
 	\tableentry{$\bullet$}{Conduct research into design margins and links to probabilistic quantities such as reliability.}{}
 	\tableentry{$\bullet$}{Foster collaborations with the industry (GKN Aerospace) and write research proposals.}{spaceafter}
 
@@ -237,7 +249,7 @@
 	{Postdoctoral Researcher} % Job title
 	{}{} % Description
 	\tableentry{$\bullet$}{Developed a deep learning forecasting model for COVID-19 trajectories based on cross-sectional patient data. The forecasting model is a sequence-to-sequence model that uses encoder and decoder RNNs with attention to transform cross-sectional patient data to a COVID-19 trajectory.}{}
-	\tableentry{$\bullet$}{Deployed the trained forecasting model online for public use: \href{https://covid-forecaster-lebanon.herokuapp.com/}{https://covid-forecaster-lebanon.herokuapp.com/}.}{}
+	\tableentry{$\bullet$}{Deployed the trained forecasting model online as a {Flask} application: \href{https://covid-forecaster-lebanon.herokuapp.com/}{https://covid-forecaster-lebanon.herokuapp.com/}.}{}
 	\tableentry{$\bullet$}{Applied novel stochastic optimization techniques for hyperparameter optimization problems in machine learning and used them to fine tune the sequence-to-sequence model.}{}
 	\tableentry{$\bullet$}{Built and published a stochastic model of the spread of COVID-19 in a population using artificial life models (agent-based approaches) and used stochastic optimization algorithms to solve for optimal public health policies \href{https://github.com/khbalhandawi/COVID_SIM_GPU}{https://github.com/khbalhandawi/COVID\_SIM\_GPU}.}{}
 	\tableentry{$\bullet$}{Lectured the engineering systems optimization class and developed MATLAB training modules and projects related to multidisciplinary optimization (NoHiMDO) with applications to aircraft design.}{spaceafter}
@@ -255,7 +267,9 @@
 	\tableentry{$\bullet$}{Developed a thermomechanical simulation model for modeling additive manufacturing repair and life extension processes using transient coupled thermal/mechanical FEA simulations.}{}
 	\tableentry{$\bullet$}{Write automation scripts using NX Siemens and Abaqus Python APIs to automate geometry generation, meshing, anaylsis, and postprocessing of parametric simulations.}{}
 	\tableentry{$\bullet$}{Co-developed a novel lifecycle cost model based on system dynamics to model the effect of life extension on lifecycle costs.}{}
-	\tableentry{$\bullet$}{Used machine learning models to substitute expensive thermomechanical simulations in design studies and developed a variant of kernel smoothing for estimating the sensitivity of design solutions to different requirements by using a Jacobian matrix \href{https://scale-am.herokuapp.com/}{https://scale-am.herokuapp.com/.}}{spaceafter}
+	\tableentry{$\bullet$}{Used machine learning models to substitute expensive thermomechanical simulations in design studies and developed a variant of kernel smoothing for estimating the sensitivity of design solutions to different requirements by using a Jacobian matrix.}{}
+	\tableentry{$\bullet$}{Authored a {Flask} application for conducting sensitivity and scalability studies on design of experiments data:
+	\href{https://github.com/khbalhandawi/scale_AM_webapp}{https://github.com/khbalhandawi/scale\_AM\_webapp}.}{spaceafter}
 
 	%------------------------------------------------
 
@@ -333,7 +347,7 @@
 	{}{}  % Description
 	\tableentry{$\bullet$}{System dynamics and controls course – Conducted lab sessions and held office hours.}{}
 	\tableentry{$\bullet$}{Computer aided design – Conducted computer lab sessions.}{}
-	\tableentry{$\bullet$}{Mentored undergraduate students participating in the Abu Dhabi Solar Challenge (building and designing a solar-powered vehicle).}{}
+	\tableentry{$\bullet$}{Mentored undergraduate students participating in the Abu Dhabi Solar Challenge.}{}
 	\tableentry{$\bullet$}{Co-mentored an undergraduate capstone project.}{spaceafter}
 
 	%------------------------------------------------
@@ -354,7 +368,6 @@
 %----------------------------------------------------------------------------------------
 %	AWARDS
 %----------------------------------------------------------------------------------------
-\newpage
 \section{Awards and recognition}
 
 % Example \tableentry{} command to add another line:
