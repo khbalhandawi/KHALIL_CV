@@ -31,6 +31,8 @@
 
 \usepackage{enumitem} % for formatting bulleted lists and reducing whitespace before bullet list
 
+\usepackage{multirow}
+
 %----------------------------------------------------------------------------------------
 %	DOCUMENT MARGINS
 %----------------------------------------------------------------------------------------
@@ -201,13 +203,15 @@
 
 % Command for entering a new work position
 \newcommand{\workposition}[7]{
-	
+	\multicolumn{2}{c}{
+		\expandafter\ifstrequal\expandafter{#3}{}{}{\textbf{#3}} % Employer
+		\expandafter\ifstrequal\expandafter{#4}{}{}{\hfill {\raggedright\textsc{#4}}} % Location
+	}
+	\expandafter\ifstrequal\expandafter{#3#4}{}{\\[-10pt]}{\\}
 	\textsc{
 		\expandafter\ifstrequal\expandafter{#1}{}{}{#1}
 		\expandafter\ifstrequal\expandafter{#2}{}{}{\hspace{6pt}\footnotesize{(#2)}}
 	} % Duration and conditional full time/part time text
-	\expandafter\ifstrequal\expandafter{#3}{}{}{& {\textbf{#3}}} % Employer
-	\expandafter\ifstrequal\expandafter{#4}{}{}{\hfill {\raggedright\textsc{#4}}\\} % Location
 	\expandafter\ifstrequal\expandafter{#5}{}{}{& {\textit{{#5}}}\\[4pt]} % Job title
 	\expandafter\ifstrequal\expandafter{#6}{}{}{& #6} % Description
 	\expandafter\ifstrequal\expandafter{#7}{}{}{\\[6pt]}
