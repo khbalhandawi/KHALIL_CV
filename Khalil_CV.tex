@@ -62,7 +62,7 @@
 %----------------------------------------------------------------------------------------
 
 \parbox[top][0.05\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
-	\vspace{-0.05\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\vspace{-0.02\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\raggedright % left align text
 	{\Huge \textbf{\cvname}}\\\medskip % Your name
 }
@@ -107,7 +107,7 @@
 
 	\tableentrytwo{\textbf{Technical}}{Numerical simulation, optimization, statistical modeling, machine learning}{}
 
-	\tableentrytwo{\textbf{Software}}{MATLAB/Simulink, Python, C++, R, mySQL, Abaqus, NX Siemens}{}
+	\tableentrytwo{\textbf{Software}}{MATLAB, Python, C++, R, mySQL, Abaqus, NX Siemens, ANSYS Fluent (basic usage)}{}
 
 	%------------------------------------------------
 	
@@ -139,12 +139,14 @@
 
 	\workposition{May 2022 -- present} % Duration
 	{} % FT/PT (full time or part time)
-	{Computer Science and Operations Research, Universit\'{e} de Montr\'{e}al} % Employer
+	{Department of Computer Science and Operations Research, Universit\'{e} de Montr\'{e}al} % Employer
 	{Montr\'{e}al, Canada} % Location
 	{Postdoctoral Researcher} % Job title
 	{}{} % Description
 	\tableentry{$\bullet$}{Analyze IATA data involving \textbf{25M flight schedules} using graph representation learning.}{}
 	\tableentry{$\bullet$}{Develop community detection algorithms for graphs with over \textbf{10K nodes} and \textbf{100K edges}.}{}
+	\tableentry{$\bullet$}{Organize flight schedule data into a mySQL database for  archival, and retrieval of data.}{}
+	\tableentry{$\bullet$}{Perform research on graph representation learning methods for analyzing the data.}{spaceafter}
 	
 	%------------------------------------------------
 	
@@ -155,8 +157,9 @@
 	{Adjunct Lecturer} % Job title
 	{}{} % Description
 	\tableentry{$\bullet$}{Was the sole instructor of the Engineering Systems Optimization course (MECH559).}{}
-	\tableentry{$\bullet$}{Developed \href{https://github.com/khbalhandawi/MECH559_notebooks/tree/master}{Python notebooks} as teaching aids for the students to understand the implementation of modern optimization algorithms and recieved an engagment rate of \textbf{70\%} with the students.}{}
-
+	\tableentry{$\bullet$}{Developed \href{https://github.com/khbalhandawi/MECH559_notebooks/tree/master}{Python notebooks} as teaching aids for the students to understand the implementation of modern optimization algorithms and recieved an engagement rate of \textbf{70\%} with the students.}{}
+	\tableentry{$\bullet$}{Hosted \textbf{two guest} lectures with aerospace industry professionals to demo optimization applications.}{}
+	
 	%------------------------------------------------
 
 	\workposition{Jan 2021 -- Apr 2022} % Duration
@@ -165,9 +168,10 @@
 	{} % Location
 	{Postdoctoral Researcher} % Job title
 	{}{} % Description
+	\tableentry{$\bullet$}{Researched simulation-based decision-making in public health and policy making during epidemics.}{}
+	\tableentry{$\bullet$}{Developed \href{https://covid-forecaster-lebanon.herokuapp.com/}{deep learning COVID-19 forecasting models} with an accuracy of \textbf{$\pm$50 daily cases}.}{}
 	\tableentry{$\bullet$}{Developed a hyperparameter optimization framework for machine learning based on direct search.}{}
-	\tableentry{$\bullet$}{Developed \href{https://covid-forecaster-lebanon.herokuapp.com/}{deep learning COVID-19 forecasting models} with \textbf{7-day} forecast window and an accuracy of \textbf{$\pm$50 daily cases}.}{}
-	\tableentry{$\bullet$}{Developed a mechanistic \href{https://github.com/khbalhandawi/COVID_SIM_GPU}{COVID-19 model} with GPU acceleration with a \textbf{1000X} performance enhancment relative to state-of-the-art epidemic simulators.}{}
+	\tableentry{$\bullet$}{Develop GPU accelerated \href{https://github.com/khbalhandawi/COVID_SIM_GPU}{epidemic models} for high simulation throughput (\textbf{1000X }).}{}
 
 	%------------------------------------------------
 
@@ -177,8 +181,9 @@
 	{} % Location
 	{Research assistant} % Job title
 	{}{}  % Description
-	\tableentry{$\bullet$}{Developed mathematical frameworks and \href{https://github.com/khbalhandawi/scale_AM_webapp}{software} for design space exploration and optimization achieving a \textbf{99.8\% reduction} in the effort to explore a 4-dimensional design space.}{}
-	\tableentry{$\bullet$}{Participated in a \href{https://www.chalmers.se/en/departments/ims/news/Pages/Optimizationdriven-setbased-design-.aspx}{technology transfer} at GKN Aerospace and provided Python training.}{}
+	\tableentry{$\bullet$}{Part of \textbf{Canadian/European industrial project} investigating additive repair technologies for aeroengine parts. I focused on optimization of aerospace design for AM remanufacturing.}{}
+	\tableentry{$\bullet$}{Developed mathematical tools and \href{https://github.com/khbalhandawi/scale_AM_webapp}{software} for design space exploration and optimization achieving a \textbf{99.8\% reduction} in effort to explore a 4-dimensional design space relative to full factorial design.}{}
+	\tableentry{$\bullet$}{Participated in a \href{https://www.chalmers.se/en/departments/ims/news/Pages/Optimizationdriven-setbased-design-.aspx}{technology transfer} at GKN Aerospace, providing Python training on said tools.}{}
 	\tableentry{$\bullet$}{Resulted in the \textbf{\href{https://www.gknaerospace.com/en/our-technology/2022/additive-manufacturing-research-paper-receives-journal-of-mechanical-design-award/}{best paper}} award by the ASME Journal of Mechanical Design in 2021.}{spaceafter}
 
 	%------------------------------------------------
@@ -189,8 +194,9 @@
 	{G\"{o}teborg, Sweden} % Location
 	{Postdoctoral Researcher} % Job title
 	{}{} % Description
+	\tableentry{$\bullet$}{Research change propagation and absorption in engineering design (applied to aeroengine systems).}{}
 	\tableentry{$\bullet$}{Authored a \href{https://sed-group.github.io/mvmlib/index.html}{Python library} for margin and change propagation management in engineering systems.}{}
-	\tableentry{$\bullet$}{Used said library in design space exploration to concurrently develop and analyze \textbf{6,552 conceptual designs} of an aeroengine component.}{spaceafter}
+	\tableentry{$\bullet$}{Used said library in design space exploration to concurrently develop and analyze \textbf{6,552 conceptual designs} of an aeroengine component and \href{https://khbalhandawi.github.io/projects/1_project/}{visualize the results} using interactive tools.}{spaceafter}
 
 	%------------------------------------------------
 
@@ -212,9 +218,8 @@
 	{Research Assistant, Asset Integrity Management Systems Lab} % Job title
 	{}{}  % Description
 	\tableentry{$\bullet$}{Developed fiber optic structural monitoring sensors for mitigating upto \textbf{\$1M of corrosion costs}.}{}
+	\tableentry{$\bullet$}{Developed and simulated a \href{https://khbalhandawi.github.io/projects/6_project/}{fiber optic-based corrosion sensor} with an accuracy of \textbf{$\pm$2mm/s}.}{}
 	\tableentry{$\bullet$}{Developed a new accelerated corrosion testing setup to simulate \textbf{2 years of corrosion in 2 hours}.}{}
-	\tableentry{$\bullet$}{Mentored capstone students to build and control a \textbf{300 kg} hydraulic robot manipulator.}{spaceafter}
-
 	%------------------------------------------------
 	
 \end{supertabular}
@@ -327,30 +332,17 @@
 
 	\tableentryraw{\textbf{Winner of best data visualization} and was ranked \textbf{2nd for best presentation} in the 11th Montreal Industrial Problem Solving Workshop}{\textsc{IVADO, Montreal, Canada}}{spaceafter}
 
-	\tableentryraw{Led the first UAE team to successfully qualifying and competing in the Baja SAE competition}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
-
-	\tableentryraw{Awarded \textbf{2nd place} in the Abu Dhabi Solar Challenge (10,000 AED)}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
+	\tableentryraw{Led the first UAE team to successfully qualifying and competing in the Baja SAE competition and awarded \textbf{2nd place} in the Abu Dhabi Solar Challenge (10,000 AED)}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
 
 	%------------------------------------------------
 	
 \end{supertabular}
-
+%
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-
+%
 \section{Selected publications}
-
-% Example \longformdescription{} command to add another publication:
-
-%\longformpublication{Reference (format this manually as desired)}
-
-%------------------------------------------------
-
-% \textbf{\large Submitted preprints}\medskip \hrule \medskip
-
-% \longformpublication{
-% A. Khalil, \textbf{K. Al Handawi}, Z. Mohsen, A. Abdel Nour, R. Feghali, I. Chamseddine and M. Kokkolaras (2021). Predicting COVID-19 incidences from patients’ viral load using deep-learning. \textit{medRxiv}} \href{https://doi.org/10.1101/2021.08.14.21262064}{doi: 10.1101/2021.08.14.21262064}
 
 %------------------------------------------------
 
@@ -411,7 +403,7 @@
 %	PERSONAL INTERESTS
 %----------------------------------------------------------------------------------------
 
-\section{Personal Interests}
+\section{Conversation starters}
 
 \columnratio{0.5,0.5} % The relative ratios of the three columns in the references
 
@@ -420,9 +412,9 @@
 \begin{paracol}{2} % Begin the multi-column environment
 
 	\begin{itemize}\itemsep0em 
-		\item Gymnastics and calisthenics training
+		\item Competitive gaming
 		\item Powerlifting
-		\item Competitive gaming	
+		\item Tabletop games (Warhammer)
 	\end{itemize}
 		
 	%----------------------------------------------------------------------------------------
@@ -433,8 +425,8 @@
 
 	\begin{itemize}\itemsep0em 
 		\item 3D printing hobbyist
-		\item Car modding (muscle cars) and drag racing
-		\item Tinkering/modifying any machine I get my hands on!		
+		\item Car enthusiast
+		\item Tinkering and restoration of old machines	
 	\end{itemize}
 
 	%----------------------------------------------------------------------------------------
