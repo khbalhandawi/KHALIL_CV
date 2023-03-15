@@ -24,7 +24,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
 
 \input{structure.tex} % Include the file that specifies the document structure
 
@@ -44,14 +44,22 @@
 \cvjobtitle{Engineer, designer, and researcher} % Job title/career
 
 \cvdate{} % Date of birth
-\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
-\cvnumberphone{} % Phone number
+\cvaddress{500 Avenue Des Pins Ouest, Apt 706\\ & H2W 1S7, Montr\'{e}al, Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{(514) 572-7367} % Phone number
 \cvsite{khbalhandawi.github.io} % Personal website
-\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvmail{khalil.al.handawi@umontreal.ca} % Email address
 \cvgithub{github.com/khbalhandawi} % GitHub
 \cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
 
 \aboutme{} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+% optional sections
+% show descriptions of below sections, to hide simply leave blank e.g., \cvdescribe{}
+\cvdescribe{}
+\cvskills{}
+\cvhobbies{}
+\cvreferences{}
+\cvcourses{}
 
 \begin{document}
 
@@ -80,7 +88,7 @@
 	\colorbox{shade}{ % Create the coloured box
 		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
 			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
-			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
+			\raisebox{-1pt}{\faHome} & \cvaddress \\ % Address
 			\ifthenelse{\equal{\cvnumberphone}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
 			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
 			\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\small\faGlobe} & \href{https://\cvsite}{\cvsite} \\} % Website
@@ -122,7 +130,7 @@
 
 %------------------------------------------------
 
-\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.17\linewidth}p{0.6\linewidth}>{\raggedleft\arraybackslash}p{0.17\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
+\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.19\linewidth}p{0.58\linewidth}>{\raggedleft\arraybackslash}p{0.17\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
 
 	%------------------------------------------------
 
@@ -179,7 +187,7 @@
 %------------------------------------------------
 
 % \begin{supertabular}{>{\raggedleft\arraybackslash}p{0.17\linewidth}p{0.6\linewidth}>{\raggedleft\arraybackslash}p{0.17\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
-\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.17\linewidth}p{0.79\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
+\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.19\linewidth}p{0.77\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
 
 	%------------------------------------------------
 
@@ -192,7 +200,7 @@
 	\tableentry{$\bullet$}{Developed a research plan and won a Natural Sciences and Engineering Research Council of Canada (NSERC) fellowship to pursue said research at Universite de Montr\'{e}al.}{}
 	\tableentry{$\bullet$}{Work with the International Air Transport Association (IATA) to develop data analytics solutions for codesharing and flight scheduling in the civil aviation industry.}{}
 	\tableentry{$\bullet$}{Assess the effectiveness and impact of the IATA operation safety audit (IOSA) on air travel accessibility and cooperation between airlines.}{spaceafter}
-
+	
 	%------------------------------------------------
 
 	\workposition{Jan 2021 -- Apr 2022} % Duration
@@ -201,12 +209,14 @@
 	{Montr\'{e}al, Canada} % Location
 	{Postdoctoral Researcher} % Job title
 	{}{} % Description
-	\tableentry{$\bullet$}{Researched simulation-based decision-making for public health and policy-making during epidemics.}{}
-	\tableentry{$\bullet$}{Developed several \href{https://covid-forecaster-lebanon.herokuapp.com/}{machine learning COVID-19 forecasting models} for infering weekly pandemic trajectories.}{}
+	\tableentry{$\bullet$}{Research simulation-based decision-making for public health policies during epidemics.}{}
+	\tableentry{$\bullet$}{Developed several \href{https://covid-forecaster-lebanon.herokuapp.com/}{machine learning COVID-19 forecasting models} for inferring weekly pandemic trajectories.}{}
 	\tableentry{$\bullet$}{Applied state-of-the-art stochastic black-box optimization algorithms to tune machine learning hyperparameters and model selection.}{}
 	\tableentry{$\bullet$}{Develop GPU accelerated \href{https://github.com/khbalhandawi/COVID_SIM_GPU}{epidemic models} for high simulation throughput to assist in policy-making during pandemics through the use of stochastic optimization.}{}
-	\tableentry{$\bullet$}{Invited to speak at the \href{https://meetings.informs.org/wordpress/healthcare2023/}{INFORMS Healthcare conference 2023} in Toronto.}{}
-
+	\tableentry{$\bullet$}{Invited to speak at the \href{https://meetings.informs.org/wordpress/healthcare2023/}{INFORMS Healthcare conference 2023} in Toronto.}{spaceafter}
+	\tableentry{}{}{}
+	\tableentry{}{}{}
+	
 	%------------------------------------------------
 
 	\workposition{Jan 2017 -- Jan 2021} % Duration
@@ -215,9 +225,9 @@
 	{} % Location
 	{Research assistant} % Job title
 	{}{}  % Description
-	\tableentry{$\bullet$}{I was part of \textbf{Canadian/European industrial project} investigating additive repair technologies for aeroengine parts. I focused on optimization of aerospace design for AM remanufacturing.}{}
-	\tableentry{$\bullet$}{Developed mathematical tools and \href{https://github.com/khbalhandawi/scale_AM_webapp}{software} for design space exploration and optimization achieving a \textbf{99.8\% reduction} in effort to explore a 4-dimensional design space relative to full factorial design.}{}
-	\tableentry{$\bullet$}{Developed a thermomechanical simulation model for modeling additive manufacturing repair and life extension processes using transient coupled thermal/mechanical FEA simulations.}{}
+	\tableentry{$\bullet$}{Was part of a \textbf{Canadian/European industrial project} investigating additive repair technology for aeroengines. I focused on optimization of design for AM remanufacturing.}{}
+	\tableentry{$\bullet$}{Developed mathematical tools and \href{https://github.com/khbalhandawi/scale_AM_webapp}{software} for design space exploration and optimization achieving a \textbf{90\% reduction} in effort to explore a 4-dimensional design space relative to full factorial design.}{}
+	\tableentry{$\bullet$}{Developed a thermomechanical simulation model for modeling additive manufacturing repair and life extension processes using coupled thermal/mechanical FEA simulations.}{}
 	\tableentry{$\bullet$}{Used machine learning models trained from expensive manufacturing simulations and a variant of kernel smoothing for estimating the sensitivity of design and process parameters to different requirements.}{}
 	\tableentry{$\bullet$}{My doctoral research paper was selected as a \textbf{\href{https://www.gknaerospace.com/en/our-technology/2022/additive-manufacturing-research-paper-receives-journal-of-mechanical-design-award/}{best paper}} by the ASME Journal of Mechanical Design in 2021.}{}
 	\tableentry{$\bullet$}{Recived a Fonds de Recherche du Qu\'{e}bec (FRQNT) doctoral award.}{}
@@ -232,9 +242,9 @@
 	{Postdoctoral Researcher} % Job title
 	{}{} % Description
 	\tableentry{$\bullet$}{Integrate my doctoral research (design under uncertainty) into SED lab activities.}{}
-	\tableentry{$\bullet$}{Research change propagation and absorption in engineering design (applied to aeroengine systems).}{}
-	\tableentry{$\bullet$}{Authored a \href{https://sed-group.github.io/mvmlib/index.html}{Python library} for margin and change propagation management in engineering systems.}{}
-	\tableentry{$\bullet$}{Used said library in design space exploration to concurrently develop and analyze \textbf{6,552 conceptual designs} of an aeroengine component and \href{https://khbalhandawi.github.io/projects/1_project/}{visualize the results} using interactive tools.}{spaceafter}
+	\tableentry{$\bullet$}{Research change propagation and absorption in design (applied to aeroengine systems).}{}
+	\tableentry{$\bullet$}{Authored a \href{https://sed-group.github.io/mvmlib/index.html}{Python library} for margin analysis in engineering systems.}{}
+	\tableentry{$\bullet$}{Used said library in design space exploration to concurrently develop and analyze \textbf{6,552 conceptual designs} of an aeroengine component and \href{https://khbalhandawi.github.io/projects/1_project/}{visualize the results} interactively.}{spaceafter}
 
 	%------------------------------------------------
 
@@ -244,9 +254,9 @@
 	{Abu Dhabi, UAE} % Location
 	{Research Assistant} % Job title
 	{}{} % Description
-	\tableentry{$\bullet$}{Developed fiber optic structural monitoring sensors for mitigating upto \textbf{\$1M of corrosion costs}.}{}
-	\tableentry{$\bullet$}{Developed and simulated a \href{https://khbalhandawi.github.io/projects/6_project/}{fiber optic-based corrosion sensor} with an accuracy of \textbf{$\pm$2mm/s}.}{}
-	\tableentry{$\bullet$}{Developed a new accelerated corrosion testing setup to simulate \textbf{2 years of corrosion in 2 hours}.}{spaceafter}
+	\tableentry{$\bullet$}{Developed fiber optic structural monitoring sensors to mitigate \textbf{\$1M of corrosion costs}.}{}
+	\tableentry{$\bullet$}{Developed a \href{https://khbalhandawi.github.io/projects/6_project/}{fiber optic-based corrosion sensor} with an accuracy of \textbf{$\pm$2mm/s}.}{}
+	\tableentry{$\bullet$}{Developed an accelerated corrosion test setup to simulate \textbf{2 years of corrosion in 2 hours}.}{spaceafter}
 
 	%------------------------------------------------
 
@@ -260,11 +270,11 @@
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\hrule \medskip \textbf{\large Industry}\medskip
+\hrule \medskip \textbf{\large Industry}
 
 %------------------------------------------------
 
-\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.17\linewidth}p{0.79\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
+\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.19\linewidth}p{0.77\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
 
 	%------------------------------------------------
 
@@ -280,14 +290,14 @@
 
 	%------------------------------------------------
 
-	\workposition{June 2017 -- Jan 2020} % Duration
+	\workposition{Jun 2017 -- Jan 2020} % Duration
 	{} % FT/PT (full time or part time)
 	{GKN Aerospace Engine Systems} % Employer
 	{Trolh\"{a}ttan, Sweden} % Location
 	{Visiting researcher} % Job title
 	{}{}  % Description
 	\tableentry{$\bullet$}{Participated in a \href{https://khbalhandawi.github.io/projects/4_project/}{technology transfer} at GKN Aerospace to translate my doctoral research into industrial practice by provided training modules and workshops to GKN engineers on the software tools that I have developed.}{}
-	\tableentry{$\bullet$}{Surveyed GKN engineers about their experience designing areoengine components for engine system manufacturers to create a timeline of expected design updates and changes. This data formed the basis of a case study for my research on design for flexibility and robustness.}{}
+	\tableentry{$\bullet$}{Surveyed GKN engineers about their design experience with areoengine components to understand the timeline for expected design updates and changes. This data formed the basis of a case study for my research on design for flexibility and robustness.}{}
 	\tableentry{$\bullet$}{Set up advanced design automation and exploration tools to be used as part of GKN's workflow (engineering workbench) by integrated parametric design software (NX Siemens) with simulation software (Abaqus and ANSYS) to evaluate hundreds of concepts for a turbine rear frame component.}{spaceafter}
 
 	%------------------------------------------------
@@ -298,7 +308,7 @@
 	{Abu Dhabi, UAE} % Location
 	{Engineering intern} % Job title
 	{}{} % Description
-	\tableentry{$\bullet$}{Created software and programs for industrial plant operation and control using Distributed Control Systems.}{}
+	\tableentry{$\bullet$}{Write programs for industrial plant operation and control on Distributed Control Systems.}{}
 	\tableentry{$\bullet$}{Visited the main headquarters in Japan to represent the Abu Dhabi National Oil Company.}{spaceafter}
 
 	%------------------------------------------------
@@ -307,7 +317,7 @@
 
 %------------------------------------------------
 
-\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
 
 %----------------------------------------------------------------------------------------
 %	MANAGEMENT EXPERIENCE
@@ -317,7 +327,7 @@
 
 %------------------------------------------------
 
-\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.17\linewidth}p{0.79\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
+\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.19\linewidth}p{0.77\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
 
 	%------------------------------------------------
 
@@ -332,14 +342,14 @@
 
 	%------------------------------------------------
 
-	\workposition{Jan 2017 -- Dec 2020} % Duration
-	{} % FT/PT (full time or part time)
-	{McGill University} % Employer
-	{Montr\'{e}al, Canada} % Location
-	{Systems Optimization Lab} % Job title
-	{}{} % Description
-	\tableentry{$\bullet$}{Update the lab's website and disseminate new research to the public.}{}
-	\tableentry{$\bullet$}{\href{http://www.sol.research.mcgill.ca/}{http://www.sol.research.mcgill.ca/}.}{spaceafter}
+	% \workposition{Jan 2017 -- Dec 2020} % Duration
+	% {} % FT/PT (full time or part time)
+	% {McGill University} % Employer
+	% {Montr\'{e}al, Canada} % Location
+	% {Systems Optimization Lab} % Job title
+	% {}{} % Description
+	% \tableentry{$\bullet$}{Update the lab's website and disseminate new research to the public.}{}
+	% \tableentry{$\bullet$}{\href{http://www.sol.research.mcgill.ca/}{http://www.sol.research.mcgill.ca/}.}{spaceafter}
 
 	%------------------------------------------------
 
@@ -368,7 +378,7 @@
 
 %------------------------------------------------
 
-\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
 
 %----------------------------------------------------------------------------------------
 %	TEACHING EXPERIENCE
@@ -380,7 +390,7 @@
 
 %------------------------------------------------
 
-\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.17\linewidth}p{0.79\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
+\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.19\linewidth}p{0.77\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
 
 	\workposition{Sep 2022 -- Dec 2022} % Duration
 	{} % FT/PT (full time or part time)
@@ -388,9 +398,9 @@
 	{Montr\'{e}al, Canada} % Location
 	{Adjunct lecturer, MECH559: Engineering Systems Optimization} % Job title
 	{}{} % Description
-	\tableentry{$\bullet$}{Developed \href{https://github.com/khbalhandawi/MECH559_notebooks/tree/master}{Python notebooks} as teaching aids for the students to understand the implementation of common optimization algorithms and their application to engineering systems.}{}
+	\tableentry{$\bullet$}{Developed \href{https://github.com/khbalhandawi/MECH559_notebooks/tree/master}{Python notebooks} as teaching aids to explain the implementation of common optimization algorithms and their application to engineering systems.}{}
 	\tableentry{$\bullet$}{Received participation rate of \textbf{69\%} in course evaluations with an average score of \textbf{4.2/5.0}.}{}
-	\tableentry{$\bullet$}{Hosted \textbf{several guest} lectures with aerospace industry professionals to demo optimization applications.}{spaceafter}
+	\tableentry{$\bullet$}{Hosted \textbf{guest} lectures with industry professionals to demo optimization applications.}{spaceafter}
 
 	%------------------------------------------------
 
@@ -403,7 +413,7 @@
 	\tableentry{$\bullet$}{Was a teaching assistant for MECH362 for 3 semesters.}{}
 	\tableentry{$\bullet$}{Supervised lab sessions covering the following theoretical courses: MECH240 Thermodynamics, MECH315/419 Mechanics, MECH331 Fluid Mechanics, MECH346 Heat Transfer.}{}
 	\tableentry{$\bullet$}{Prepared lab manuals, conducted labs, graded student reports, and provided feedback.}{}
-	\tableentry{$\bullet$}{Reported areas of the curriculum that students were constantly struggling with to the department.}{}
+	\tableentry{$\bullet$}{Report areas of the curriculum that students struggle with to the department.}{spaceafter}
 
 	%------------------------------------------------
 
@@ -414,7 +424,7 @@
 	{Teaching assistant, FACC400: Engineering Professional Practice} % Job title
 	{}{} % Description
 	\tableentry{$\bullet$}{Was a teaching assistant for FACC400 for 1 semester.}{}
-	\tableentry{$\bullet$}{Conducted town halls on relevant and pressing sociapolitical topics facing modern day engineers.}{}
+	\tableentry{$\bullet$}{Conducted town halls on relevant sociapolitical topics facing modern day engineers.}{}
 	\tableentry{$\bullet$}{Substituted lecturers, and provided feedback to students on the townhalls.}{}
 
 	%------------------------------------------------
@@ -439,7 +449,7 @@
 	{} % Location
 	{Teaching assistant, Computer Aided Design} % Job title
 	{}{} % Description
-	\tableentry{$\bullet$}{Conducted computer lab sessions to educate the students on the use of modern CAD software (SolidWorks).}{}
+	\tableentry{$\bullet$}{Conduct computer lab sessions on modern CAD software (SolidWorks).}{}
 
 	%------------------------------------------------
 
@@ -449,7 +459,7 @@
 	{} % Location
 	{Grader, Physics II} % Job title
 	{}{} % Description
-	\tableentry{$\bullet$}{Graded homework, midterms, and final examinations for the undergraduate physics course.}{spaceafter}
+	\tableentry{$\bullet$}{Graded homework and exams for the undergraduate physics course.}{spaceafter}
 
 \end{supertabular}
 
@@ -465,7 +475,7 @@
 
 %------------------------------------------------
 
-\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.17\linewidth}p{0.6\linewidth}>{\raggedleft\arraybackslash}p{0.17\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
+\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.19\linewidth}p{0.58\linewidth}>{\raggedleft\arraybackslash}p{0.17\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
 
 	%------------------------------------------------
 
@@ -492,137 +502,140 @@
 
 %------------------------------------------------
 
-\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
 
 %----------------------------------------------------------------------------------------
 %	MAJOR RESEARCH PROJECT
 %----------------------------------------------------------------------------------------
 
-\section{Description of selected publications}
+\ifthenelse{\equal{\cvdescribe}{}}{}{
+	\section{Description of selected publications}
+	{\raggedright\textbf{``Scalable set-based design optimization and remanufacturing for meeting changing requirements"}}
+	\textit{\center How do you quantify the remanufacturability of a product before it goes into production?}\\
 
-{\raggedright\textbf{``Scalable set-based design optimization and remanufacturing for meeting changing requirements"}}
-\textit{\center How do you quantify the remanufacturability of a product before it goes into production?}\\
+	This question was motivated by the advent of novel manufacturing technologies such as additive manufacturing (AM) and their enormous potential to enable a circular economy recovery activities such as remanufacturing. In this paper, I highlight this potential and answer the above research question by using quantitative metrics to measure the design's remanufacturability when using additive or conventional subtractive manufacturing processes.
 
-This question was motivated by the advent of novel manufacturing technologies such as additive manufacturing (AM) and their enormous potential to enable a circular economy recovery activities such as remanufacturing. In this paper, I highlight this potential and answer the above research question by using quantitative metrics to measure the design's remanufacturability when using additive or conventional subtractive manufacturing processes.
+	The metric was derived from the principle of design changeability, and the concept of scalability specifically. It was found that scalability is relevant to remanufacturing as it defines the potential for restoring product specifications to its original or better-than-original levels. I mathematically formulated a metric for scalability and used it in design space exploration (DSE) of an aeroengine component at GKN Aerospace engine systems to identify a set of scalable designs that are eligible for remanufacturing via additive manufacturing. The results show great promise and allow designers to incorporate the principles of sustainable manufacturing and design early in the product development cycle.
 
-The metric was derived from the principle of design changeability, and the concept of scalability specifically. It was found that scalability is relevant to remanufacturing as it defines the potential for restoring product specifications to its original or better-than-original levels. I mathematically formulated a metric for scalability and used it in design space exploration (DSE) of an aeroengine component at GKN Aerospace engine systems to identify a set of scalable designs that are eligible for remanufacturing via additive manufacturing. The results show great promise and allow designers to incorporate the principles of sustainable manufacturing and design early in the product development cycle.
+	\programlang{\color{python}}{Python}
+	~\programlang{\color{matlab}}{MATLAB}
+	~\programlang{\color{black}}{NX Siemens}
+	~\programlang{\color{black}}{Abaqus}
+	~\programlang{\color{black}}{Thermomechanical simulation}
+	~\programlang{\color{black}}{Design space exploration (DSE)}
+	~\programlang{\color{black}}{Surrogate modeling}
+	~\round{\href{https://github.com/khbalhandawi/DM_SBD_opt}{\small\faGlobe~Open-source code}}{proglang}
+	~\round{\href{https://scale-am.herokuapp.com/}{\small\faGlobe~Web application}}{proglang}
+	~\round{\href{https://asmedigitalcollection.asme.org/mechanicaldesign/article-abstract/143/2/021702/1085767/Scalable-Set-Based-Design-Optimization-and}{\small\faGlobe~DOI: 10.1115/1.4047908}}{proglang}
 
-\programlang{\color{python}}{Python}
-~\programlang{\color{matlab}}{MATLAB}
-~\programlang{\color{black}}{NX Siemens}
-~\programlang{\color{black}}{Abaqus}
-~\programlang{\color{black}}{Thermomechanical simulation}
-~\programlang{\color{black}}{Design space exploration (DSE)}
-~\programlang{\color{black}}{Surrogate modeling}
-~\round{\href{https://github.com/khbalhandawi/DM_SBD_opt}{\small\faGlobe~Open-source code}}{proglang}
-~\round{\href{https://scale-am.herokuapp.com/}{\small\faGlobe~Web application}}{proglang}
-~\round{\href{https://asmedigitalcollection.asme.org/mechanicaldesign/article-abstract/143/2/021702/1085767/Scalable-Set-Based-Design-Optimization-and}{\small\faGlobe~DOI: 10.1115/1.4047908}}{proglang}
+	{\raggedright\textbf{``Optimization of design margins allocation when making use of additive remanufacturing"}}
+	\textit{\center How do you design a component when the design requirements can change at any moment and without advance notice?}\\
 
-{\raggedright\textbf{``Optimization of design margins allocation when making use of additive remanufacturing"}}
-\textit{\center How do you design a component when the design requirements can change at any moment and without advance notice?}\\
+	That is the question my dissertation tries to answer. To answer this question, I needed to identify the mechanisms by which products are able to mitigate requirement changes. The literature suggested passive methods such as the use of design margins and active methods such as changing the product's design. Each method has its advantages and disadvantages and balancing the two strategies within a product is key to cost-effective mitigation of changing requirements. I assessed different aeroengine product designs (from GKN aerospace) against a wide variety of requirement change scenarios (using Monte Carlo simulation) to identify those designs that absorbed the most change without negatively impacting the product's performance (in terms of weight and redesign cost). The results of the study show promise and the open-source design tool that was developed allows designers to conceive of lean products despite the uncertain design requirements they have to work with.
 
-That is the question my dissertation tries to answer. To answer this question, I needed to identify the mechanisms by which products are able to mitigate requirement changes. The literature suggested passive methods such as the use of design margins and active methods such as changing the product's design. Each method has its advantages and disadvantages and balancing the two strategies within a product is key to cost-effective mitigation of changing requirements. I assessed different aeroengine product designs (from GKN aerospace) against a wide variety of requirement change scenarios (using Monte Carlo simulation) to identify those designs that absorbed the most change without negatively impacting the product's performance (in terms of weight and redesign cost). The results of the study show promise and the open-source design tool that was developed allows designers to conceive of lean products despite the uncertain design requirements they have to work with.
-
-\programlang{\color{python}}{Python}
-~\programlang{\color{magenta}}{C++}
-~\programlang{\color{matlab}}{MATLAB}
-~\programlang{\color{rpackage}}{R}
-~\programlang{\color{black}}{NX Siemens}
-~\programlang{\color{black}}{Abaqus}
-~\programlang{\color{black}}{Monte Carlo simulation}
-~\programlang{\color{black}}{Uncertainty quantification}
-~\round{\href{https://github.com/khbalhandawi/DM_SBD_opt}{\small\faGlobe~Online open-source code}}{proglang}
-~\round{\href{https://asmedigitalcollection.asme.org/mechanicaldesign/article-abstract/144/1/012001/1112332/Optimization-of-Design-Margins-Allocation-When?redirectedFrom=fulltext}{\small\faGlobe~DOI: 10.1115/1.4051607}}{proglang}
+	\programlang{\color{python}}{Python}
+	~\programlang{\color{magenta}}{C++}
+	~\programlang{\color{matlab}}{MATLAB}
+	~\programlang{\color{rpackage}}{R}
+	~\programlang{\color{black}}{NX Siemens}
+	~\programlang{\color{black}}{Abaqus}
+	~\programlang{\color{black}}{Monte Carlo simulation}
+	~\programlang{\color{black}}{Uncertainty quantification}
+	~\round{\href{https://github.com/khbalhandawi/DM_SBD_opt}{\small\faGlobe~Online open-source code}}{proglang}
+	~\round{\href{https://asmedigitalcollection.asme.org/mechanicaldesign/article-abstract/144/1/012001/1112332/Optimization-of-Design-Margins-Allocation-When?redirectedFrom=fulltext}{\small\faGlobe~DOI: 10.1115/1.4051607}}{proglang}
 
 
-\medskip % Extra whitespace before the next section
+	\medskip % Extra whitespace before the next section
 
-{\raggedright\textbf{``Optimization of Infectious Disease Prevention and Control Policies Using Artificial Life"}}
-\textit{\center How can we apply the principles of design and decision making to help bring a pandemic under control?}\\
+	{\raggedright\textbf{``Optimization of Infectious Disease Prevention and Control Policies Using Artificial Life"}}
+	\textit{\center How can we apply the principles of design and decision making to help bring a pandemic under control?}\\
 
-Although this project is not directly relevant to the discipline of materials science and industrial engineering, I found it quite useful for my design research. This is because most design problems involve a fair bit of uncertainty at all stages of the product development process. Being able to explore the design space under uncertainty is a very challenging problem mathematically. This project exemplifies such design problems by treating the public health policies for an epidemic as design solutions. 
+	Although this project is not directly relevant to the discipline of materials science and industrial engineering, I found it quite useful for my design research. This is because most design problems involve a fair bit of uncertainty at all stages of the product development process. Being able to explore the design space under uncertainty is a very challenging problem mathematically. This project exemplifies such design problems by treating the public health policies for an epidemic as design solutions. 
 
-I modeled how an infectious disease spreads in a small population. Diseases such as COVID-19 spread through social interaction. I programmed intelligent agents to model a complex social system. I used stochastic derivative-free optimization to determine the critical amount of intervention necessary to keep the disease in check without negatively affecting the economy. I used the stochastic optimization algorithm to reduce the number of hospitalizations beneath the healthcare capacity while reducing the socio-economic cost of interventions by up to \textbf{5 times} compared to a complete lock-down. Such tradeoffs are quite common in the engineering design world and I plan to use stochastic design exploration strategies in my future design research.
+	I modeled how an infectious disease spreads in a small population. Diseases such as COVID-19 spread through social interaction. I programmed intelligent agents to model a complex social system. I used stochastic derivative-free optimization to determine the critical amount of intervention necessary to keep the disease in check without negatively affecting the economy. I used the stochastic optimization algorithm to reduce the number of hospitalizations beneath the healthcare capacity while reducing the socio-economic cost of interventions by up to \textbf{5 times} compared to a complete lock-down. Such tradeoffs are quite common in the engineering design world and I plan to use stochastic design exploration strategies in my future design research.
 
-\programlang{\color{magenta}}{C++}
-~\programlang{\color{cuda}}{CUDA}
-~\programlang{\color{python}}{Python}
-~\programlang{\color{qt}}{Qt}
-~\programlang{\color{black}}{Stochastic optimization}
-~\programlang{\color{black}}{Agent-based modeling}
-~\round{\href{https://github.com/khbalhandawi/COVID_SIM}{\small\faGlobe~Online open-source code}}{proglang}
-~\round{\href{https://ieeexplore.ieee.org/abstract/document/9532002}{\small\faGlobe~DOI: 10.1109/TETCI.2021.3107496}}{proglang}
+	\programlang{\color{magenta}}{C++}
+	~\programlang{\color{cuda}}{CUDA}
+	~\programlang{\color{python}}{Python}
+	~\programlang{\color{qt}}{Qt}
+	~\programlang{\color{black}}{Stochastic optimization}
+	~\programlang{\color{black}}{Agent-based modeling}
+	~\round{\href{https://github.com/khbalhandawi/COVID_SIM}{\small\faGlobe~Online open-source code}}{proglang}
+	~\round{\href{https://ieeexplore.ieee.org/abstract/document/9532002}{\small\faGlobe~DOI: 10.1109/TETCI.2021.3107496}}{proglang}
 
-\medskip % Extra whitespace before the next section
+	\medskip % Extra whitespace before the next section
 
-% {\raggedright\textbf{``A lifecycle cost-driven system dynamics
-% approach for considering additive re-manufacturing or repair in aero-engine component design"}}
-% \textit{\center How can we minimize the lifecycle cost when considering additve remanufactuing life extension strategies?}\\
+	{\raggedright\textbf{``A lifecycle cost-driven system dynamics
+	approach for considering additive re-manufacturing or repair in aero-engine component design"}}
+	\textit{\center How can we minimize the lifecycle cost when considering additve remanufactuing life extension strategies?}\\
 
-% I collaborated with a colleague that developed a novel lifecycle cost (LCC) model based on system dynamics to capture the causal loops that often arise in LCC modeling. Such casual loops include viscous cycles, where increasing one parameter leads to another increasing which in turn results in the former parameter increasing even more. Such loops are difficult to capture in traditional time-driven activity-based LCC modeling and hence the need for a system dynamics model. The developed LCC model was used to explore different life extension strategies for aeroengine products from an LCC perspective. I formulated and solved an optimization problem that captures the tradeoff between life extension strategies that favor ``design for-life'' versus strategies that favor frequent life extension and maintenance. Me and my colleague managed to present a tool for obtaining the optimal life extension schedule such that LCC is minimized.
+	I collaborated with a colleague that developed a novel lifecycle cost (LCC) model based on system dynamics to capture the causal loops that often arise in LCC modeling. Such casual loops include viscous cycles, where increasing one parameter leads to another increasing which in turn results in the former parameter increasing even more. Such loops are difficult to capture in traditional time-driven activity-based LCC modeling and hence the need for a system dynamics model. The developed LCC model was used to explore different life extension strategies for aeroengine products from an LCC perspective. I formulated and solved an optimization problem that captures the tradeoff between life extension strategies that favor ``design for-life'' versus strategies that favor frequent life extension and maintenance. Me and my colleague managed to present a tool for obtaining the optimal life extension schedule such that LCC is minimized.
 
-% \programlang{\color{matlab}}{MATLAB}
-% ~\programlang{\color{black}}{Simulink}
-% ~\programlang{\color{black}}{Lifecycle cost (LCC)}
-% ~\programlang{\color{black}}{System dynamics modeling}
-% ~\round{\href{https://www.cambridge.org/core/journals/proceedings-of-the-international-conference-on-engineering-design/article/lifecycle-costdriven-system-dynamics-approach-for-considering-additive-remanufacturing-or-repair-in-aeroengine-component-design/E6288AA6947FED87C8AD308E3CA62788}{\small\faGlobe~DOI: 10.1017/dsi.2019.140}}{proglang}
+	\programlang{\color{matlab}}{MATLAB}
+	~\programlang{\color{black}}{Simulink}
+	~\programlang{\color{black}}{Lifecycle cost (LCC)}
+	~\programlang{\color{black}}{System dynamics modeling}
+	~\round{\href{https://www.cambridge.org/core/journals/proceedings-of-the-international-conference-on-engineering-design/article/lifecycle-costdriven-system-dynamics-approach-for-considering-additive-remanufacturing-or-repair-in-aeroengine-component-design/E6288AA6947FED87C8AD308E3CA62788}{\small\faGlobe~DOI: 10.1017/dsi.2019.140}}{proglang}
 
-\medskip % Extra whitespace before the next section
+	\medskip % Extra whitespace before the next section
+
+	%----------------------------------------------------------------------------------------
+	%	PREVIOUS RESEARCH PROJECT
+	%----------------------------------------------------------------------------------------
+
+	{\raggedright\textbf{``Strain based FBG sensor for real-time corrosion rate monitoring in pre-stressed structures"}}\\
+	Oil pipelines are monitored for corrosion on regular intervals using conventional tools. This activity accrues massive maintenance costs on the pipeline operator. I tried to mitigate maintenance costs by developing a passive realtime corrosion monitoring product. This research was my first exposure to the industrial world and the importance of developing cost-effective solutions. Furthermore, this was my first real product-design problem, where I employed the principles of product development to arrive at a prototype solution that the industry can readily test.
+	I used concept elimination to find a solution that best fulfils the requirements of oil pipeline operators of being intrinsically safe and requiring minimal energy to operate. I arrived at a concept that uses fiber optics to transmit and receive signals from the pipeline without needed much energy to excite the laser and posing no electrical hazards to the pipeline environment. This sensor consists of fiber Bragg grating (FBG), which is used to sense the change in the pipeline's hoop stress as a result of internal corrosion and localized thinning of its inner diameter. The system was simulated, and a laboratory scale prototype was 3D printed to validate and test the solution. Our setup featured advanced fiber optic sensors (fiber Bragg grating (FBG)) and spectral analyzers controlled and operated by LabVIEW data acquisition software. I also relied heavily on MATLAB and Abaqus simulations to construct and verify the setup.
+
+	\programlang{\color{black}}{LabVIEW}
+	~\programlang{\color{black}}{Abaqus}
+	~\programlang{\color{matlab}}{MATLAB}
+	~\programlang{\color{black}}{Fiber Bragg grating (FBG)}
+	~\round{\href{https://www.sciencedirect.com/science/article/abs/pii/S0925400516308528}{\small\faGlobe~DOI: 10.1016/j.snb.2016.05.167}}{proglang}
+
+	\medskip % Extra whitespace before the next section
+
+	{\raggedright\textbf{``Development of a human operated mobile hexapod platform"}}\\
+	I designed and developed of a six-legged hexapod platform that employed a hydraulic system to actuate each of the six robotic manipulators used for locomotion. The control and distribution of the hydraulic power was controlled through state-of-the art technology employing hydraulic servo-valves. As of today, the design stands at a total weight of 3 tons and occupies a space of 5m x 2m x 3m high. The robotic manipulator which constitutes a leg of the hexapod was reverse engineered and repurposed for walking from a used hydraulic excavator manufactured by JCB. I made a faithful reproduction of the 3D CAD model in SOLIDWORKS by taking measurements from the physical excavator so that the necessary modifications can be designed and manufactured. Most modifications were manufactured manually using a milling machine, lathe, and MIG/TIG welding. More complex parts where tolerances are critical were machined via a CNC milling machine. Once the mechanical setup was built, I used kinematics, and rotation matrices to compute the necessary actuation for tracking a given trajectory. I used and configured a microcontroller (Arduino) to provide the actuation signal to the servo-valves that distribute hydraulic power throughout the hexapod and achieved smooth tracking of the target trajectory that I provided.
+
+	\programlang{\color{black}}{SOLIDWORKS}
+	~\programlang{\color{black}}{manufacturing}
+	~\programlang{\color{black}}{CNC machining}
+	~\programlang{\color{black}}{kinematics}
+	~\programlang{\color{black}}{rotation matrices}
+	~\programlang{\color{black}}{Arduino}
+
+	% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+	\section{Extracurricular projects}
+
+	{\raggedright\textbf{``Khalifa university Solar Car Project"}}\\
+	I was part of the Khalifa University Solar Car Team which successfully developed and commissioned the \textbf{first} solar vehicle in The United Arab Emirates. The vehicle was of outstanding performance and competed in The Abu Dhabi Solar Challenge (January 15th – 19th 2015) earning \textbf{second place} in the race with 2 minutes behind the leading team (University of Michigan, Ann Arbor). My responsibilities in the team included aerodynamic design of the body and driver canopy using ANSYS Fluent. Furthermore, after the design stage my main responsibilities were to oversee the manufacturing of the various components needed to operate the vehicle as well as procure the equipment needed to build and maintain the vehicle. In order to fabricate the monocoque carbon fiber chassis of the vehicle, I collaborated with a team of solar car designers at \textbf{Tokai University, Japan}. The project provided a lot of hands-on inter-disciplinary experience in instrumentation, mechanical, and electrical design.
+
+	\programlang{\color{black}}{aerodynamic design}
+	~\programlang{\color{black}}{ANSYS Fluent}
+	~\programlang{\color{black}}{carbon fiber}
+	~\round{\href{https://www.thenationalnews.com/business/technology/solar-team-awaits-its-day-in-the-sun-1.601904}{\small\faGlobe
+	~Online news article}}{proglang}
+
+	\medskip % Extra whitespace before the next section
+
+	{\raggedright\textbf{``Khalifa university Baja SAE Project"}}\\
+	I led and supervised a team of engineering students to design and produce a vehicle to compete in the SAE Baja Event during the summer of 2015. This project provides extensive hands-on experience on fabrication of various automotive parts using CNC technology, welding and conventional machining. Furthermore, I acquired a lot of experience throughout the design process on CAD modeling (SOLIDWORKS, Autodesk AutoCAD) and simulation (FEA Analysis of the Chassis using ANSYS mechanical APDL). The built design qualified for the Baja SAE 2015 annual competition in Maryland, United States, which was the university’s first undertaking in competing oversees. Being the team’s first encounter with oversees competitions, the vehicle passed rigorous technical inspection requirements and successfully completed all the events and the endurance race arriving at a rank of \textbf{58 out of a total of 100} competing international university teams.
+
+	\programlang{\color{black}}{SOLIDWORKS, Autodesk AutoCAD}
+	~\programlang{\color{black}}{manufacturing}
+	~\programlang{\color{black}}{CNC machining}
+	~\programlang{\color{black}}{ANSYS mechanical APDL}
+
+	% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+}
 
 %----------------------------------------------------------------------------------------
-%	PREVIOUS RESEARCH PROJECT
+%	EXTRACURRICULAR PROJECTS
 %----------------------------------------------------------------------------------------
 
-% {\raggedright\textbf{``Strain based FBG sensor for real-time corrosion rate monitoring in pre-stressed structures"}}\\
-% Oil pipelines are monitored for corrosion on regular intervals using conventional tools. This activity accrues massive maintenance costs on the pipeline operator. I tried to mitigate maintenance costs by developing a passive realtime corrosion monitoring product. This research was my first exposure to the industrial world and the importance of developing cost-effective solutions. Furthermore, this was my first real product-design problem, where I employed the principles of product development to arrive at a prototype solution that the industry can readily test.
-% I used concept elimination to find a solution that best fulfils the requirements of oil pipeline operators of being intrinsically safe and requiring minimal energy to operate. I arrived at a concept that uses fiber optics to transmit and receive signals from the pipeline without needed much energy to excite the laser and posing no electrical hazards to the pipeline environment. This sensor consists of fiber Bragg grating (FBG), which is used to sense the change in the pipeline's hoop stress as a result of internal corrosion and localized thinning of its inner diameter. The system was simulated, and a laboratory scale prototype was 3D printed to validate and test the solution. Our setup featured advanced fiber optic sensors (fiber Bragg grating (FBG)) and spectral analyzers controlled and operated by LabVIEW data acquisition software. I also relied heavily on MATLAB and Abaqus simulations to construct and verify the setup.
-
-% \programlang{\color{black}}{LabVIEW}
-% ~\programlang{\color{black}}{Abaqus}
-% ~\programlang{\color{matlab}}{MATLAB}
-% ~\programlang{\color{black}}{Fiber Bragg grating (FBG)}
-% ~\round{\href{https://www.sciencedirect.com/science/article/abs/pii/S0925400516308528}{\small\faGlobe~DOI: 10.1016/j.snb.2016.05.167}}{proglang}
-
-\medskip % Extra whitespace before the next section
-
-% {\raggedright\textbf{``Development of a human operated mobile hexapod platform"}}\\
-% I designed and developed of a six-legged hexapod platform that employed a hydraulic system to actuate each of the six robotic manipulators used for locomotion. The control and distribution of the hydraulic power was controlled through state-of-the art technology employing hydraulic servo-valves. As of today, the design stands at a total weight of 3 tons and occupies a space of 5m x 2m x 3m high. The robotic manipulator which constitutes a leg of the hexapod was reverse engineered and repurposed for walking from a used hydraulic excavator manufactured by JCB. I made a faithful reproduction of the 3D CAD model in SOLIDWORKS by taking measurements from the physical excavator so that the necessary modifications can be designed and manufactured. Most modifications were manufactured manually using a milling machine, lathe, and MIG/TIG welding. More complex parts where tolerances are critical were machined via a CNC milling machine. Once the mechanical setup was built, I used kinematics, and rotation matrices to compute the necessary actuation for tracking a given trajectory. I used and configured a microcontroller (Arduino) to provide the actuation signal to the servo-valves that distribute hydraulic power throughout the hexapod and achieved smooth tracking of the target trajectory that I provided.
-
-% \programlang{\color{black}}{SOLIDWORKS}
-% ~\programlang{\color{black}}{manufacturing}
-% ~\programlang{\color{black}}{CNC machining}
-% ~\programlang{\color{black}}{kinematics}
-% ~\programlang{\color{black}}{rotation matrices}
-% ~\programlang{\color{black}}{Arduino}
-
-% \medskip % Extra whitespace before the next section
-
-% %----------------------------------------------------------------------------------------
-% %	EXTRACURRICULAR PROJECTS
-% %----------------------------------------------------------------------------------------
-% \newpage
-% \section{Extracurricular projects}
-
-% {\raggedright\textbf{``Khalifa university Solar Car Project"}}\\
-% I was part of the Khalifa University Solar Car Team which successfully developed and commissioned the \textbf{first} solar vehicle in The United Arab Emirates. The vehicle was of outstanding performance and competed in The Abu Dhabi Solar Challenge (January 15th – 19th 2015) earning \textbf{second place} in the race with 2 minutes behind the leading team (University of Michigan, Ann Arbor). My responsibilities in the team included aerodynamic design of the body and driver canopy using ANSYS Fluent. Furthermore, after the design stage my main responsibilities were to oversee the manufacturing of the various components needed to operate the vehicle as well as procure the equipment needed to build and maintain the vehicle. In order to fabricate the monocoque carbon fiber chassis of the vehicle, I collaborated with a team of solar car designers at \textbf{Tokai University, Japan}. The project provided a lot of hands-on inter-disciplinary experience in instrumentation, mechanical, and electrical design.
-
-% \programlang{\color{black}}{aerodynamic design}
-% ~\programlang{\color{black}}{ANSYS Fluent}
-% ~\programlang{\color{black}}{carbon fiber}
-% ~\round{\href{https://www.thenationalnews.com/business/technology/solar-team-awaits-its-day-in-the-sun-1.601904}{\small\faGlobe
-% ~Online news article}}{proglang}
-
-% \medskip % Extra whitespace before the next section
-
-% {\raggedright\textbf{``Khalifa university Baja SAE Project"}}\\
-% I led and supervised a team of engineering students to design and produce a vehicle to compete in the SAE Baja Event during the summer of 2015. This project provides extensive hands-on experience on fabrication of various automotive parts using CNC technology, welding and conventional machining. Furthermore, I acquired a lot of experience throughout the design process on CAD modeling (SOLIDWORKS, Autodesk AutoCAD) and simulation (FEA Analysis of the Chassis using ANSYS mechanical APDL). The built design qualified for the Baja SAE 2015 annual competition in Maryland, United States, which was the university’s first undertaking in competing oversees. Being the team’s first encounter with oversees competitions, the vehicle passed rigorous technical inspection requirements and successfully completed all the events and the endurance race arriving at a rank of \textbf{58 out of a total of 100} competing international university teams.
-
-% \programlang{\color{black}}{SOLIDWORKS, Autodesk AutoCAD}
-% ~\programlang{\color{black}}{manufacturing}
-% ~\programlang{\color{black}}{CNC machining}
-% ~\programlang{\color{black}}{ANSYS mechanical APDL}
-
-% \medskip % Extra whitespace before the next section
+% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
@@ -635,17 +648,12 @@ I modeled how an infectious disease spreads in a small population. Diseases such
 %\longformpublication{Reference (format this manually as desired)}
 
 %------------------------------------------------
-
-% \textbf{\large Submitted preprints}\medskip \hrule \medskip
-
-% \longformpublication{
-% A. Khalil, \textbf{K. Al Handawi}, Z. Mohsen, A. Abdel Nour, R. Feghali, I. Chamseddine and M. Kokkolaras (2021). Predicting COVID-19 incidences from patients’ viral load using deep-learning. \textit{medRxiv}} \href{https://doi.org/10.1101/2021.08.14.21262064}{doi: 10.1101/2021.08.14.21262064}
-
-%------------------------------------------------
 \textbf{\large Submitted articles}\medskip \hrule \medskip
 
 \longformpublication{\textbf{K. Al Handawi}, A. Brahma, D. Wynn, M. Kokkolaras and O. Isaksson (2023). Design space exploration and evaluation using margin-based trade-offs. \textit{Journal of Mechanical Design}\\
 \textit{funded partially by NSERC and Area of Advance of Chalmers University}}
+
+%------------------------------------------------
 
 \textbf{\large Refereed Journal Articles}\medskip \hrule \medskip
 
@@ -690,7 +698,7 @@ I modeled how an infectious disease spreads in a small population. Diseases such
 \longformpublication{L. Lawand, O. Shiryayev, \textbf{K. Al Handawi}, N. Vahdati and P. Rostron (2016). Corrosivity monitoring system using RFID-based sensors. \textit{in Proceedings of SPIE Smart Structures/NDE, International Society for Optics and Photonics, Sensors and Smart Structures Technologies for Civil, Mechanical, and Aerospace Systems}, Las Vegas, USA, SPIE2016. \href{http://dx.doi.org/10.1117/12.2218813}{doi: 10.1117/12.2218813}}
 
 %------------------------------------------------
-
+\newpage
 \textbf{\large Poster presentations}\medskip \hrule \medskip
 
 \longformpublication{\textbf{K. Al Handawi}, P. Andersson, O. Isaksson and M. Kokkolaras (2019). Scalable set-based design solutions for product remanufacturing. \textit{International Conference on Engineering Design}, Delft, Netherlands, ICED19.}
@@ -699,7 +707,75 @@ I modeled how an infectious disease spreads in a small population. Diseases such
 
 %------------------------------------------------
 
-\medskip % Extra whitespace before the next section
+% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards and recognition}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.19\linewidth}p{0.58\linewidth}>{\raggedleft\arraybackslash}p{0.17\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentryrawthree{\textsc{May 2022 – Apr 2024}}{\textbf{Postdoctoral fellowship (PDF)}}{90,000 CAD}{spaceafter}
+	\tableentryrawthree{}{\textit{National Sciences and Engineering Research council Canada}}{}{spaceafter}
+
+	%------------------------------------------------
+	
+	\tableentryrawthree{\textsc{May 2019 – Dec 2021}}{\textbf{Doctoral Research award (B2X)}}{56,000 CAD}{spaceafter}
+	\tableentryrawthree{}{\textit{Fonds de Recherche du Qu\'{e}bec - Nature et Technologies}}{}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentryrawthree{\textsc{Jan 2017 – Dec 2019}}{\textbf{McGill Engineering Doctoral Award (MEDA)}}{96,000 CAD}{spaceafter}
+	\tableentryrawthree{}{\textit{McGill University}}{}{spaceafter}
+	
+	%------------------------------------------------
+
+		
+	\tableentryrawthree{\textsc{Aug 2013 – Dec 2015}}{\textbf{ADNOC Graduate fellowship}}{90,000 USD}{spaceafter}
+	\tableentryrawthree{}{\textit{Abu Dhabi National Oil Company}}{}{}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%------------------------------------------------
+
+\medskip \hrule \medskip
+
+\begin{supertabular}{>{\raggedright\arraybackslash}p{0.77\linewidth}>{\raggedleft\arraybackslash}p{0.2\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentryraw{Our \href{http://dx.doi.org/10.1115/1.4047908}{paper on scalable designs} was selected for the \textbf{2021 ASME Journal of Mechanical Design Editor's Choice award}}{\textsc{ASME IDETC 2022, St.~Louis, USA}}{spaceafter}
+
+	\tableentryraw{Awarded \textbf{2nd place} for final problem presentation and winner of best data visualization in the 11th Montreal Industreal Problem Solving Workshop}{\textsc{IVADO, Universit\'{e} de Montr\'{e}al, Canada}}{spaceafter}
+
+	\tableentryraw{Team leader of the first team to successfully qualify and complete the Baja SAE competition}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
+
+	\tableentryraw{Awarded \textbf{2nd place} in the Abu Dhabi Solar Challenge (10,000 AED)}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
+
+	\tableentryraw{Recognition for voluntary commitment to the Graduate School's and the Graduate Student Affair's events}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
+
+	% \tableentryraw{Graduated Honors with distinction (2,000 AED)}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
+	
+	% \tableentryraw{Made it to the Provost's list 3 times}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
 
 
 %----------------------------------------------------------------------------------------
@@ -746,109 +822,43 @@ I modeled how an infectious disease spreads in a small population. Diseases such
 %	SPECIAL ELECTIVE COURSES
 %----------------------------------------------------------------------------------------
 
-\section{Course work}
+\ifthenelse{\equal{\cvcourses}{}}{}{
+	\section{Course work}
 
-%------------------------------------------------
-
-\columnratio{0.5,0.5} % The relative ratios of the three columns in the references
-
-\setlength\columnsep{0.05\textwidth} % Specify the amount of space between the columns
-
-\begin{paracol}{2} % Begin the multi-column environment
-
-	\begin{itemize}\itemsep0em 
-		\item Advanced mechanics of materials
-		\item Engineering systems optimization
-		\item Continuum mechanics
-		\item Applied numerical methods
-		\item Applied finite element analysis
-	\end{itemize}
+	%------------------------------------------------
+	
+	\columnratio{0.5,0.5} % The relative ratios of the three columns in the references
+	
+	\setlength\columnsep{0.05\textwidth} % Specify the amount of space between the columns
+	
+	\begin{paracol}{2} % Begin the multi-column environment
+	
+		\begin{itemize}\itemsep0em 
+			\item Advanced mechanics of materials
+			\item Engineering systems optimization
+			\item Continuum mechanics
+			\item Applied numerical methods
+			\item Applied finite element analysis
+		\end{itemize}
+			
+		%----------------------------------------------------------------------------------------
 		
-	%----------------------------------------------------------------------------------------
-	
-	\switchcolumn % Switch to the next paracol column
-	
-	%----------------------------------------------------------------------------------------
-
-	\begin{itemize}\itemsep0em 
-		\item Material engineering and corrosion
-		\item Measurements and instrumentation
-		\item Advanced vibrations
-		\item Fracture mechanics	
-		\item Viscous and compressible fluid flows
-	\end{itemize}
-
-	%----------------------------------------------------------------------------------------
-	
-\end{paracol}
-
-%----------------------------------------------------------------------------------------
-%	AWARDS
-%----------------------------------------------------------------------------------------
-
-\section{Awards and recognition}
-
-% Example \tableentry{} command to add another line:
-
-%\tableentry{Heading}{Content}{spaceafter}
-
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
-
-%------------------------------------------------
-
-\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.17\linewidth}p{0.6\linewidth}>{\raggedleft\arraybackslash}p{0.17\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
-	
-	%------------------------------------------------
-	
-	\tableentryrawthree{\textsc{May 2022 – Apr 2024}}{\textbf{Postdoctoral fellowship (PDF)}}{90,000 CAD}{spaceafter}
-	\tableentryrawthree{}{\textit{National Sciences and Engineering Research council Canada}}{}{spaceafter}
-
-	%------------------------------------------------
-	
-	\tableentryrawthree{\textsc{May 2019 – Dec 2021}}{\textbf{Doctoral Research award (B2X)}}{56,000 CAD}{spaceafter}
-	\tableentryrawthree{}{\textit{Fonds de Recherche du Qu\'{e}bec - Nature et Technologies}}{}{spaceafter}
-	
-	%------------------------------------------------
-	
-	\tableentryrawthree{\textsc{Jan 2017 – Dec 2019}}{\textbf{McGill Engineering Doctoral Award (MEDA)}}{96,000 CAD}{spaceafter}
-	\tableentryrawthree{}{\textit{McGill University}}{}{spaceafter}
-	
-	%------------------------------------------------
-
+		\switchcolumn % Switch to the next paracol column
 		
-	\tableentryrawthree{\textsc{Aug 2013 – Dec 2015}}{\textbf{ADNOC Graduate fellowship}}{90,000 USD}{spaceafter}
-	\tableentryrawthree{}{\textit{Abu Dhabi National Oil Company}}{}{}
+		%----------------------------------------------------------------------------------------
 	
-	%------------------------------------------------
+		\begin{itemize}\itemsep0em 
+			\item Material engineering and corrosion
+			\item Measurements and instrumentation
+			\item Advanced vibrations
+			\item Fracture mechanics	
+			\item Viscous and compressible fluid flows
+		\end{itemize}
 	
-\end{supertabular}
-
-%------------------------------------------------
-
-\medskip \hrule \medskip
-
-\begin{supertabular}{>{\raggedright\arraybackslash}p{0.77\linewidth}>{\raggedleft\arraybackslash}p{0.19\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
-	
-	%------------------------------------------------
-	
-	\tableentryraw{Our \href{http://dx.doi.org/10.1115/1.4047908}{paper on scalable designs} was selected for the 2021 ASME Journal of Mechanical Design Editor's Choice award}{\textsc{ASME IDETC 2022, St.~Louis, USA}}{spaceafter}
-
-	\tableentryraw{Awarded 2nd place for final problem presentation and winner of best data visualization in the 11th Montreal Industreal Problem Solving Workshop}{\textsc{IVADO, Universit\'{e} de Montr\'{e}al, Canada}}{spaceafter}
-
-	\tableentryraw{Team leader of the first team to successfully qualify and complete the Baja SAE competition}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
-
-	\tableentryraw{Awarded 2nd place in the Abu Dhabi Solar Challenge (10,000 AED)}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
-
-	\tableentryraw{Recognition for voluntary commitment to the Graduate School's and the Graduate Student Affair's events}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
-
-	\tableentryraw{Graduated Honors with distinction (2,000 AED)}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
-	
-	\tableentryraw{Made it to the Provost's list 3 times}{\textsc{Khalifa University, Abu Dhabi, UAE}}{spaceafter}
-	
-	%------------------------------------------------
-	
-\end{supertabular}
+		%----------------------------------------------------------------------------------------
+		
+	\end{paracol}
+}
 
 %----------------------------------------------------------------------------------------
 %	REVIEW SERVICE
@@ -858,7 +868,7 @@ I modeled how an infectious disease spreads in a small population. Diseases such
 
 %------------------------------------------------
 
-\begin{supertabular}{>{\raggedright\arraybackslash}p{0.56\linewidth}>{\centering\arraybackslash}p{0.4\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
+\begin{supertabular}{>{\raggedright\arraybackslash}p{0.65\linewidth}>{\centering\arraybackslash}p{0.3\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
 
 	\textbf{Served as a reviewer on the following journals:}\\
 	~\\
@@ -894,283 +904,287 @@ I modeled how an infectious disease spreads in a small population. Diseases such
 \end{supertabular}
 %------------------------------------------------
 
-\medskip % Extra whitespace before the next section
+% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS
 %----------------------------------------------------------------------------------------
 
-\section{Skills} 
+\ifthenelse{\equal{\cvskills}{}}{}{
+	\section{Skills} 
 
-% Example \tableentry{} command to add another line:
-
-%\tableentry{Heading}{Content}{spaceafter}
-
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
-
-%------------------------------------------------
-
-\columnratio{0.5,0.5} % The relative ratios of the three columns in the references
-
-\setlength\columnsep{0.05\textwidth} % Specify the amount of space between the columns
-
-\begin{paracol}{2} % Begin the multi-column environment
-
-	\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.15\linewidth}l} % Start a table with three columns, the table will ensure everything is aligned
-
-		%------------------------------------------------
-		\tableentry{}{\Large\textsc{Programming Languages}}{spaceafter}
-		\tableentry{}{\skilllevel{Python}{7}}{}
-		\tableentry{}{\skilllevel{C++}{4}}{}
-		\tableentry{}{\skilllevel{VB}{3}}{}
-		\tableentry{}{\skilllevel{R}{5}}{}
-		\tableentry{}{\skilllevel{MATLAB}{7}}{}
-		\tableentry{}{\skilllevel{HTML, CSS}{3}}{}
-		\tableentry{}{\skilllevel{Javascript}{2}}{}
-		\tableentry{}{\skilllevel{mySQL}{5}}{}
-
-		%------------------------------------------------
+	% Example \tableentry{} command to add another line:
 	
-	\end{supertabular}
+	%\tableentry{Heading}{Content}{spaceafter}
+	
+	% All 3 parameters must be supplied but any can be empty if you don't need them
+	% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+	
+	%------------------------------------------------
+	
+	\columnratio{0.5,0.5} % The relative ratios of the three columns in the references
+	
+	\setlength\columnsep{0.05\textwidth} % Specify the amount of space between the columns
+	
+	\begin{paracol}{2} % Begin the multi-column environment
+	
+		\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.15\linewidth}l} % Start a table with three columns, the table will ensure everything is aligned
+	
+			%------------------------------------------------
+			\tableentry{}{\Large\textsc{Programming Languages}}{spaceafter}
+			\tableentry{}{\skilllevel{Python}{7}}{}
+			\tableentry{}{\skilllevel{C++}{4}}{}
+			\tableentry{}{\skilllevel{VB}{3}}{}
+			\tableentry{}{\skilllevel{R}{5}}{}
+			\tableentry{}{\skilllevel{MATLAB}{7}}{}
+			\tableentry{}{\skilllevel{HTML, CSS}{3}}{}
+			\tableentry{}{\skilllevel{Javascript}{2}}{}
+			\tableentry{}{\skilllevel{mySQL}{5}}{}
+	
+			%------------------------------------------------
 		
-	%----------------------------------------------------------------------------------------
+		\end{supertabular}
+			
+		%----------------------------------------------------------------------------------------
+		
+		\switchcolumn % Switch to the next paracol column
+		
+		%----------------------------------------------------------------------------------------
 	
-	\switchcolumn % Switch to the next paracol column
+		\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.15\linewidth}l} % Start a table with three columns, the table will ensure everything is aligned
 	
-	%----------------------------------------------------------------------------------------
-
-	\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.15\linewidth}l} % Start a table with three columns, the table will ensure everything is aligned
-
+			%------------------------------------------------
+			\tableentry{}{\Large\textsc{Spoken Languages}}{spaceafter}
+			\tableentry{English}{\skilllevel{Verbal}{9}}{}
+			\tableentry{}{\skilllevel{Written}{8}}{}
+			\tableentry{Arabic}{\skilllevel{Verbal}{9}}{}
+			\tableentry{}{\skilllevel{Written}{8}}{}
+			\tableentry{French}{\skilllevel{Verbal}{1}}{}
+			\tableentry{}{\skilllevel{Written}{4}}{}
+			\tableentry{Swedish}{\skilllevel{Verbal}{0}}{}
+			\tableentry{}{\skilllevel{Written}{2}}{}
+		
+			%------------------------------------------------
+		
+		\end{supertabular}
+	
+		%----------------------------------------------------------------------------------------
+		
+	\end{paracol}
+	
+	% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+	
+	\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.4\linewidth}>{\raggedright\arraybackslash}p{0.5\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
+		
 		%------------------------------------------------
-		\tableentry{}{\Large\textsc{Spoken Languages}}{spaceafter}
-		\tableentry{English}{\skilllevel{Verbal}{9}}{}
-		\tableentry{}{\skilllevel{Written}{8}}{}
-		\tableentry{Arabic}{\skilllevel{Verbal}{9}}{}
-		\tableentry{}{\skilllevel{Written}{8}}{}
-		\tableentry{French}{\skilllevel{Verbal}{1}}{}
-		\tableentry{}{\skilllevel{Written}{4}}{}
-		\tableentry{Swedish}{\skilllevel{Verbal}{0}}{}
-		\tableentry{}{\skilllevel{Written}{2}}{}
+		
+		\tableentry{Operating Systems ~~\faDesktop}{\faWindows ~~~\faLinux ~~~\faApple}{spaceafter}
 	
 		%------------------------------------------------
+	
+		\tableentry{Scientific libraries ~~\faCogs}{Qt, PyTorch, CUDA, Intel MPI, OpenCL, Pandas, scikit-learn}{spaceafter}
+	
+		%------------------------------------------------
+	
+		\tableentry{Source control ~~\faCodeFork}{Git, Perforce}{spaceafter}
+	
+		%------------------------------------------------
+	
+		\tableentry{Interactive development environments ~~\faListAlt}{VSCode, Xcode, Visual Studio, RStudio}{spaceafter}
+	
+		%------------------------------------------------
+		
+		\tableentry{Typesetting ~~\faFileText}{\LaTeX (and beamer), Microsoft Office}{spaceafter}
+		
+		%------------------------------------------------
+		
+		\tableentry{Finite element software ~~\faTh}{Ansys-APDL, Abaqus, NASTRAN}{spaceafter}
+	
+		%------------------------------------------------
+		
+		\tableentry{Application programming interfaces ~~\faCode}{Abaqus Fortran subroutines and python API, NX siemens API}{spaceafter}
+	
+		%------------------------------------------------
+		
+		\tableentry{CFD Software ~~\faSpaceShuttle}{Ansys (CFX, Fluent, Workbench) - basic usage}{spaceafter}
+	
+		%------------------------------------------------
+	
+		\tableentry{Computer aided design ~~\faCube}{SOLIDWORKS, NX siemens}{spaceafter}
+	
+		%------------------------------------------------
+	
+		\tableentry{Communication and interpersonal skills ~~\faUsers}{Excellent written and verbal presentation skills}{}
+		\tableentry{}{Comfortable working in a target-driven and fast paced environment}{}
+		\tableentry{}{Data analysis, proposal writing and questionnaire design}{}
+		\tableentry{}{Very methodical and organized. Pays attention to detail and is able to identify underlying trends and patterns}{spaceafter}
 	
 	\end{supertabular}
-
-	%----------------------------------------------------------------------------------------
-	
-\end{paracol}
-
-\medskip % Extra whitespace before the next section
-
-\begin{supertabular}{>{\raggedleft\arraybackslash}p{0.4\linewidth}>{\raggedright\arraybackslash}p{0.5\linewidth}} % Start a table with three columns, the table will ensure everything is aligned
-	
 	%------------------------------------------------
 	
-	\tableentry{Operating Systems ~~\faDesktop}{\faWindows ~~~\faLinux ~~~\faApple}{spaceafter}
-
-	%------------------------------------------------
-
-	\tableentry{Scientific libraries ~~\faCogs}{Qt, PyTorch, CUDA, Intel MPI, OpenCL, Pandas, scikit-learn}{spaceafter}
-
-	%------------------------------------------------
-
-	\tableentry{Source control ~~\faCodeFork}{Git, Perforce}{spaceafter}
-
-	%------------------------------------------------
-
-	\tableentry{Interactive development environments ~~\faListAlt}{VSCode, Xcode, Visual Studio, RStudio}{spaceafter}
-
-	%------------------------------------------------
-	
-	\tableentry{Typesetting ~~\faFileText}{\LaTeX (and beamer), Microsoft Office}{spaceafter}
-	
-	%------------------------------------------------
-	
-	\tableentry{Finite element software ~~\faTh}{Ansys-APDL, Abaqus, NASTRAN}{spaceafter}
-
-	%------------------------------------------------
-	
-	\tableentry{Application programming interfaces ~~\faCode}{Abaqus Fortran subroutines and python API, NX siemens API}{spaceafter}
-
-	%------------------------------------------------
-	
-	\tableentry{CFD Software ~~\faSpaceShuttle}{Ansys (CFX, Fluent, Workbench) - basic usage}{spaceafter}
-
-	%------------------------------------------------
-
-	\tableentry{Computer aided design ~~\faCube}{SOLIDWORKS, NX siemens}{spaceafter}
-
-	%------------------------------------------------
-
-	\tableentry{Communication and interpersonal skills ~~\faUsers}{Excellent written and verbal presentation skills}{}
-	\tableentry{}{Comfortable working in a target-driven and fast paced environment}{}
-	\tableentry{}{Data analysis, proposal writing and questionnaire design}{}
-	\tableentry{}{Very methodical and organized. Pays attention to detail and is able to identify underlying trends and patterns}{spaceafter}
-
-\end{supertabular}
-%------------------------------------------------
-
-\medskip % Extra whitespace before the next section
+	% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+}
 
 %----------------------------------------------------------------------------------------
 %	PERSONAL INTERESTS
 %----------------------------------------------------------------------------------------
 
-\section{Personal Interests}
+\ifthenelse{\equal{\cvhobbies}{}}{}{
+	\section{Personal Interests}
 
-\columnratio{0.5,0.5} % The relative ratios of the three columns in the references
-
-\setlength\columnsep{0.05\textwidth} % Specify the amount of space between the columns
-
-\begin{paracol}{2} % Begin the multi-column environment
-
-	\begin{itemize}\itemsep0em 
-		\item Gymnastics and Powerlifting training
-		\item Automotive enthusiast
-		\item Competitive gaming	
-	\end{itemize}
+	\columnratio{0.5,0.5} % The relative ratios of the three columns in the references
+	
+	\setlength\columnsep{0.05\textwidth} % Specify the amount of space between the columns
+	
+	\begin{paracol}{2} % Begin the multi-column environment
+	
+		\begin{itemize}\itemsep0em 
+			\item Gymnastics and Powerlifting training
+			\item Automotive enthusiast
+			\item Competitive gaming	
+		\end{itemize}
+			
+		%----------------------------------------------------------------------------------------
 		
-	%----------------------------------------------------------------------------------------
+		\switchcolumn % Switch to the next paracol column
+		
+		%----------------------------------------------------------------------------------------
 	
-	\switchcolumn % Switch to the next paracol column
+		\begin{itemize}\itemsep0em 
+			\item 3D printing hobbyist
+			\item Tinkering and restoration of old machines
+			\item Tabletop games (Warhammer and D\&D)
+		\end{itemize}
 	
-	%----------------------------------------------------------------------------------------
+		%----------------------------------------------------------------------------------------
+		
+	\end{paracol}
+	%------------------------------------------------
 
-	\begin{itemize}\itemsep0em 
-		\item 3D printing hobbyist
-		\item Tinkering and restoration of old machines
-		\item Tabletop games (Warhammer and D\&D)
-	\end{itemize}
-
-	%----------------------------------------------------------------------------------------
-	
-\end{paracol}
-%------------------------------------------------
-
-\medskip % Extra whitespace before the next section
+	% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+}
 
 %----------------------------------------------------------------------------------------
 %	REFERENCES
 %----------------------------------------------------------------------------------------
-\section{References}
 
-%\textit{References available on request}
+\ifthenelse{\equal{\cvreferences}{}}{}{
+	\section{References}
+	%------------------------------------------------
 
-%------------------------------------------------
+	% Example \tableentry{} command to add another line:
 
-% Example \tableentry{} command to add another line:
+	%\tableentry{Heading}{Content}{spaceafter}
 
-%\tableentry{Heading}{Content}{spaceafter}
+	% All 3 parameters must be supplied but any can be empty if you don't need them
+	% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
 
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+	%------------------------------------------------
 
-%------------------------------------------------
+	\columnratio{0.5,0.5} % The relative ratios of the three columns in the references
 
-\columnratio{0.5,0.5} % The relative ratios of the three columns in the references
+	\setlength\columnsep{0.05\textwidth} % Specify the amount of space between the columns
 
-\setlength\columnsep{0.05\textwidth} % Specify the amount of space between the columns
+	\begin{paracol}{2} % Begin the multi-column environment
 
-\begin{paracol}{2} % Begin the multi-column environment
-
-	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-	
-		%------------------------------------------------
+		\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
 		
-		\tableentry{}{\textbf{Prof. Michael Kokkolaras}}{spaceafter}
-		\tableentry{Position}{Associate Professor}{}
-		\tableentry{Employer}{\href{https://www.mcgill.ca/mecheng/}{Department of Mechanical Engineering}}{}
-		\tableentry{}{\href{https://www.mcgill.ca/}{\textit{McGill Univeristy}}}{spaceafter}
-		\tableentry{Email}{\href{mailto:michael.kokkolaras@mcgill.ca}{michael.kokkolaras@mcgill.ca}}{}
-	
-		%------------------------------------------------
-
-		\tableentry{}{}{spaceafter}
-
-		%------------------------------------------------
-
-		\tableentry{}{\textbf{Prof. Fabian Bastin}}{spaceafter}
-		\tableentry{Position}{Professor}{}
-		\tableentry{Department}{\href{https://diro.umontreal.ca/accueil/}{Department of Computer Science}}{}
-		\tableentry{}{\href{https://www.umontreal.ca/}{\textit{Universit\'{e} de Montr\'{e}al}}}{spaceafter}
-		\tableentry{Email}{\href{mailto:fabian.bastin@umontreal.ca}{fabian.bastin@umontreal.ca}}{}
-	
-		%------------------------------------------------
-
-		\tableentry{}{}{spaceafter}
-
-		%------------------------------------------------
-
-		% \tableentry{}{\textbf{Prof. Peter Rodgers}}{spaceafter}
-		% \tableentry{Position}{Professor and Director, Research Laboratories}{}
-		% \tableentry{Employer}{\href{https://www.ku.ac.ae/academics/college-of-engineering/department/department-of-mechanical-engineering}{Department of Mechanical Engineering}}{}
-		% \tableentry{}{\href{https://www.ku.ac.ae/}{\textit{Khalifa Univeristy}}}{spaceafter}
-		% \tableentry{Email}{\href{mailto:peter.rodgers@ku.ac.ae}{peter.rodgers@ku.ac.ae}}{}
-
-		%------------------------------------------------
-
-	\end{supertabular}
-
-	%----------------------------------------------------------------------------------------
-	
-	\switchcolumn % Switch to the next paracol column
-	
-	%----------------------------------------------------------------------------------------
-
-	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-
-	%----------------------------------------------------------------------------------------
-	
-		\tableentry{}{\textbf{Prof. Ola Isaksson}}{spaceafter}
-		\tableentry{Position}{Professor}{}
-		\tableentry{Employer}{\href{https://www.chalmers.se/en/departments/ims/}{Department of Industrial and Materials Science}}{}
-		\tableentry{}{\href{https://www.chalmers.se/sv/Sidor/default.aspx}{\textit{Chalmers Univeristy of Technology}}}{spaceafter}
-		\tableentry{Email}{\href{mailto:ola.isaksson@chalmers.se}{ola.isaksson@chalmers.se}}{}
-
-		%------------------------------------------------
-
-		\tableentry{}{}{spaceafter}
+			%------------------------------------------------
+			
+			\tableentry{}{\textbf{Prof. Michael Kokkolaras}}{spaceafter}
+			\tableentry{Position}{Associate Professor}{}
+			\tableentry{Employer}{\href{https://www.mcgill.ca/mecheng/}{Department of Mechanical Engineering}}{}
+			\tableentry{}{\href{https://www.mcgill.ca/}{\textit{McGill Univeristy}}}{spaceafter}
+			\tableentry{Email}{\href{mailto:michael.kokkolaras@mcgill.ca}{michael.kokkolaras@mcgill.ca}}{}
 		
-		%------------------------------------------------
+			%------------------------------------------------
+
+			\tableentry{}{}{spaceafter}
+
+			%------------------------------------------------
+
+			\tableentry{}{\textbf{Prof. Fabian Bastin}}{spaceafter}
+			\tableentry{Position}{Professor}{}
+			\tableentry{Department}{\href{https://diro.umontreal.ca/accueil/}{Department of Computer Science}}{}
+			\tableentry{}{\href{https://www.umontreal.ca/}{\textit{Universit\'{e} de Montr\'{e}al}}}{spaceafter}
+			\tableentry{Email}{\href{mailto:fabian.bastin@umontreal.ca}{fabian.bastin@umontreal.ca}}{}
 		
-		\tableentry{}{\textbf{Dr. Ibrahim Chamseddine}}{spaceafter}
-		\tableentry{Position}{Instructor in Investigation}{}
-		\tableentry{Department}{\href{https://gray.mgh.harvard.edu/}{Department of radiation oncology}}{}
-		\tableentry{}{\href{https://hms.harvard.edu/}{\textit{Harvard Medical School}}}{spaceafter}
-		\tableentry{Email}{\href{mailto:ichamseddine@mgh.harvard.edu}{ichamseddine@mgh.harvard.edu}}{}
+			%------------------------------------------------
 
-		%------------------------------------------------
+			\tableentry{}{}{spaceafter}
 
-		\tableentry{}{}{spaceafter}
+			%------------------------------------------------
 
-		%------------------------------------------------
+			\tableentry{}{\textbf{Prof. Peter Rodgers}}{spaceafter}
+			\tableentry{Position}{Professor and Director, Research Laboratories}{}
+			\tableentry{Employer}{\href{https://www.ku.ac.ae/academics/college-of-engineering/department/department-of-mechanical-engineering}{Department of Mechanical Engineering}}{}
+			\tableentry{}{\href{https://www.ku.ac.ae/}{\textit{Khalifa Univeristy}}}{spaceafter}
+			\tableentry{Email}{\href{mailto:peter.rodgers@ku.ac.ae}{peter.rodgers@ku.ac.ae}}{}
 
-		% \tableentry{}{\textbf{Prof. Nader Vahdati}}{spaceafter}
-		% \tableentry{Position}{Associate Professor}{}
-		% \tableentry{Employer}{\href{https://www.ku.ac.ae/academics/college-of-engineering/department/department-of-mechanical-engineering}{Department of Mechanical Engineering}}{}
-		% \tableentry{}{\href{https://www.ku.ac.ae/}{\textit{Khalifa Univeristy}}}{spaceafter}
-		% \tableentry{Email}{\href{mailto:nader.vahdati@ku.ac.ae}{nader.vahdati@ku.ac.ae}}{}
+			%------------------------------------------------
+
+		\end{supertabular}
+
+		%----------------------------------------------------------------------------------------
 		
-		%------------------------------------------------
+		\switchcolumn % Switch to the next paracol column
+		
+		%----------------------------------------------------------------------------------------
 
-		\tableentry{}{}{spaceafter}
+		\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
 
-		%------------------------------------------------
+		%----------------------------------------------------------------------------------------
+		
+			\tableentry{}{\textbf{Prof. Ola Isaksson}}{spaceafter}
+			\tableentry{Position}{Professor}{}
+			\tableentry{Employer}{\href{https://www.chalmers.se/en/departments/ims/}{Department of Industrial and Materials Science}}{}
+			\tableentry{}{\href{https://www.chalmers.se/sv/Sidor/default.aspx}{\textit{Chalmers Univeristy of Technology}}}{spaceafter}
+			\tableentry{Email}{\href{mailto:ola.isaksson@chalmers.se}{ola.isaksson@chalmers.se}}{}
 
-		% \tableentry{}{\textbf{Prof. Oleg Shiryayev}}{spaceafter}
-		% \tableentry{Position}{Assistant Professor}{}
-		% \tableentry{Employer}{\href{https://www.uaa.alaska.edu/academics/college-of-engineering/departments/mechanical-engineering}{Department of Mechanical Engineering}}{}
-		% \tableentry{}{\href{https://www.uaa.alaska.edu/}{\textit{University of Alaska Anchorage}}}{spaceafter}
-		% \tableentry{Email}{\href{mailto:oshiryayev@alaska.edu}{oshiryayev@alaska.edu}}{}
+			%------------------------------------------------
 
-	\end{supertabular}
+			\tableentry{}{}{spaceafter}
+			
+			%------------------------------------------------
+			
+			\tableentry{}{\textbf{Dr. Ibrahim Chamseddine}}{spaceafter}
+			\tableentry{Position}{Instructor in Investigation}{}
+			\tableentry{Department}{\href{https://gray.mgh.harvard.edu/}{Department of radiation oncology}}{}
+			\tableentry{}{\href{https://hms.harvard.edu/}{\textit{Harvard Medical School}}}{spaceafter}
+			\tableentry{Email}{\href{mailto:ichamseddine@mgh.harvard.edu}{ichamseddine@mgh.harvard.edu}}{}
 
-	%----------------------------------------------------------------------------------------
-	
-\end{paracol}
+			%------------------------------------------------
 
-\medskip % Extra whitespace before the next section
+			\tableentry{}{}{spaceafter}
+
+			%------------------------------------------------
+
+			\tableentry{}{\textbf{Prof. Nader Vahdati}}{spaceafter}
+			\tableentry{Position}{Associate Professor}{}
+			\tableentry{Employer}{\href{https://www.ku.ac.ae/academics/college-of-engineering/department/department-of-mechanical-engineering}{Department of Mechanical Engineering}}{}
+			\tableentry{}{\href{https://www.ku.ac.ae/}{\textit{Khalifa Univeristy}}}{spaceafter}
+			\tableentry{Email}{\href{mailto:nader.vahdati@ku.ac.ae}{nader.vahdati@ku.ac.ae}}{}
+			
+			%------------------------------------------------
+
+			\tableentry{}{}{spaceafter}
+
+			%------------------------------------------------
+
+			\tableentry{}{\textbf{Prof. Oleg Shiryayev}}{spaceafter}
+			\tableentry{Position}{Assistant Professor}{}
+			\tableentry{Employer}{\href{https://www.uaa.alaska.edu/academics/college-of-engineering/departments/mechanical-engineering}{Department of Mechanical Engineering}}{}
+			\tableentry{}{\href{https://www.uaa.alaska.edu/}{\textit{University of Alaska Anchorage}}}{spaceafter}
+			\tableentry{Email}{\href{mailto:oshiryayev@alaska.edu}{oshiryayev@alaska.edu}}{}
+
+		\end{supertabular}
+
+		%----------------------------------------------------------------------------------------
+		
+	\end{paracol}
+
+	% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+}
 
 %----------------------------------------------------------------------------------------
 
