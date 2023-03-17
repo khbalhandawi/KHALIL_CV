@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{khbalhandawi.github.io} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{0.0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge \cvname}\\\medskip % Your name
+}
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.1\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{0\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\ifthenelse{\equal{\cvdate}{}}{}{\raisebox{-1pt}{\faInfo} & \cvdate \\}
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faHome} & \cvaddress \\} % Address
+			\ifthenelse{\equal{\cvaddress}{}}{}{\raisebox{-1pt}{\faPhone} & \cvnumberphone \\} % Phone number
+			\ifthenelse{\equal{\cvmail}{}}{}{\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\cvmail}{\cvmail} \\} % Email address
+			\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\faGlobe} & \href{https://\cvsite}{\cvsite} \\} % GitHub profile
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\raisebox{-1pt}{\faLinkedinSquare} & \href{https://\cvlinkedin}{\cvlinkedin} \\} % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+\end{paracol}
+
+\medskip % Extra whitespace before the next section
+\rule[0pt]{\textwidth}{1pt}\\
+%----------------------------------------------------------------------------------------
+%	ADDRESS
+%----------------------------------------------------------------------------------------
+\today\\[6pt]
+Aerospace Research Centre, Human Factors research team\\
+Re: Research Council Officer, Airborne Research (18610)\\[6pt]
+
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+
+Dear Hiring Manager,
+
+\medskip % Extra whitespace before the next section 
+
+I am writing to express my interest in the Research Council Officer role within the Human Factors research team at NRC. I am excited about the opportunity to leverage my optimization and modeling experience to contribute to the cutting-edge technology and innovation being developed at the NRC Aerospace research centre.
+
+\medskip % Extra whitespace before the next section 
+
+I have 6 years of experience doing research on aerospace and aviation related projects. I am currently a post-doctoral research at the department of computer science and operations research (DIRO) at the Universit\'{e} de Montr\'{e}al as part of an industrial project with the international air transport association (IATA). My current research focuses on temporal graph learning from aviation data collected over the last decade to assess the effectiveness and impact of the IATA operation safety audit (IOSA) on air travel accessibility and cooperation between airlines. I believe this experience is closely related to the research being done by the Human Factors team as it focuses on operational standards in aviation and passenger experience when it comes to codesharing between airlines.
+
+\medskip % Extra whitespace before the next section 
+
+I also worked on various research projects during my tenure at McGill University with aeroengine companies such as GKN Aerospace. I developed mathematical frameworks to facilitate complex engineering design analyses that are common in the industry. For example, engineers wish to understand the sensitivity of their designs with respect to certain decisions and client requirements. This results in changes that propagate through the various systems of the product (e.g., a change in an aircraft's wing could propagate to the fuselage design). I authored a \href{https://sed-group.github.io/mvmlib/index.html}{Python library} and various \href{https://github.com/khbalhandawi/scale_AM_webapp}{web applications} to perform said sensitivity and change propagation analysis on an engineering system (defined by the user) and returns various results and visualizations to convey the sensitivity results.
+
+\medskip % Extra whitespace before the next section 
+
+As part of my research at McGill, I had to work with actual aeroengine components on computer-aided design (CAD) and finite element analysis (FEA) software which gave me the necessary exposure to simulation tools that are commonly used in the industry. However, I have a basic understanding of computational fluid dynamics (CFD) software and have used ANSYS Fluent in the past as part of internships and automotive engineering competitions (Baja SAE and solar powered vehicles).
+
+\medskip % Extra whitespace before the next section 
+
+I am confident that my technical abilities, combined with my strong mathematical and simulation skills, would make me a valuable asset to your team. I am eager to bring my expertise to the Human Factors team and am excited about the opportunity to work on challenging projects that require creative and innovative solutions.
+
+\medskip % Extra whitespace before the next section 
+
+Thank you for considering my application. I would be honored to have the opportunity to discuss my qualifications further and show you my \href{https://khbalhandawi.github.io/projects/}{portfolio} of projects. Please feel free to contact me through any of the channels at the top of this letter.
+
+\medskip % Extra whitespace before the next section
+
+Best regards,
+
+\medskip % Extra whitespace before the next section
+
+
+Khalil Al Handawi
+
+% \begin{figure*}[h]
+% 	\includegraphics[width=0.2\textwidth]{Signiture.png}
+% \end{figure*}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
