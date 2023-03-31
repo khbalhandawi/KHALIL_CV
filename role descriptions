@@ -1,0 +1,35 @@
+Work on an industrial research project in collaboration with IATA to analyze commercial aviation data from the last 10 years. We plan to use graph representation learning to identify laten community structures within the aviation industry and how collaborations such as codesharing and interlining agreements are formed.
+
+
+
+
+
+I was the sole instructor of the Engineering Systems Optimization course(MECH559). I gave lectures to engineering students covering:
+1- Optimization fundementals (FONCs and SOSCs)
+2- Gradient descent
+3- Linear and nonlinear programming (including SQP)
+4- Multidiscpenary design optimization (MDO)
+5- Derivative free optimization
+
+As part of the course I also developed training material and Python notebooks for the students to improve their understanding and use in their projects.
+
+
+
+
+
+Researched simulation-based decision-making in public health and policy making during epidemics. Developed deep learning COVID-19 forecasting models. Developed a hyperparameter optimization framework for machine learning based on direct search. Developed GPU accelerated epidemic models for high simulation throughput.
+
+
+
+I was a part of a joint Canadian/European industrial project investigating additive repair technologies for aeroengine parts. I focused on optimization of aerospace design remanufacturing. I developed mathematical tools and software for design space exploration and optimization under uncertainty to explore multidimensional design spaces. Participated in a technology transfer at GKN Aerospace, providing Python training on said tools and was awarded the best paper award by the ASME Journal of Mechanical Design in 2021.
+
+
+
+
+I conducted research on change propagation and absorption in engineering design (applied to aeroengine systems). Said change can arise due to uncertain design requirements. I authored a Python library to perform sensitivity studies and allocate design margins in order to allow designer to account for changes in their designs. I used said library in design space exploration to concurrently develop and analyze 6, 552 conceptual designs of an aeroengine component and visualize the results using interactive tools.
+
+
+
+
+
+I developed fiber optic structural monitoring sensors for mitigating corrosion costs in the oil and gas industry. I also developed a new accelerated corrosion testing setup to simulate 2 years of corrosion in 2 hours.
