@@ -50,6 +50,7 @@
 \cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
 \cvgithub{github.com/khbalhandawi} % GitHub
 \cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+\cvscholar{scholar.google.com} % google scholar
 
 \aboutme{} % To have no About Me section, just remove all the text and leave \aboutme{}
 
@@ -86,6 +87,8 @@
 			\ifthenelse{\equal{\cvsite}{}}{}{\raisebox{-1pt}{\small\faGlobe} & \href{https://\cvsite}{\cvsite} \\} % Website
 			\ifthenelse{\equal{\cvgithub}{}}{}{\raisebox{-1pt}{\faGithub} & \href{https://\cvgithub}{\cvgithub} \\} % GitHub profile
 			\ifthenelse{\equal{\cvlinkedin}{}}{}{\raisebox{-1pt}{\faLinkedinSquare} & \href{https://\cvlinkedin}{\cvlinkedin} \\} % LinkedIn profile
+			\ifthenelse{\equal{\cvscholar}{}}{}{\raisebox{-1pt}{\aiGoogleScholar} & \href{https://scholar.google.com/citations?user=2UAU3bMAAAAJ\&hl=en}{\cvscholar} \\} % google scholar
+			% https://scholar.google.com/citations?user=2UAU3bMAAAAJ&hl=en
 			% See fontawesome.pdf in the fonts folder for all icons you can use
 		\end{supertabular}
 	}
@@ -184,7 +187,9 @@
 	{} % Location
 	{Research assistant} % Job title
 	{}{}  % Description
-	\tableentry{$\bullet$}{Worked in a \textbf{Canadian/European industrial project} for additive repair technologies in aerospace parts. I focused on process optimization and remanufacturing options.}{}
+	\tableentry{$\bullet$}{Worked in a \textbf{Canadian/European industrial project} for investigating additive repair technologies within the aerospace industry.}{}
+	\tableentry{$\bullet$}{Developed parameteric CAD modeling tools using NX seimens and the NXOpen API to explore various design solutions for aerospace componenets.}{}
+	\tableentry{$\bullet$}{Developed parameteric thermomechanical simulations in Abaqus to simulate additive manufacturing processes and assess residual distortion. The model was used for process optimization.}{}
 	\tableentry{$\bullet$}{Developed mathematical tools and \href{https://github.com/khbalhandawi/scale_AM_webapp}{software} for design space exploration and visualization of high-dimensional design spaces that are based on blackbox optimization.}{}
 	\tableentry{$\bullet$}{Worked on a \href{https://www.chalmers.se/en/departments/ims/news/Pages/Optimizationdriven-setbased-design-.aspx}{technology transfer} at \textbf{GKN Aerospace}, providing Python training on said tools.}{}
 	\tableentry{$\bullet$}{Resulted in the \textbf{\href{https://www.gknaerospace.com/en/our-technology/2022/additive-manufacturing-research-paper-receives-journal-of-mechanical-design-award/}{best paper}} award by the ASME Journal of Mechanical Design in 2021.}{spaceafter}
@@ -347,18 +352,59 @@
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
 %
-\section{Selected publications}
+
+\section{Publications}
+
+% Example \longformdescription{} command to add another publication:
+
+%\longformpublication{Reference (format this manually as desired)}
 
 %------------------------------------------------
+
+\textbf{\large Submitted preprints}\medskip \hrule \medskip
+
+\longformpublication{\textbf{K. Al Handawi}, A. Brahma, D. Wynn, M. Kokkolaras and O. Isaksson (2023). Design space exploration and evaluation using margin-based trade-offs. \textit{Journal of Mechanical Design}\\
+\textit{funded partially by NSERC and Area of Advance of Chalmers University}}
+
+%------------------------------------------------
+
+\textbf{\large Refereed Journal Articles}\medskip \hrule \medskip
 
 \longformpublication{A. Khalil, \textbf{K. Al Handawi}, Z. Mohsen, A. Abdel Nour, R. Feghali, I. Chamseddine and M. Kokkolaras (2022). Weekly nowcasting of new COVID-19 cases using past viral load measurements. \textit{Viruses}, \textit{14}(7): pp 1414. \href{https://www.mdpi.com/1999-4915/14/7/1414}{doi: 10.3390/V14071414}}
 
 \longformpublication{\textbf{K. Al Handawi} and M. Kokkolaras (2021). Optimization of infectious disease prevention and control policies using artificial life. \textit{IEEE Transactions on Emerging Topics in Computational Intelligence}, \href{https://doi.org/10.1109/TETCI.2021.3107496}{doi: 10.1109/TETCI.2021.3107496}
 ~\textit{funded by an NSERC discovery grant}}
 
+\longformpublication{\textbf{K. Al Handawi}, M. Panarotto, P. Andersson, O. Isaksson and M. Kokkolaras (2021). Optimization of design margins allocation when making use of additive remanufacturing. \textit{Journal of Mechanical Design}, \textit{144}(1): pp 012001. \href{https://doi.org/10.1115/1.4051607}{doi: 10.1115/1.4051607}\\
+\textit{funded partially by NSERC, FRQNT, CARIC and EU Horizon 2020 research and innovation programme}}
+
+\longformpublication{M. Chehadeh, M. Wahbah, M. Awad, O. AbdulHay, \textbf{K. Al Handawi}, L. Seneviratne, I. Greatbatch and Y. Zweiri (2021). Novel aerial firefighting system for suppression of incipient cladding fires. \textit{Journal of Field Robotics}, (\textit{In Press})\\
+\textit{funded by Emaar Properties PJSC}}
+
 \longformpublication{\textbf{K. Al Handawi}, P. Andersson, M. Panarotto, O. Isaksson and M. Kokkolaras (2020). Scalable set-based design optimization and remanufacturing for meeting changing requirements. \textit{Journal of Mechanical Design}, \textit{143}(2): pp 021702. \href{http://dx.doi.org/10.1115/1.4047908}{doi: 10.1115/1.4047908}\\
 \textit{funded partially by NSERC, FRQNT, CARIC and EU Horizon 2020 research and innovation programme}}
 
+\longformpublication{\textbf{K. Al Handawi}, N. Vahdati, O. Shiryayev and L. Lawand (2017). Analytical modeling tool for design of hydrocarbon sensitive optical fibers. \textit{Sensors}, \textit{17}(10): pp 2227. \href{http://dx.doi.org/10.3390/s17102227}{doi: 10.3390/s17102227}\\
+\textit{funded by Abu Dhabi National Oil Company}}
+
+\longformpublication{L. Lawand, O. Shiryayev, \textbf{K. Al Handawi}, N. Vahdati and P. Rostron (2017). Corrosivity sensor for exposed pipelines based on wireless energy transfer. \textit{Sensors}, \textit{17}(6): pp 1238. \href{http://dx.doi.org/10.3390/s17061238}{doi: 10.3390/s17061238}\\
+\textit{funded by Abu Dhabi National Oil Company}}
+
+\longformpublication{\textbf{K. Al Handawi}, N. Vahdati, P. Rostron, L. Lawand and O. Shiryayev (2016). Strain-based FBG sensor for real-time corrosion rate monitoring in pre-stressed structures. \textit{Sensors and Actuators B: Chemical}, \textit{236}: pp 276 -- 285. \href{http://dx.doi.org/10.1016/j.snb.2016.05.167}{doi: 10.1016/j.snb.2016.05.167}\\
+\textit{funded by Abu Dhabi National Oil Company}}
+
+%------------------------------------------------
+\textbf{\large Conference Papers}\medskip \hrule \medskip
+
+\longformpublication{\textbf{K. Al Handawi}, P. Andersson, M. Panarotto, O. Isaksson and M. Kokkolaras (2020). Scalable set-based design optimization and remanufacturing for meeting changing requirements. \textit{in Proceedings of the International Design Engineering Technical Conferences \& Computers and Information in Engineering Conference}, Virtual conference, IDETC2020.}
+
+\longformpublication{L. Lawand, \textbf{K. Al Handawi}, M. Panarotto, P. Andersson, O. Isaksson and M. Kokkolaras (2019). A lifecycle cost-driven system dynamics approach for considering additive re-manufacturing or repair in aero-engine component design. \textit{in Proceedings of the Design Society: International Conference on Engineering Design}, Delft, Netherlands, ICED19: pp 1343 -- 1352. \href{http://dx.doi.org/10.1017/dsi.2019.140}{doi: 10.1017/dsi.2019.140}}
+
+\longformpublication{\textbf{K. Al Handawi}, N. Vahdati, O. Shiryayev, and L. Lawand (2016). Corrosion monitoring along infrastructures using distributed fiber optic sensing. \textit{in Proceedings of SPIE Smart Structures/NDE, International Society for Optics and Photonics, Sensors and Smart Structures Technologies for Civil, Mechanical, and Aerospace Systems}, Las Vegas, USA, SPIE2016. \href{http://dx.doi.org/10.1117/12.2218820}{doi: 10.1117/12.2218820}}
+
+\longformpublication{L. Lawand, O. Shiryayev, \textbf{K. Al Handawi}, N. Vahdati and P. Rostron (2016). Corrosivity monitoring system using RFID-based sensors. \textit{in Proceedings of SPIE Smart Structures/NDE, International Society for Optics and Photonics, Sensors and Smart Structures Technologies for Civil, Mechanical, and Aerospace Systems}, Las Vegas, USA, SPIE2016. \href{http://dx.doi.org/10.1117/12.2218813}{doi: 10.1117/12.2218813}}
+
+%------------------------------------------------
 %------------------------------------------------
 
 % \medskip % Extra whitespace before the next section
@@ -433,7 +479,7 @@
 	\begin{itemize}\itemsep0em 
 		\item 3D printing hobbyist
 		% \item Car enthusiast
-		\item Weightlifting and strength training
+		\item 3D modeling and graphic design
 	\end{itemize}
 
 	%----------------------------------------------------------------------------------------

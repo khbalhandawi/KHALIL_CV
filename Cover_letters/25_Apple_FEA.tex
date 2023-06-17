@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{khbalhandawi.github.io} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	ADDRESS
+%----------------------------------------------------------------------------------------
+
+Khalil Al Handawi, PhD\\
+500 Avenue Des Pins Ouest\\
+H2W 1S7, Montr\'{e}al, Qu\'{e}bec, Canada\\
+\faPhone~~\cvnumberphone\\
+\faEnvelope~~\href{mailto:\cvmail}{\cvmail}\\
+
+\today\\
+
+Camera hardware engineering team\\
+Santa Clara Valley (Cupertino), CA, United States\\
+Subject: Camera Mechanical Engineer - FEA\\
+Role Number: 200483677\\[6pt] \medskip
+
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+
+Dear Hiring Manager,
+
+\medskip % Extra whitespace before the next section 
+
+I am writing to express my interest in the Camera Mechanical Engineer position within the camera hardware engineering team at Apple, Inc. I am excited about the opportunity to leverage my optimization, simulation, and modeling experience to enable the innovations behind Apple's products.
+
+\medskip % Extra whitespace before the next section 
+
+I understand that as part of the role, I will be developing simulation and modeling solutions pertinent to camera design using commercial finite element software. I have extensive experience with Abaqus and NX Siemens from my research at McGill University, Chalmers University, and collaboration with GKN Aerospace. I have 6 years of experience within aviation and the aerospace industry at said institutions, where thermal modeling and structural simulation are an integral part of my work.
+
+\medskip % Extra whitespace before the next section 
+
+During my doctoral and postdoctoral research, I modeled additive manufacturing (AM) processes on aeroengine components using thermomechanical modeling to capture the residual stress and deformation due to the localized temperature gradients caused by a moving heat source. The entire simulation and design workflow was automated using API scripting in various commercial software to generate and analyze parametric CAD models (generated using NX Seimens and analyzed using Abaqus CAE's coupled structural and thermal solver) which gave me the necessary exposure to simulation tools that are commonly used in the industry. I also used advanced functionality within Abaqus such as user-defined subroutines (UMAT and VUMAT) to define material properties following thermal deposition. 
+
+\medskip % Extra whitespace before the next section 
+
+I also solved robust design optimization problems where some of the design requirements are modeled by probabilistic functions. I authored a \href{https://sed-group.github.io/mvmlib/index.html}{Python library} and a \href{https://github.com/khbalhandawi/scale_AM_webapp}{web application} to support the design activities of our industry partner, GKN Aerospace engine systems.
+
+\medskip % Extra whitespace before the next section 
+
+In addition to my simulation skills, I have authored several software and simulation programs for research purposes in various application domains (such as healthcare and commercial aviation). As an example, I wrote a \href{https://github.com/khbalhandawi/COVID_SIM_GPU}{CUDA accelerated C++ simulation} for the simulation of pandemics giving me exposure to high performance computing and multithreading. I was also an adjunct lecturer at McGill University, teaching the engineering systems optimization course (MECH559) to engineering students. I authored several \href{https://github.com/khbalhandawi/MECH559_notebooks}{notebooks in Python and Julia} to help the students understand the implementation of said algorithms and solve real-world engineering problems in their projects. This skillset could allow me to develop in-house simulation capabilities that could potentially address the limitations of commercial solvers while also providing relevant training and workshops on the use of said tools.
+
+\medskip % Extra whitespace before the next section 
+
+I am currently a post-doctoral researcher at the department of computer science and operations research (DIRO) at the Universit\'{e} de Montr\'{e}al as part of an industrial project with the international air transport association (IATA). My current research focuses on graph representation learning from aviation data collected over the last decade to assess the effectiveness and impact of the IATA operation safety audit (IOSA) on air travel accessibility and cooperation between airlines. I am specifically focusing on unsupervised learning on graph data structures to identify community structures within networks.
+
+\medskip % Extra whitespace before the next section 
+
+I believe these experiences are relevant to the role in the following ways: 
+
+\begin{itemize}
+	\item I can provide structural and thermal simulation solutions for Apple's camera products since I can develop and validate models (both simulation-based, and statistical) given my previous modeling and simulation experience during aerospace design, healthcare, and aviation related projects. 
+	\item I can interpret finite element results and models using my advanced background in solid mechanics (through my Ph.D. courses: \href{https://www.mcgill.ca/study/2022-2023/courses/mech-632}{MECH632}).
+	\item I can navigate commercial CAD and FEA modeling software given my experience with static and transient thermal simulations.
+	\item I can automate our design processes using my knowledge of parameteric CAD and FEA modeling and use of their APIs and subroutines.
+	\item I can help develop in-house simulation capabilities using my knowledge of HPC and low-level programming languages such as C++ and CUDA.
+	\item I can support design efforts to accommodate moving performance targets and requirements through my extensive knowledge on robust design and design for changeability from my doctoral research.
+	\item I can apply software development best-practices such as unit-testing, documentation, and maintenance given my experience in authoring a Python library for use by other researchers and engineers. This will allow me to communicate our solutions with other teams.
+	\item I have a good understanding of the industry's simulation needs given my experience working with various industry partners such as GKN Aerospace.
+	\item I can combine my domain knowledge in mechanical engineering and physics-based modeling with software engineering given the multidisciplinary nature of my research.
+\end{itemize}
+
+\medskip % Extra whitespace before the next section 
+
+Thank you for considering my application. I would be honored to have the opportunity to discuss my qualifications further and show you my \href{https://khbalhandawi.github.io/projects/}{portfolio} of projects. Please feel free to contact me through any of the channels at the top of this letter.
+
+\medskip % Extra whitespace before the next section
+
+Best regards,
+
+\medskip % Extra whitespace before the next section
+
+
+Khalil Al Handawi
+
+% \begin{figure*}[h]
+% 	\includegraphics[width=0.2\textwidth]{Signiture.png}
+% \end{figure*}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

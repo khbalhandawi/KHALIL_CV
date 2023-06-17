@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{khbalhandawi.github.io} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	ADDRESS
+%----------------------------------------------------------------------------------------
+
+Khalil Al Handawi, PhD\\
+500 Avenue Des Pins Ouest\\
+H2W 1S7, Montr\'{e}al, Qu\'{e}bec, Canada\\
+\faPhone~~\cvnumberphone\\
+\faEnvelope~~\href{mailto:\cvmail}{\cvmail}\\
+
+\today\\
+
+Sensing Product Design Team\\
+Santa Clara Valley (Cupertino), CA, United States\\
+Subject: Mechanical Design Engineer\\
+Role Number: 200284913\\[6pt] \medskip
+
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+
+Dear Hiring Manager,
+
+\medskip % Extra whitespace before the next section 
+
+I am writing to express my interest in the mechanical design engineer position within the sensing product design team at Apple, Inc. I am excited about the opportunity to leverage my optimization, simulation, and modeling experience to enable the innovations behind Apple's products.
+
+\medskip % Extra whitespace before the next section 
+
+I understand that as part of the role, I will be developing mechanical design concepts for various sensor technologies. My doctoral and postdoctoral research focused on this specific area of engineering design while taking a risk-averse approach to engineering design. I have worked for 6 years within this area of engineering design albeit applied to the aerospace industry. Although, I have not worked with consumer electronics, I feel that a lot of my experience from that industry could translate over to this position. I feel that this position would allow me to build on that experience and make a real impact.
+
+\medskip % Extra whitespace before the next section 
+
+During my doctoral and postdoctoral research, I worked on a research project that explores additive repair options for aerospace parts. The objective of the research was to design products so that they are robust against changing requirements and can tracking moving performance targets by leveraging state-of-the-art manufacturing technologies such as additive manufacturing (AM). As part of this project, I used various mechanical analysis and simulation tools such as NX Siemens and Abaqus CAE to setup my simulation and manufacturing models. I also used statistical modeling (response surfaces and surrogate models) to facilitate design space exploration and enumerate design concepts. I used a risk-averse approach to shortlist those concepts which can satisfy a wide-range of probabilistic requirements and performance targets by using reliability-based design optimization and robust-design optimization. I authored a \href{https://sed-group.github.io/mvmlib/index.html}{Python library} and a \href{https://github.com/khbalhandawi/scale_AM_webapp}{web application} to support the design activities of our industry partner, GKN Aerospace engine systems and my work was recognized in the ASME journal of mechanical design by earning a best paper award in 2021.
+
+\medskip % Extra whitespace before the next section 
+
+In addition to working on aerospace-related projects, I have worked in other discplines such as \href{https://github.com/khbalhandawi/COVID_SIM_GPU}{healthcare} and commercial aviation. Since I have a multidisciplinary background, I can related to the needs and requirements of other disciplinary teams. I was also an adjunct lecturer at McGill University, teaching the engineering systems optimization course (MECH559). I authored several \href{https://github.com/khbalhandawi/MECH559_notebooks}{notebooks in Python and Julia} to help the students understand the implementation of said algorithms and solve real-world engineering problems in their projects. This skillset helped me cultivate my communication and teaching skills and which are useful for disseminating results to other engineering teams.
+
+\medskip % Extra whitespace before the next section 
+
+I also worked with \href{https://khbalhandawi.github.io/projects/6_project/}{fiber-optic sensors} and waveguides during my masters education to prototype and calibrate a corrosion sensing and monitoring sensor for oil pipelines. I simulated the sensing solution and cross-validated the predicted corrosion rates with experimental and managed to publish my work in an instrumentation journal.
+
+\medskip % Extra whitespace before the next section 
+
+I am currently a post-doctoral researcher at the department of computer science and operations research (DIRO) at the Universit\'{e} de Montr\'{e}al as part of an industrial project with the international air transport association (IATA). My current research focuses on graph representation learning from aviation data collected over the last decade to assess the effectiveness and impact of the IATA operation safety audit (IOSA) on air travel accessibility and cooperation between airlines. I am specifically focusing on unsupervised learning on graph data structures to identify community structures within networks.
+
+\medskip % Extra whitespace before the next section 
+
+I believe these experiences are relevant to the role in the following ways: 
+
+\begin{itemize}
+	\item I can generate sensor design alternatives through parametric design space exploration given my knowledge of design of experiments (DOE) studies, latin hypercube sampling, etc.
+	\item I am knowledgeable with commercial CAD and FEA software given my experience with Abaqus and NX Siemens and their respective APIs and use them to simulate sensor concepts.
+	\item I am familiar with gradient-based and derivative-free optimization (mesh adaptive direct search, heuristic algorithms) which is useful for supporting design decisions.
+	\item I am familiar with probabilistic modeling, Monte Carlo simulation, and stochastic processes which can be useful for modeling and handling uncertainty in design and performing tolerance and process capability analyses.
+	\item I have knowledge regarding additive manufacturing and manufacturing process optimization which I can extend to other manufacturing processes used in the consumer electronics industry.
+	\item Experience with inter-disciplinary projects given my experience with aerospace, healthcare, and aviation and knowledge of multi-disciplinary design optimization.
+	\item I have experience designing and analyzing waveguides and photonic sensors (Fiber-bragg grating sensors for sensing strain and temperature) from my masters eduction which could be relevant to the sensor technologies in the team.
+	\item I am experienced with a variety of surrogate models such as Kriging, radial basis function neural networks, and kernel smoothing, for constructing response surfaces.
+	\item I have theoretical knowledge regarding nonlinear material behaviour and constitutive models such as those of rubber and viscoelastic material from my PhD coursework.
+	\item Strong communication skills given my experience presenting and publishing in the scientific community and delivering university lectures and training workshops.
+	\item I am familiar with Python, R, and MATLAB and their statistical libraries which can help us construct response surfaces and postprocess design data.
+\end{itemize}
+
+\medskip % Extra whitespace before the next section 
+
+Thank you for considering my application. I would be honored to have the opportunity to discuss my qualifications further and show you my \href{https://khbalhandawi.github.io/projects/}{portfolio} of projects. Please feel free to contact me through any of the channels at the top of this letter.
+
+\medskip % Extra whitespace before the next section
+
+Best regards,
+
+\medskip % Extra whitespace before the next section
+
+
+Khalil Al Handawi
+
+% \begin{figure*}[h]
+% 	\includegraphics[width=0.2\textwidth]{Signiture.png}
+% \end{figure*}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
