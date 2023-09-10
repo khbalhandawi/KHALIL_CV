@@ -1,0 +1,131 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Khalil Al Handawi, PhD} % Your name
+\cvjobtitle{Engineer, designer, and researcher} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Montr\'{e}al Qu\'{e}bec, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 572-7367} % Phone number
+\cvsite{khbalhandawi.github.io} % Personal website
+\cvmail{khalil.alhandawi@mail.mcgill.ca} % Email address
+\cvgithub{github.com/khbalhandawi} % GitHub
+\cvlinkedin{linkedin.com/in/khbalhandawi} % LinkedIn
+
+\aboutme{I believe that physics and artificial intelligence should be two sides of the same coin. One cannot exist without the other. How? By cross-validation. In this way, the toughest physics and mathematics problems can be solved! This philosophy is what drives my research.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	ADDRESS
+%----------------------------------------------------------------------------------------
+
+Khalil Al Handawi, PhD\\
+500 Avenue Des Pins Ouest\\
+H2W 1S7, Montr\'{e}al, Qu\'{e}bec, Canada\\
+\faPhone~~\cvnumberphone\\
+\faEnvelope~~\href{mailto:\cvmail}{\cvmail}\\
+
+\today\\
+
+Huawei Technologies Canada, Montr\'{e}al, Qu\'{e}bec, Canada\\
+Subject: Senior Researcher - Graph Machine Learning\\[6pt]
+
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+
+Dear Hiring Manager,
+
+\medskip % Extra whitespace before the next section 
+
+I am writing to express my interest in the Graph Machine Learning researcher position at Huawei Technologies. I am excited about the opportunity to leverage my optimization, simulation, and statistical modeling experience for advancing the exciting and nascent field of graph representation learning.
+
+\medskip % Extra whitespace before the next section 
+
+I understand that as part of the role, I will be working with graph structured data to solve interesting problems within Huawei. I have used various graph representation learning techniques during my tenure at the department of computer science and operations research (DIRO) at the Universit\'{e} de Montr\'{e}al as an NSERC postdoctoral scholar. I worked closely with the aviation industry to solve relevent problems for the international air transport association (IATA) and provide business intelligence insights from graph structured flight data. Namely, I worked on identifying community structures in the graph using modularity maximization techniques and mixed-integer linear programming as well was learning node embeddings and building edge prediction algorithms using shallow embedding techniques. The next phase of my research will deal with much larger graph data structures pertaining to passenger datasets which will involve Heterogenous graph neural networks for learning node embeddings.
+\medskip % Extra whitespace before the next section 
+
+I have also used various optimization and machine learning techniques as an instructor and a researcher at McGill University, were I worked on healthcare related projects and developed various statistical models for forecasting the trajectory of the COVID-19 pandemic. As part of these projects I used (with PyTorch) to build recurrent neural networks for the purpose of providing short term predictions. I also built GPU-accelerated agent-based simulation environments on which to train various reinforcement learning agents (by future researchers in my lab). 
+\medskip % Extra whitespace before the next section 
+
+As an adjunct lecturer at McGill University. I covered various topics in optimization and covered some of the basics of deep learning by introducing gradient descent and its applications. I authored several \href{https://github.com/khbalhandawi/MECH559_notebooks}{notebooks in Python and Julia} to help the students understand the implementation of said algorithms and solve real-world engineering problems in their projects.
+\medskip % Extra whitespace before the next section 
+
+Prior to my postdoctoral and lecturer posts, I worked on aerospace design related projects as part of my doctorate at McGill University, where I was frequently building and evaluating machine learning surrogate models to accelerate simulation workflows. Examples, of such machine learning models include weak learners such as Guassian processes, radial basis function networks, and support vector machines. I authored a \href{https://sed-group.github.io/mvmlib/index.html}{Python library} and a \href{https://github.com/khbalhandawi/scale_AM_webapp}{web application} to support the design activities of our industry partner, GKN Aerospace engine systems which relied on automating the setup, training, and tuning of said statistical models at its core.
+\medskip % Extra whitespace before the next section 
+
+Overall, I have 6 years of experience doing research on aerospace and aviation related projects at said institutions where I applied and used various statistical modeling and optimization tools.
+\medskip % Extra whitespace before the next section 
+
+I believe these experiences are relevant to the role in the following ways: 
+
+\begin{itemize}
+	\item I can apply machine learning and statistical modeling given my experience in surrogate modeling, graph representation learning, and deep learning.
+	\item I can create software prototypes along with unit tests and documentation given my past experience authoring Python libraries and web applications on cloud platforms such as Heroku.
+	\item I have some mySQL database design experience through the IATA project which can help me setup data pipelines to train our models.
+	\item I have experience developing CUDA accelerated software in C++ and Numba for exploiting parallelism where possible for our machine learning and/or simulation workflows.
+	\item I can apply mathematical optimization techniques given my optimization background to solve problems pertinent to graphs (such as community detection and path planning).
+\end{itemize}
+
+\medskip % Extra whitespace before the next section 
+
+Thank you for considering my application. I would be honored to have the opportunity to discuss my qualifications further and show you my \href{https://khbalhandawi.github.io/projects/}{portfolio} of projects. Please feel free to contact me through any of the channels at the top of this letter.
+
+\medskip % Extra whitespace before the next section
+
+Best regards,
+
+\medskip % Extra whitespace before the next section
+
+
+Khalil Al Handawi
+
+% \begin{figure*}[h]
+% 	\includegraphics[width=0.2\textwidth]{Signiture.png}
+% \end{figure*}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
